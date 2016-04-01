@@ -5,17 +5,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+
+     <div class="container">
+      <div class="masthead">
+        <h3 class="text-muted">Körsbärsgården</h3>
+        <nav>
+          <ul class="nav nav-pills">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Välkommen</a></li>
+            <li><a href="#">Verksamhet</a></li>
+            <li><a href="#">Pedagogik</a></li>
+            <li><a href="#">Personal</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        <%--hej--%>
-            <%--hej då--%>
         </asp:ContentPlaceHolder>
-    </div>
-    </form>
+     </div>
+    </form>        
 </body>
 </html>
