@@ -5,17 +5,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
+
+<form id="form1" runat="server" class="container">
+  
+     <div class="nav navbar navbar-fixed-top">
+     <div style="background-color: #ffd800">
+<%--                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>--%>
+          <ul class="nav nav-pills container">
+            <li><a href="index.aspx">Home</a></li>
+            <li><a href="#">Välkommen</a></li>
+            <li><a href="#">Verksamhet</a></li>
+            <li><a href="#">Pedagogik</a></li>
+            <li><a href="personal.aspx">Personal</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>     
+   </div>
+</div>
+
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        <%--hej--%>
-            <%--hej då--%>
         </asp:ContentPlaceHolder>
-    </div>
-    </form>
+     
+           <footer class="footer" style="background-color: #ffd800">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+    </form>        
+
 </body>
 </html>
