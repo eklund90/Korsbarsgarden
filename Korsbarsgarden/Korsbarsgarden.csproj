@@ -83,6 +83,7 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\npm.js" />
+    <Content Include="personal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +99,13 @@
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="personal.aspx.cs">
+      <DependentUpon>personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="personal.aspx.designer.cs">
+      <DependentUpon>personal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
