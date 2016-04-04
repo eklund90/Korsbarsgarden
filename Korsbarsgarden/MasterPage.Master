@@ -82,9 +82,9 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
      
-           <footer class="nav navbar navbar-fixed-bottom" style="background-color: #808080">
+           <footer class="nav navbar navbar-fixed-bottom" style="background-color:#000000">
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+        <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg, Telefon 042-912 04</p>
       </div>
     </footer>
     </form>        

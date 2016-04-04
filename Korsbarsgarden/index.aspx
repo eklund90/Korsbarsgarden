@@ -15,13 +15,13 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="img-responsive" src="https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg" alt=""; style="margin:0 auto">
+                            <img class="img-responsive" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Valkommen_files/shapeimage_1.png" alt=""; style="margin:0 auto">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg" alt="" style="margin:0 auto">
+                            <img class="img-responsive" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Valkommen_files/shapeimage_1.png" alt="" style="margin:0 auto">
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="https://www.petfinder.com/wp-content/uploads/2012/11/140272627-grooming-needs-senior-cat-632x475.jpg" alt="" style="margin:0 auto">
+                            <img class="img-responsive" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Valkommen_files/shapeimage_1.png" alt="" style="margin:0 auto">
                         </div>
                     </div>
 
