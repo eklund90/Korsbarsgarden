@@ -57,8 +57,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bin\Korsbarsgarden.dll" />
-    <Content Include="bin\Korsbarsgarden.pdb" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\modern-business.css" />
@@ -73,7 +71,6 @@
     <Content Include="js\jquery.js" />
     <Content Include="MasterPage.Master" />
     <Content Include="bin\contact_me.php" />
-    <Content Include="bin\Korsbarsgarden.dll.config" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.ttf" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.woff" />

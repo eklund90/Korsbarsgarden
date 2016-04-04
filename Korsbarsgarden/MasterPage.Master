@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-    <title>hallå</title>
+    <title>Körsbärsgården</title>
 
 
     <link href="css/bootstrap.css" rel="stylesheet" />
@@ -82,9 +82,11 @@
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
      
-           <footer class="nav navbar navbar-fixed-bottom" style="background-color:#000000">
+           <footer class="nav navbar" style="background-color:#000000">
       <div class="container" style="text-align:center">
-        <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg, Telefon 042-912 04</p>
+        <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p>
+          
+          <p class="text-muted">Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
       </div>
     </footer>
     </form>        
