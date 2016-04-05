@@ -6,6 +6,10 @@
            <header id="myCarousel" class="carousel slide">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
+    <br />
+    <br />
+                 
+    <br />
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -23,6 +27,8 @@
                         <div class="item">
                             <img class="img-responsive" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Valkommen_files/shapeimage_1.png" alt="" style="margin:0 auto" />
                         </div>
+                      
+    <br />
                     </div>
 
                     <!-- Controls -->
@@ -46,7 +52,9 @@
                         Småskaligheten gör att alla barn, föräldrar och våra pedagoger får en nära relation och ger alla en god inblick i verksamheten.
                         Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken.</p>
                         <br />
-                        
+<hr />
+                        <h3 style="text-align: center">Pedagogik
+                    </h3>
                         <p>Vi strävar efter att lägga grunden för ett livslångt lärande genom att erbjuda varje barn en trygg och lärorik pedagogisk miljö. 
                         Lärande och lek sammanflätas i en förberedd miljö med empatiska, kompetenta pedagoger som tillsammans med barnen upplever var dag. Hela dagen är lika viktig. 
                         Alla barn blir sedda, hörda och får tid att uttrycka sig och träna sina färdigheter. 
@@ -55,7 +63,8 @@
                     </p>
                     </div>
                     </div>
-    <hr />
+
+
             <div class="row">
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">

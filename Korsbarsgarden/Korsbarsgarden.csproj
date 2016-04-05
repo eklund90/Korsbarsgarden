@@ -69,6 +69,7 @@
     <Content Include="js\contact_me.js" />
     <Content Include="js\jqBootstrapValidation.js" />
     <Content Include="js\jquery.js" />
+    <Content Include="kooperativ.aspx" />
     <Content Include="MasterPage.Master" />
     <Content Include="bin\contact_me.php" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kooperativ.aspx.cs">
+      <DependentUpon>kooperativ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kooperativ.aspx.designer.cs">
+      <DependentUpon>kooperativ.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

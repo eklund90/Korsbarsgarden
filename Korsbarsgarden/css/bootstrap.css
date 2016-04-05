@@ -1335,7 +1335,7 @@ mark,
   text-transform: capitalize;
 }
 .text-muted {
-  color: #777;
+  color: #ddd;
 }
 .text-primary {
   color: #337ab7;
@@ -4281,6 +4281,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
