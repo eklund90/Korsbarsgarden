@@ -34,7 +34,7 @@
                     </a>
                 </div>
                 </header>
-  
+  <hr />
                 <div>
                    
                     <h1 style="text-align:center"><span class="error-404">Välkommen till föräldrakooperativet Körsbärsgården!</span>
@@ -55,6 +55,7 @@
                     </p>
                     </div>
                     </div>
+    <hr />
             <div class="row">
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
