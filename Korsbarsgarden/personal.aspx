@@ -22,7 +22,7 @@
         <div class="row">
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                     Tina
@@ -31,7 +31,7 @@
             </div>
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                     Carina
@@ -40,7 +40,7 @@
             </div>
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                     Mia
@@ -53,7 +53,7 @@
         <div class="row">
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                     Lena
@@ -62,7 +62,7 @@
             </div>
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                    Eva
@@ -71,7 +71,7 @@
             </div>
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
                 <h3>
                     Christina
@@ -88,8 +88,6 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
 </asp:Content>

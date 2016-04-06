@@ -42,6 +42,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
+                     <li>
+                        <a href="index.aspx">Hem</a>
+                    </li>
                     <li>
                         <a href="personal.aspx">Personal</a>
                     </li>
@@ -49,26 +52,29 @@
                         <a href="kooperativ.aspx">Kooperativ</a>
                     </li>
                     <li>
+                        <a href="intagning.aspx">Intagning</a>
+                    </li>
+                    <li>
                         <a href="kontakt.aspx">Kontakt</a>
                     </li>
 
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropmeny <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="full-width.html">Full Width Page</a>
+                                <a href="full-width.html">AAAAA</a>
                             </li>
                             <li>
-                                <a href="sidebar.html">Sidebar Page</a>
+                                <a href="sidebar.html">BBBBB</a>
                             </li>
                             <li>
-                                <a href="faq.html">FAQ</a>
+                                <a href="faq.html">CCCCC</a>
                             </li>
                             <li>
-                                <a href="404.html">404</a>
+                                <a href="404.html">EEEEE</a>
                             </li>
                             <li>
-                                <a href="pricing.html">Pricing Table</a>
+                                <a href="pricing.html">FFFFF</a>
                             </li>
                         </ul>
                     </li>
@@ -81,14 +87,14 @@
      
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-     
-           <footer class="footer" style="background-color:#565454">
+     <br />
+
+    </form>    
+      <footer class="footer" style="background-color:#565454">
       <div class="container" style="text-align:center">
         <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p> 
         <p class="text-muted">Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
       </div>
-    </footer>
-    </form>        
-
+    </footer>    
 </body>
 </html>

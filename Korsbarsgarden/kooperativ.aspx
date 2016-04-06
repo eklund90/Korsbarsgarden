@@ -4,8 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       <br />
     <br />
-    <div class="row" style="align-content">
-                <div class="col-md-8">                 
+    <div class="row">
+                <div class="container">                 
                     <h1 style="text-align:center"><span class="error-404">Föräldrakooperativet</span>
                     </h1>
                     <div>
@@ -18,6 +18,31 @@
             </div>
           </div>
                         <br />
- 
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <br />
+            <div class="row">
+            <div class="col-md-4 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Kooperativ_files/DSC_0683%20-%20Version%202.jpg" alt=""/>
+                </a>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Kooperativ_files/shapeimage_3.png" alt=""/>
+                </a>
+            </div>
+            <div class="col-md-4 img-portfolio">
+                <a href="portfolio-item.html">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Kooperativ_files/shapeimage_4.png" alt=""/>
+                </a>
+            </div>
+        </div>
 <hr />
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </asp:Content>

@@ -40,7 +40,7 @@
                     </a>
                 </div>
                 </header>
-  <hr />
+
                 <div>
                    
                     <h1 style="text-align:center"><span class="error-404">Välkommen till föräldrakooperativet Körsbärsgården!</span>
@@ -52,7 +52,8 @@
                         Småskaligheten gör att alla barn, föräldrar och våra pedagoger får en nära relation och ger alla en god inblick i verksamheten.
                         Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken.</p>
                         <br />
-<hr />
+
+
                         <h3 style="text-align: center">Pedagogik
                     </h3>
                         <p>Vi strävar efter att lägga grunden för ett livslångt lärande genom att erbjuda varje barn en trygg och lärorik pedagogisk miljö. 
@@ -63,12 +64,19 @@
                     </p>
                     </div>
                     </div>
+    <br />
 
+    <h3 style="text-align: center">Avdelningar
+                    </h3>
+  
+    <p>På Körsbärsgården har vi två avdelningar, Snäckan och Krabban. 
+Lämning sker ute på altanen, där också de små barnen sover efter 
+lunchen.</p>
 
             <div class="row">
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="http://zingzingtree.com/wp-content/uploads/2013/08/shell-bag1.jpg" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="http://zingzingtree.com/wp-content/uploads/2013/08/shell-bag1.jpg" alt="">
                 </a>
                 <h3>
                     Snäckan
@@ -80,7 +88,7 @@ Vi har utedagar med uppdrag och utflykter till stranden, skogen eller någon lek
             </div>
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover" src="https://wallowshd.com/uploads/cache/1247495296/animal-crab-015-qlZq2-700x400-MM-100.jpg" alt="">
+                    <img class="img-responsive img-hover img-thumbnail" src="https://wallowshd.com/uploads/cache/1247495296/animal-crab-015-qlZq2-700x400-MM-100.jpg" alt="">
                 </a>
                 <h3>
                     Krabban
@@ -92,12 +100,8 @@ En dag i veckan har vi utedag då vi spanar och har spännande uppdrag i naturen
             </div>
 </div>
 
-        <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
