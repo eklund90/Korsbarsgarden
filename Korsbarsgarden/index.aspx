@@ -52,7 +52,7 @@
                         Småskaligheten gör att alla barn, föräldrar och våra pedagoger får en nära relation och ger alla en god inblick i verksamheten.
                         Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken.</p>
                         <br />
-
+                        <hr />
 
                         <h3 style="text-align: center">Pedagogik
                     </h3>
@@ -62,6 +62,7 @@
                         Vi tror att varje barn har en inneboende kraft och vilja att utvecklas, utmanas och förändras. 
                         Genom vår förberedda miljö, vårt förhållningssätt, verksamhetens innehåll och vår Montessoripedagogik ger vi varje barn bästa möjliga förutsättningar.
                     </p>
+                        <hr />
                     </div>
                     </div>
     <br />
@@ -98,6 +99,7 @@ Vi har utedagar med uppdrag och utflykter till stranden, skogen eller någon lek
 En dag i veckan har vi utedag då vi spanar och har spännande uppdrag i naturen. Sångstund tillsammans med barnen på Snäckan är också en stående aktivitet. Vi arbetar temabaserat med utgångspunkt i 
                     barnens frågeställningar och intressen. De barn som går sista året har regelbundet specifika, skolförberedande aktiviteter. </p>
             </div>
+                <hr />
 </div>
 </div>
     <script src="js/jquery.js"></script>

@@ -25,7 +25,7 @@
 </head>
 <body style="background-image: url(images/kaffebak.jpg);">
      
-<form id="form1" runat="server" class="container" style="background-color: #f1eeee"> 
+<form id="form1" runat="server" class="container" style="background-color: #d3d3d3"> 
   
    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #565454">
         <div class="container">
