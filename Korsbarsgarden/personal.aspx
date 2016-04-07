@@ -2,12 +2,13 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+        <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
         <br />
      <br />
      
     <!-- Page Content -->
-    <div class="container" style="background-color: #d3d3d3">
+    <div style="background-color: #d3d3d3">
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
@@ -15,7 +16,7 @@
                 <h1 style="text-align:center">Vår Personal
                  
                 </h1>
-
+                <hr />
             </div>
         </div>
         <!-- /.row -->
@@ -50,7 +51,8 @@
                 <p>Förskolelärare sedan 1986, och har varit på Körsbärsgården sedan 2003. Älskar mitt arbete och min arbetsplats. Arbetar för att möta varje barn och stimulera dess utveckling och lärande. Brinner för att få "tända stjärnögon".</p>
             </div>
         </div>
-
+        <hr />
+        <br />
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-4 img-portfolio">
@@ -80,16 +82,8 @@
                 </h3>
                 <p>Är barnskötare. Hjälper till i köket med diverse göromål samt står för städningen. Har varit på Körsbärsgården sedan våren 2012. Bakar ibland bröd eller kaka till mellanmål. Brinner för att baka och pyssla med barnen samt för allt inom trädgård och odling.</p>
             </div>
-        </div>
-        <!-- /.row -->
-
-        <hr>
-
+        </div>  
+        <hr />
     </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
+  
 </asp:Content>

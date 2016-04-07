@@ -4,6 +4,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
     <br />
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <br />
         <div style="background-color: #d3d3d3">
 
@@ -99,8 +101,5 @@
             </div>
         </div>
        </div>
-    <br />
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 </asp:Content>
 
