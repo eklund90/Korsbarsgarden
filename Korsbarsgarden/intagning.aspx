@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <br />
     <br />
-    <div class="row" style="min-height: 800px;">
+    <div class="row" style="min-height: 800px; background-color: #d3d3d3"">
                 <div class="container">                 
                     <h1 style="text-align:center"><span class="error-404">Intagning</span>
                     </h1>

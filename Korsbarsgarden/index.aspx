@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    <div style="background-color: #d3d3d3">
            <header id="myCarousel" class="carousel slide">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -99,7 +99,7 @@ En dag i veckan har vi utedag då vi spanar och har spännande uppdrag i naturen
                     barnens frågeställningar och intressen. De barn som går sista året har regelbundet specifika, skolförberedande aktiviteter. </p>
             </div>
 </div>
-
+</div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>

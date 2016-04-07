@@ -5,9 +5,9 @@
    
       <br />
     <br />
-    <div class="row" style="min-height: 800px;">
+    <div class="row" style="min-height: 850px; background-color: #d3d3d3">
                 <div class="container">                 
-                    <h1><span class="error-404">Föräldrakooperativet</span>
+                    <h1 style="text-align:center"><span class="error-404">Föräldrakooperativet</span>
                     </h1>
                     <div>
                <p>Körsbärsgården är en ideell förening som drivs av ett föräldrakooperativ. Alla föräldrar som har barn inskrivna i förskolan är medlemmar och personalen är anställd av föreningen. Föräldrarna sitter i styrelsen och har ett övergripande ansvar för verksamheten. På det här sättet får föräldrarna insyn, ansvar och engageras i verksamheten. Det innebär att du som förälder har en unik möjlighet att kunna påverka ditt barns vardag på förskolan. Vi får kommunala bidrag och tar ut samma avgifter som andra förskolor i kommunen.<br /></p>
@@ -40,7 +40,6 @@
             </div>
         </div>
         </div>
-<hr />
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -23,7 +23,7 @@
     <![endif]
   --%>
 </head>
-<body style="background-image: url(images/bakgrund.jpg)">
+<body style="background-image: url(images/kaffebak.jpg);">
      
 <form id="form1" runat="server" class="container" style="background-color: #f1eeee"> 
   

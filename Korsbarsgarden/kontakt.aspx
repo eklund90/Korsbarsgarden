@@ -5,7 +5,7 @@
     <br />
     <br />
     <br />
-        <div class="container">
+        <div style="background-color: #d3d3d3">
 
         <!-- Page Heading/Breadcrumbs -->
 <%--        <div class="row">
@@ -20,8 +20,7 @@
             </div>
         </div>--%>
 
-        <!-- TestÄNDRING -->
-            <p>HEJ JIMMY123</p>
+        
 
         <!-- Content Row -->
         <div class="row">
