@@ -19,13 +19,13 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="img-responsive" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Valkommen_files/shapeimage_1.png" alt="" style="margin:0 auto" />
+                            <img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Valkommen_files/shapeimage_1.png" alt="" style="margin:0 auto" />
+                            <img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Valkommen_files/shapeimage_1.png" alt="" style="margin:0 auto" />
+                            <img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />
                         </div>
                       
     <br />
