@@ -65,7 +65,6 @@
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\hus.png" />
-    <Content Include="images\bakgrund.jpg" />
     <Content Include="images\kaffebak.jpg" />
     <Content Include="images\krabba.jpg" />
     <Content Include="images\snäcka.jpg" />
