@@ -23,8 +23,8 @@
     <![endif]
   --%>
 </head>
-<body>
-    
+<body style="background-image: url(images/bakgrund.jpg)">
+     
 <form id="form1" runat="server" class="container" style="background-color: #f1eeee"> 
   
    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #565454">
