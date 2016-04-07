@@ -4,13 +4,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
         <br />
+     <br />
+     
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" style="background-color: #d3d3d3">
 
         <!-- Page Heading/Breadcrumbs -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Vår Personal
+                <h1 style="text-align:center">Vår Personal
                  
                 </h1>
 
