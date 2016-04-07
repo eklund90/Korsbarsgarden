@@ -21,7 +21,7 @@ Alternativt kan du kontakta vår styrelseordförande Catja Öhlin på mobiltelef
               </div>
             </div>
           </div>
-
+    <p>hej jimmy</p>
             <div class="row">
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
