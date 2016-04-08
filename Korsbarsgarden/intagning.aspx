@@ -2,6 +2,8 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+            <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <br />
     <br />
     <div class="row" style="min-height: 800px; background-color: #d3d3d3"">
