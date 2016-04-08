@@ -23,8 +23,6 @@ Alternativt kan du kontakta vår styrelseordförande Catja Öhlin på mobiltelef
               </div>
          
        
-    <p>hej jimmyasdasdasd</p>
-
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover img-thumbnail" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Kooperativ_files/DSC_0683%20-%20Version%202.jpg" alt=""/>
