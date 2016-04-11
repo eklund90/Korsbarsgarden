@@ -1140,6 +1140,7 @@ img {
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
+    width: 209px;
 }
 .img-circle {
   border-radius: 50%;
@@ -4333,6 +4334,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-top: 10px;
   padding-bottom: 10px;
   line-height: 20px;
+  text-decoration-color: #000
 }
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
@@ -4511,10 +4513,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-color: transparent;
 }
 .navbar-default .navbar-text {
-  color: #777;
+  color: #000;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #000;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
