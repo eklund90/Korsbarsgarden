@@ -3,10 +3,10 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-<div class="container" style="background-color: #d3d3d3">
+<div class="container" style="background-color: #f2f1f1">
                 <h1 style="text-align:center">Vår Personal                
                 </h1>
-        <hr />
+        <hr style="border-color: white" />
         <div class="row">
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">

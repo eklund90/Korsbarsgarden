@@ -33,7 +33,7 @@
                     <a class="right carousel-control" href="#myCarousel" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
-                <%--</divasdafghjsd>--%>
+                <%--</div>--%>
                 </header>
                 
                 <div class="container" style="background-color: #f2f1f1">
@@ -67,22 +67,17 @@
                         </div>
                     </div>
                 </div>
-                
+                <hr style="border-color: white" />
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3>Avdelningar</h3>
-                                </div>
-                                <div class="panel-body">
+                                    <h3 style="text-align:center">Avdelningar</h3>
+                                
                                     <p>På Körsbärsgården har vi två avdelningar, Snäckan och Krabban. 
                                        Lämning sker ute på altanen, där också de små barnen sover efter 
                                        lunchen.</p>
                                 </div>
-
-                            </div>
-                        </div>
+                     
                         <div class="col-md-1"></div>
                     </div>
                     

@@ -4,11 +4,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-<div class="container" style="background-color: #d3d3d3"">
+<div class="container" style="background-color: #f2f1f1">
 
                 <h1 style="text-align:center">Intagning            
                 </h1>
-    <hr />
+    <hr style="border-color: white" />
 
      <p>Varje termin tar vi in nya barn. Om du är intresserad av att ditt barn ska få en plats så är första steget att kontakta oss för att boka in ett besök på Körsbärsgården. 
 Då får personalen tillfälle att berätta mer om vår förskola och du som förälder får en inblick i hur förskolan ser ut och fungerar. 
