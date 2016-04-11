@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: #DD5151;
 }
 
@@ -91,4 +91,9 @@ footer {
     header.carousel .carousel {
         height: 70%;
     }
+}
+
+#pb1 {
+    background-image: url(images/snacka.jpg) !important; 
+  
 }

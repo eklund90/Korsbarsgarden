@@ -2,33 +2,27 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div style="background-color: #d3d3d3">
-           <header id="myCarousel" class="carousel slide">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <header id="myCarousel" class="carousel slide">
+                <%--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">--%>
                     <!-- Indicators -->
-    <br />
-    <br />
-                 
-    <br />
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
 
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
-                            <img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />
+                            <%--<img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />--%>
+                            <div class="fill" style="background-image:url('images/hus.jpg')"></div>
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />
+                            <img class="img-responsive" src="images/cykel.jpg" alt="" />
                         </div>
                         <div class="item">
-                            <img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />
-                        </div>
-                      
-    <br />
+                            <img class="img-responsive" src="images/hus.png" alt="" />
+                        </div>                      
                     </div>
 
                     <!-- Controls -->
@@ -38,36 +32,42 @@
                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
-                </div>
+                <%--</div>--%>
                 </header>
-
-                <div>
-                   
-                    <h1 style="text-align:center"><span class="error-404">Välkommen till föräldrakooperativet Körsbärsgården!</span>
-                    </h1>
-                    <div>
-                    <p>
-                        Vi är en liten Montessori-inspirerad verksamhet med ett stort hjärta! Körsbärsgårdens rosa villa har plats för runt 22 barn och ligger i Domsten, i norra Helsingborg. 
-                        Den stora, lummiga trädgården lockar till lek och vi har strand och skog som närmsta grannar. Domstens by inbjuder till promenader till hamnen och omgivande lekplatser. 
-                        Småskaligheten gör att alla barn, föräldrar och våra pedagoger får en nära relation och ger alla en god inblick i verksamheten.
-                        Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken.</p>
-                        <br />
-                        <hr />
-
-                        <h3 style="text-align: center">Pedagogik
-                    </h3>
-                        <p>Vi strävar efter att lägga grunden för ett livslångt lärande genom att erbjuda varje barn en trygg och lärorik pedagogisk miljö. 
-                        Lärande och lek sammanflätas i en förberedd miljö med empatiska, kompetenta pedagoger som tillsammans med barnen upplever var dag. Hela dagen är lika viktig. 
-                        Alla barn blir sedda, hörda och får tid att uttrycka sig och träna sina färdigheter. 
-                        Vi tror att varje barn har en inneboende kraft och vilja att utvecklas, utmanas och förändras. 
-                        Genom vår förberedda miljö, vårt förhållningssätt, verksamhetens innehåll och vår Montessoripedagogik ger vi varje barn bästa möjliga förutsättningar.
-                    </p>
-                        <hr />
+                
+                <div class="container" style="background-color: #e8e2e2">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Välkommen till föräldrakoperativet Körsbärsgården!</h3>
+                            </div>
+                            <div class="panel-body">
+                            <p> Vi är en liten Montessori-inspirerad verksamhet med ett stort hjärta! Körsbärsgårdens rosa villa har plats för runt 22 barn och ligger i Domsten, i norra Helsingborg. 
+                                Den stora, lummiga trädgården lockar till lek och vi har strand och skog som närmsta grannar. Domstens by inbjuder till promenader till hamnen och omgivande lekplatser. 
+                                Småskaligheten gör att alla barn, föräldrar och våra pedagoger får en nära relation och ger alla en god inblick i verksamheten.
+                                Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken. asdasdasdasdadadadadadadadadadaf saffasafsafssfaf saasffsafasfsafsfasa fsafafss faasfsfasafasf afssafs afafsafs</p>
+                        </div>
+                        </div>                        
                     </div>
-                    </div>
-    <br />
 
-    <h3 style="text-align: center">Avdelningar
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Pedagogik</h3>
+                            </div>
+                            <div class="panel-body">
+                            <p> Vi strävar efter att lägga grunden för ett livslångt lärande genom att erbjuda varje barn en trygg och lärorik pedagogisk miljö. 
+                                Lärande och lek sammanflätas i en förberedd miljö med empatiska, kompetenta pedagoger som tillsammans med barnen upplever var dag. Hela dagen är lika viktig. 
+                                Alla barn blir sedda, hörda och får tid att uttrycka sig och träna sina färdigheter. 
+                                Vi tror att varje barn har en inneboende kraft och vilja att utvecklas, utmanas och förändras. 
+                                Genom vår förberedda miljö, vårt förhållningssätt, verksamhetens innehåll och vår Montessoripedagogik ger vi varje barn bästa möjliga förutsättningar.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+    <%--<h3 style="text-align: center">Avdelningar
                     </h3>
   
     <p>På Körsbärsgården har vi två avdelningar, Snäckan och Krabban. 
@@ -77,7 +77,7 @@ lunchen.</p>
             <div class="row">
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover img-thumbnail" src="images/snäcka.jpg" alt="" ">
+                    <img class="img-responsive img-hover img-thumbnail" src="images/snäcka.jpg" alt="" style="height: 300px; margin: auto;">
                 </a>
                 <h3>
                     Snäckan
@@ -89,7 +89,7 @@ Vi har utedagar med uppdrag och utflykter till stranden, skogen eller någon lek
             </div>
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover img-thumbnail" src="images/krabba.jpg" alt=""">
+                    <img class="img-responsive img-hover img-thumbnail" src="images/krabba.jpg" alt="" style="height: 300px;">
                 </a>
                 <h3>
                     Krabban
@@ -100,7 +100,56 @@ En dag i veckan har vi utedag då vi spanar och har spännande uppdrag i naturen
                     barnens frågeställningar och intressen. De barn som går sista året har regelbundet specifika, skolförberedande aktiviteter. </p>
             </div>
                 <hr />
-</div>
+    </div>--%>
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3>Avdelningar</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>På Körsbärsgården har vi två avdelningar, Snäckan och Krabban. 
+                                       Lämning sker ute på altanen, där också de små barnen sover efter 
+                                       lunchen.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    
+                    <div class="row">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" style="background-image: url(images/snacka2.jpg)">
+                                      <%--<img class="img-responsive" src="images/snacka2.jpg" />  --%>                   
+                            </div>
+                            <div class="panel-body">
+                            <p> Vi är en liten Montessori-inspirerad verksamhet med ett stort hjärta! Körsbärsgårdens rosa villa har plats för runt 22 barn och ligger i Domsten, i norra Helsingborg. 
+                                Den stora, lummiga trädgården lockar till lek och vi har strand och skog som närmsta grannar. Domstens by inbjuder till promenader till hamnen och omgivande lekplatser. 
+                                Småskaligheten gör att alla barn, föräldrar och våra pedagoger får en nära relation och ger alla en god inblick i verksamheten.
+                                Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken.</p>
+                        </div>
+                        </div>                        
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Pedagogik</h3>
+                            </div>
+                            <div class="panel-body">
+                            <p> Vi strävar efter att lägga grunden för ett livslångt lärande genom att erbjuda varje barn en trygg och lärorik pedagogisk miljö. 
+                                Lärande och lek sammanflätas i en förberedd miljö med empatiska, kompetenta pedagoger som tillsammans med barnen upplever var dag. Hela dagen är lika viktig. 
+                                Alla barn blir sedda, hörda och får tid att uttrycka sig och träna sina färdigheter. 
+                                Vi tror att varje barn har en inneboende kraft och vilja att utvecklas, utmanas och förändras. 
+                                Genom vår förberedda miljö, vårt förhållningssätt, verksamhetens innehåll och vår Montessoripedagogik ger vi varje barn bästa möjliga förutsättningar.</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
 </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

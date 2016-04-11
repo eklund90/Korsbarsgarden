@@ -64,12 +64,14 @@
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="images\footer.jpg" />
+    <Content Include="images\cykel.jpg" />
     <Content Include="images\hus.png" />
+    <Content Include="images\bakgrund.jpg" />
     <Content Include="images\kaffebak.jpg" />
     <Content Include="images\krabba.jpg" />
-    <Content Include="images\meny.jpg" />
-    <Content Include="images\snäcka.jpg" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\snacka.jpg" />
+    <Content Include="images\snacka2.jpg" />
     <Content Include="images\stenbak.jpg" />
     <Content Include="intagning.aspx" />
     <Content Include="js\bootstrap.js" />

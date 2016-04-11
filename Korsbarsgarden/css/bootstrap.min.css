@@ -3560,6 +3560,7 @@ select.input-group-sm[multiple] > .form-control, select.input-group-sm[multiple]
 .navbar-fixed-top {
     border-width: 0 0 1px;
     top: 0;
+    margin-bottom: 50px;
 }
 .navbar-fixed-bottom {
     border-width: 1px 0 0;
