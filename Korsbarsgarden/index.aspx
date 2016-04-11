@@ -33,7 +33,7 @@
                     <a class="right carousel-control" href="#myCarousel" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
-                <%--</divasdasd>--%>
+                <%--</divasdafghjsd>--%>
                 </header>
                 
                 <div class="container" style="background-color: #f2f1f1">
