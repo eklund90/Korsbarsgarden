@@ -77,7 +77,7 @@ lunchen.</p>
             <div class="row">
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover img-thumbnail" src="images/snäcka.jpg" alt="" style="height: 300px;">
+                    <img class="img-responsive img-hover img-thumbnail" src="images/snäcka.jpg" alt="" ">
                 </a>
                 <h3>
                     Snäckan
@@ -89,7 +89,7 @@ Vi har utedagar med uppdrag och utflykter till stranden, skogen eller någon lek
             </div>
             <div class="col-md-6 img-portfolio">
                 <a href="portfolio-item.html">
-                    <img class="img-responsive img-hover img-thumbnail" src="images/krabba.jpg" alt="" style="height: 300px;">
+                    <img class="img-responsive img-hover img-thumbnail" src="images/krabba.jpg" alt=""">
                 </a>
                 <h3>
                     Krabban
