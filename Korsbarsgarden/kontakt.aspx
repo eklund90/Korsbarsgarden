@@ -2,12 +2,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <br />
-    <br />
+<div class="container" style="background-color: #d3d3d3"> 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <br />
-        <div style="background-color: #d3d3d3">
+
+
 
         <!-- Page Heading/Breadcrumbs -->
 <%--        <div class="row">
@@ -101,5 +100,6 @@
             </div>
         </div>
        </div>
+
 </asp:Content>
 
