@@ -9,6 +9,7 @@
 
 
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/modern-business.css" rel="stylesheet" />
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
@@ -23,13 +24,15 @@
     <![endif]
   --%>
 </head>
-<body style="background-image: url(images/kaffebak.jpg);">
-     
-<form id="form1" runat="server" class="container" style="background-color: #d3d3d3"> 
-  
-   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #565454">
+<%--<form id="form1" runat="server" class="" style=""> --%>
+<body style="background-color: #f5f5f5">
+       
+   <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="background-color: #4e5754">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
+            <div style="margin-top: 5px">
+                <img class="img-responsive" src="images/logo.png" alt="Något gick fel! Bilden kan inte visas."/>
+            </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -37,11 +40,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.aspx">Körsbärsgården</a>
+                <%--<a class="navbar-brand" href="index.aspx">Körsbärsgården</a>--%>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav nav-justified" >
                      <li>
                         <a href="index.aspx">Hem</a>
                     </li>
@@ -81,15 +84,15 @@
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
-        </div>
+        
         <!-- /.container -->
-    </nav>
-     
+           </div>
+        </nav>
+           
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
-     <br />
 
-    </form>    
+    
       <footer class="footer" style="background-color:#565454">
       <div class="container" style="text-align:center">
         <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p> 
@@ -97,4 +100,5 @@
       </div>
     </footer>    
 </body>
+<%--</form> --%>   
 </html>
