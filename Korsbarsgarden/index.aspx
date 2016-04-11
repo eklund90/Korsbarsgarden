@@ -12,7 +12,7 @@
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
 
-                    <!-- Wrapper for slides -->
+                    <!-- Wrapper for sdflides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <%--<img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />--%>
