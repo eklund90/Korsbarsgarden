@@ -67,12 +67,14 @@
     <Content Include="images\cykel1.jpg" />
     <Content Include="images\cykel2.jpg" />
     <Content Include="images\cykel3.jpg" />
+    <Content Include="images\denim.png" />
     <Content Include="images\hus.png" />
     <Content Include="images\kaffebak.jpg" />
     <Content Include="images\krabba.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\snacka.jpg" />
     <Content Include="images\stenbak.jpg" />
+    <Content Include="images\subtle_grunge.png" />
     <Content Include="images\test.jpg" />
     <Content Include="images\test2.jpg" />
     <Content Include="intagning.aspx" />

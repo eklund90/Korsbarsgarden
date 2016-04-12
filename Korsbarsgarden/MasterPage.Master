@@ -26,9 +26,9 @@
   --%>
 </head>
 <%--<form id="form1" runat="server" class="" style=""> --%>
-<body style="background-image: url(images/kaffebak.jpg)">
+<body style="background-image: url(images/subtle_grunge.png)">
        
-   <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="background-color: #4e5754">
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/denim.png)">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div style="margin-top: 5px">

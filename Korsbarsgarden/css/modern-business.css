@@ -12,7 +12,7 @@ body {
 }
 
 body {
-     /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 70px;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: #DD5151;
 }
 
@@ -27,6 +27,7 @@ body {
 /* Home Page Carousel */
 
 header.carousel {
+    margin-top: 75px;
     height: 50%;
 }
 
@@ -96,4 +97,16 @@ footer {
 #pb1 {
     background-image: url(images/snacka.jpg) !important; 
   
+}
+
+.hr2{
+    margin-right: 85%;
+}
+
+.pfont{
+    font-family: "roboto",serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.7; 
+    /*color: #424242;*/
 }

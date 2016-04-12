@@ -1148,8 +1148,12 @@ img {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eee;
+  /*border: 0;
+  border-top: 3px solid #337ab7;*/
+  border-style: solid none none;
+  border-width: 3px 0px 0px;
+  border-color: #337ab7;
+  
 }
 .sr-only {
   position: absolute;
@@ -4257,7 +4261,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   z-index: 1030;
