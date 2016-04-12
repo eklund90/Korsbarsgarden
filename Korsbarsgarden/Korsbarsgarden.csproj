@@ -71,6 +71,8 @@
     <Content Include="images\hus.png" />
     <Content Include="images\kaffebak.jpg" />
     <Content Include="images\krabba.jpg" />
+    <Content Include="images\korsbarsgarden_logo.png" />
+    <Content Include="images\körsbärsgården_1500px.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\snacka.jpg" />
     <Content Include="images\stenbak.jpg" />

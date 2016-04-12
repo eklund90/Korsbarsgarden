@@ -32,7 +32,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div style="margin-top: 5px">
-                <img class="img-responsive" src="images/logo.png" alt="Något gick fel! Bilden kan inte visas."/>
+                <img class="img-responsive" src="images/korsbarsgarden_logo.png" alt="Något gick fel! Bilden kan inte visas."/>
             </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
