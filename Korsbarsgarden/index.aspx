@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+    
             <header id="myCarousel" class="carousel slide">
                 <%--<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">--%>
                     <!-- Indicators -->
