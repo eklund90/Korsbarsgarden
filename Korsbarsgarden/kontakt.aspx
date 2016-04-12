@@ -65,7 +65,7 @@
         <!-- Contact Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <h3>Skicka ett meddelande</h3>
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group form-group">
@@ -95,7 +95,7 @@
                     </div>
                     <div id="success"></div>
                     <!-- For success/fail messages -->
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary">Skicka meddelande</button>
                 
             </div>
         </div>

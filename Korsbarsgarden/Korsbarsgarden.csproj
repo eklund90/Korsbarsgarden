@@ -83,6 +83,7 @@
     <Content Include="js\jquery.js" />
     <Content Include="kontakt.aspx" />
     <Content Include="kooperativ.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="MasterPage.Master" />
     <Content Include="bin\contact_me.php" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.eot" />
@@ -128,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.aspx" />
+    <Content Include="nyheter.aspx" />
     <Content Include="personal.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -160,12 +162,26 @@
     <Compile Include="kooperativ.aspx.designer.cs">
       <DependentUpon>kooperativ.aspx</DependentUpon>
     </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="nyheter.aspx.cs">
+      <DependentUpon>nyheter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nyheter.aspx.designer.cs">
+      <DependentUpon>nyheter.aspx</DependentUpon>
     </Compile>
     <Compile Include="personal.aspx.cs">
       <DependentUpon>personal.aspx</DependentUpon>
