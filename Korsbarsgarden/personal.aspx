@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 <div class="container" style="background-color: #f2f1f1">
-                <h1 style="text-align:center">Vår Personal                
+                <h1 style="text-align:center">Personal                
                 </h1>
         <hr style="border-color: white" />
         <div class="row">
