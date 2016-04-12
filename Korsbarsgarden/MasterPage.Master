@@ -12,6 +12,7 @@
     <link href="css/modern-business.css" rel="stylesheet" />
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 

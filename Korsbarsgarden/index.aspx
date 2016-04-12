@@ -12,7 +12,7 @@
                         <li data-target="#myCarousel" data-slide-to="2"></li>
                     </ol>
 
-                    <!-- Wrapper for slides -->
+                    <!-- Wrapper for sdflides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <%--<img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />--%>
@@ -67,22 +67,17 @@
                         </div>
                     </div>
                 </div>
-                
+                <hr style="border-color: white" />
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3>Avdelningar</h3>
-                                </div>
-                                <div class="panel-body">
+                                    <h3 style="text-align:center">Avdelningar</h3>
+                                
                                     <p>På Körsbärsgården har vi två avdelningar, Snäckan och Krabban. 
                                        Lämning sker ute på altanen, där också de små barnen sover efter 
                                        lunchen.</p>
                                 </div>
-
-                            </div>
-                        </div>
+                     
                         <div class="col-md-1"></div>
                     </div>
                     
