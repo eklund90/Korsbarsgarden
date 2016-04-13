@@ -6,7 +6,7 @@
 
                 <h1 style="text-align:center">Kooperativ          
                 </h1>
-    <hr style="border-color: white" />
+    <hr />
                <p>Körsbärsgården är en ideell förening som drivs av ett föräldrakooperativ. Alla föräldrar som har barn inskrivna i förskolan är medlemmar och personalen är anställd av föreningen. Föräldrarna sitter i styrelsen och har ett övergripande ansvar för verksamheten. På det här sättet får föräldrarna insyn, ansvar och engageras i verksamheten. Det innebär att du som förälder har en unik möjlighet att kunna påverka ditt barns vardag på förskolan. Vi får kommunala bidrag och tar ut samma avgifter som andra förskolor i kommunen.<br /></p>
                <br />
                 <p>Ansvar och engagemang från föräldrarna är naturligtvis viktigt för att kooperativet ska fungera väl. I utbyte får du en nära kontakt med personal och andra föräldrar samt glädjen i att bidra till en välfungerande förskola för ditt barn. Som förälder förväntas du delta i årsmöten och fixardagar samt att ibland hjälpa med mindre, praktiska sysslor såsom att sätta upp en hylla eller skotta snö. De flesta familjer kommer också att delta i styrelsearbetet någon period under sin tid på Körsbärsgården Fixardagar arrangeras två-fyra gånger per år och varar normalt 4h. Under dessa utförs lättare renoverings- och utvecklingsarbete på fastigheten och trädgården ses över. Fixardagarna brukar också vara trevliga rent socialt och avslutas typiskt med gemensam korvgrillning. Föräldrarna har ingen arbetsplikt i barngruppen, utan den pedagogiska verksamheten sköts helt av personalen. <br /></p>

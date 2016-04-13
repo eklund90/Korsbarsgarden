@@ -1148,8 +1148,6 @@ img {
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
-  /*border: 0;
-  border-top: 3px solid #337ab7;*/
   border-style: solid none none;
   border-width: 3px 0px 0px;
   border-color: #337ab7;
