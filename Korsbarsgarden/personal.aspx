@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 <div class="container" style="background-color: #f2f1f1">
-                <h1 style="text-align:center">Vår Personal                
+                <h1 style="text-align:center">Personal                
                 </h1>
         <hr style="border-color: white" />
         <div class="row">
@@ -45,44 +45,28 @@
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Lena</h3>
-                            </div>
-                            <div class="panel-body">
+                                <h3>Lena</h3>                                                
                 <p>Barnskötare sedan 1980, Montessoripedagog 0-6 år sedan 1998 och trädgårdsmästare sedan 2011. Arbetar på Körsbärsgården sedan januari 2014. Brinner för allt det som växer och gror i trädgård och skog.</p>
-            </div>
-           </div>
-         </div>
+         </div>  
+       
+    
 
                         <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
                 </a>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Eva</h3>
-                            </div>
-                            <div class="panel-body">
-                <p>Har lång erfarenhet inom försäljning av inredning och belysning. Driver ett designföretag med min man. Saknar familjens fyra utflugna barn och har därför sökt mig till förskolans värld. Har arbetat på Körsbärsgården sedan 2012. Brinner för samvaron, glädjen och spontaniteten i mötena med barnen.</p>
-            </div>
-           </div>
+                                <h3>Eva</h3>
+                <p>Har lång erfarenhet inom försäljning av inredning och belysning. Driver ett designföretag med min man. Saknar familjens fyra utflugna barn och har därför sökt mig till förskolans värld. Har arbetat på Körsbärsgården sedan 2012. Brinner för samvaron, glädjen och spontaniteten i mötena med barnen.</p>  
          </div>
 
 
                                     <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
-                </a>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Christina</h3>
-                            </div>
-                            <div class="panel-body">
+                </a>                                   
+                                <h3>Christina</h3>                              
                 <p>Är barnskötare. Hjälper till i köket med diverse göromål samt står för städningen. Har varit på Körsbärsgården sedan våren 2012. Bakar ibland bröd eller kaka till mellanmål. Brinner för att baka och pyssla med barnen samt för allt inom trädgård och odling.</p>
-            </div>
-           </div>
-         </div>
+            </div> 
         </div> 
  </div>
 </asp:Content>
