@@ -6,7 +6,7 @@
 <div class="container" style="background-color: #f2f1f1">
                 <h1 style="text-align:center">Personal                
                 </h1>
-        <hr style="border-color: white" />
+        <hr />
         <div class="row">
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">

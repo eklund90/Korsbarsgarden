@@ -48,7 +48,7 @@
                                 <h3 class="panel-title">Välkommen till föräldrakoperativet Körsbärsgården!</h3>
                             </div>--%>
                             <div class="panel-body">
-                                <h3 class="hfont">Föräldrakoperativet Körsbärsgården</h3>
+                                <h3 class="hfont">Personalkooperativet Körsbärsgården</h3>
                                 <hr class="hr2" />
                             <p class="pfont"> Vi är en liten Montessori-inspirerad verksamhet med ett stort hjärta! Körsbärsgårdens rosa villa har plats för runt 22 barn och ligger i Domsten, i norra Helsingborg. 
                                 Den stora, lummiga trädgården lockar till lek och vi har strand och skog som närmsta grannar. Domstens by inbjuder till promenader till hamnen och omgivande lekplatser. 

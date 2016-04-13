@@ -19,13 +19,17 @@ Sedan sätter du upp ditt barn i kö hos Helsingborgs kommun eftersom att Körsb
 Barnet måste alltså stå i den kommunala kön för att kunna erbjudas en plats på Körsbärsgården. 
 Äldst barn hamnar längst fram i kön. Då vi är en liten enhet måste vi även ta hänsyn till köns- och åldersfördelning när vi tar in barn.</p>
          <br />
+<div style="text-align:center">
          <p>
-För mer information samt bokning av besök, kontakta vår förskolechef Tiina Huovinen på telefon 042-912 04 eller per e-mail på korsbarsgarden@telia.com. 
-Alternativt kan du kontakta vår styrelseordförande Catja Öhlin på mobiltelefon 070-2062655.</p>
+För mer information samt bokning av besök, klicka nedan</p>
+                <form runat="server">
+<asp:Button href="kontakt.aspx" ID="btnKontakt" runat="server" class="btn btn-primary" Text="Kontakta oss" Width="228px" /> </form>
 </div>
+</div>  
                      <div class="col-md-2">
                      </div>
-</div>      
+        
+    </div>    
              <div class="row">
                  <div class="col-md-3">
         </div>
