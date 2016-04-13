@@ -39,6 +39,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Npgsql">
+      <HintPath>..\..\..\..\npgsql\Npgsql.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -64,18 +67,16 @@
     <Content Include="font-awesome\css\font-awesome.min.css" />
     <Content Include="font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="images\cykel1.jpg" />
-    <Content Include="images\cykel2.jpg" />
-    <Content Include="images\cykel3.jpg" />
+    <Content Include="images\bat1.JPG" />
+    <Content Include="images\bil1.JPG" />
     <Content Include="images\denim.png" />
-    <Content Include="images\hus.png" />
-    <Content Include="images\kaffebak.jpg" />
+    <Content Include="images\flaggor.JPG" />
+    <Content Include="images\karta.JPG" />
     <Content Include="images\krabba.jpg" />
     <Content Include="images\korsbarsgarden_logo.png" />
     <Content Include="images\körsbärsgården_1500px.png" />
-    <Content Include="images\logo.png" />
+    <Content Include="images\main.JPG" />
     <Content Include="images\snacka.jpg" />
-    <Content Include="images\stenbak.jpg" />
     <Content Include="images\subtle_grunge.png" />
     <Content Include="images\test.jpg" />
     <Content Include="images\test2.jpg" />
@@ -138,6 +139,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\medlem.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -180,6 +182,7 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="classes\methods.cs" />
     <Compile Include="nyheter.aspx.cs">
       <DependentUpon>nyheter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

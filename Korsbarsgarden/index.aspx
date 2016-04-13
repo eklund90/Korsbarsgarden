@@ -10,20 +10,24 @@
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>
 
                     <!-- Wrapper for sdflides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <%--<img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />--%>
-                            <div class="fill" style="background-image:url('images/cykel1.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/main.jpg')"></div>
                         </div>
                         <div class="item">
-                            <div class="fill" style="background-image:url('images/cykel2.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/karta.jpg')"></div>
                         </div>
                         <div class="item">
-                            <div class="fill" style="background-image:url('images/cykel3.jpg')"></div>
-                        </div>                      
+                            <div class="fill" style="background-image:url('images/bat1.jpg')"></div>
+                        </div>       
+                        <div class="item">
+                            <div class="fill" style="background-image:url('images/bil1.jpg')"></div>
+                        </div>                     
                     </div>
 
                     <!-- Controls -->
