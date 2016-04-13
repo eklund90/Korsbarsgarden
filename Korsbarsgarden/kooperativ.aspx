@@ -24,6 +24,7 @@
         <br />
         <br />
             <div class="row" >
+
             <div class="col-md-4 img-portfolio" >
                 <a href="portfolio-item.html" style="align-items:center">
                     <img class="img-responsive img-hover img-thumbnail" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Kooperativ_files/DSC_0683%20-%20Version%202.jpg" alt="" />

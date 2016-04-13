@@ -26,20 +26,24 @@ Alternativt kan du kontakta vår styrelseordförande Catja Öhlin på mobiltelef
                      <div class="col-md-2">
                      </div>
 </div>      
-            
-         
+             <div class="row">
+                 <div class="col-md-3">
+        </div>
        
-            <div class="col-md-6 img-portfolio">
+            <div class="col-md-3 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover img-thumbnail" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Kooperativ_files/DSC_0683%20-%20Version%202.jpg" alt=""/>
                 </a>
             </div>
-            <div class="col-md-6 img-portfolio">
+            <div class="col-md-3 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover img-thumbnail" src="http://www.korsbarsgarden.org/Korsbarsgarden.org/Kooperativ_files/shapeimage_3.png" alt=""/>
                 </a>
             </div>
+                                 <div class="col-md-3">
+        </div>
    </div>
+    </div>
 
 </asp:Content>
 
