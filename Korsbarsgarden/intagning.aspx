@@ -11,7 +11,7 @@
             <div class="col-md-8">
                 <h1 style="text-align:center">Intagning            
                 </h1>
-    <hr style="border-color: white" />
+    <hr />
 
      <p>Varje termin tar vi in nya barn. Om du är intresserad av att ditt barn ska få en plats så är första steget att kontakta oss för att boka in ett besök på Körsbärsgården. 
 Då får personalen tillfälle att berätta mer om vår förskola och du som förälder får en inblick i hur förskolan ser ut och fungerar. 

@@ -32,7 +32,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div style="margin-top: 5px">
-                <img class="img-responsive" src="images/korsbarsgarden_logo.png" alt="Något gick fel! Bilden kan inte visas."/>
+                <img class="img-responsive" src="images/korsbersgardentest.png" alt="Något gick fel! Bilden kan inte visas."/>
             </div>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -95,7 +95,7 @@
         </asp:ContentPlaceHolder>
 
     
-      <footer class="footer" style="background-color:#565454">
+      <footer class="footer" style="background-image: url(images/denim.png)">
       <div class="container" style="text-align:center">
         <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p> 
         <p class="text-muted">Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
