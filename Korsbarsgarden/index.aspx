@@ -10,20 +10,24 @@
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
                         <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
                     </ol>
 
                     <!-- Wrapper for sdflides -->
                     <div class="carousel-inner">
                         <div class="item active">
                             <%--<img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />--%>
-                            <div class="fill" style="background-image:url('images/cykel1.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/main.jpg')"></div>
                         </div>
                         <div class="item">
-                            <div class="fill" style="background-image:url('images/cykel2.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/karta.jpg')"></div>
                         </div>
                         <div class="item">
-                            <div class="fill" style="background-image:url('images/cykel3.jpg')"></div>
-                        </div>                      
+                            <div class="fill" style="background-image:url('images/bat1.jpg')"></div>
+                        </div>       
+                        <div class="item">
+                            <div class="fill" style="background-image:url('images/bil1.jpg')"></div>
+                        </div>                     
                     </div>
 
                     <!-- Controls -->
@@ -44,7 +48,7 @@
                                 <h3 class="panel-title">Välkommen till föräldrakoperativet Körsbärsgården!</h3>
                             </div>--%>
                             <div class="panel-body">
-                                <h3 class="hfont">Föräldrakoperativet Körsbärsgården</h3>
+                                <h3 class="hfont">Personalkooperativet Körsbärsgården</h3>
                                 <hr class="hr2" />
                             <p class="pfont"> Vi är en liten Montessori-inspirerad verksamhet med ett stort hjärta! Körsbärsgårdens rosa villa har plats för runt 22 barn och ligger i Domsten, i norra Helsingborg. 
                                 Den stora, lummiga trädgården lockar till lek och vi har strand och skog som närmsta grannar. Domstens by inbjuder till promenader till hamnen och omgivande lekplatser. 
