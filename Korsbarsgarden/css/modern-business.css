@@ -12,7 +12,7 @@ body {
 }
 
 body {
-    padding-top: 146px;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 150px;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     background-color: #DD5151;
 }
 
@@ -26,8 +26,7 @@ body {
 
 /* Home Page Carousel */
 
-header.carousel {
-    margin-top: 20px;
+header.carousel {    
     height: 50%;
 }
 

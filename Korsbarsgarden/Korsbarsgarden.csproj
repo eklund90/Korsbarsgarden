@@ -39,8 +39,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\Mono.Security.dll</HintPath>
+    </Reference>
     <Reference Include="Npgsql">
-      <HintPath>..\..\..\..\npgsql\Npgsql.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\PostgreSQL\Npgsql\ms.net45\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -80,6 +83,10 @@
     <Content Include="images\subtle_grunge.png" />
     <Content Include="images\test.jpg" />
     <Content Include="images\test2.jpg" />
+    <Content Include="images\test3.jpg" />
+    <Content Include="images\test4.jpg" />
+    <Content Include="images\test5.jpg" />
+    <Content Include="images\test6.jpg" />
     <Content Include="intagning.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />

@@ -17,16 +17,16 @@
                     <div class="carousel-inner">
                         <div class="item active">
                             <%--<img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />--%>
-                            <div class="fill" style="background-image:url('images/main.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/test3.jpg')"></div>
                         </div>
                         <div class="item">
-                            <div class="fill" style="background-image:url('images/karta.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/test4.jpg')"></div>
                         </div>
                         <div class="item">
-                            <div class="fill" style="background-image:url('images/bat1.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/test5.jpg')"></div>
                         </div>       
                         <div class="item">
-                            <div class="fill" style="background-image:url('images/bil1.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/test6.jpg')"></div>
                         </div>                     
                     </div>
 

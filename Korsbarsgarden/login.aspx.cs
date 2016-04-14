@@ -17,7 +17,7 @@ namespace Korsbarsgarden
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             string password = "hej";
-            methods.checkUserPasswordExist(password);
+            //methods.checkUserPasswordExist(password);
         }
     }
 }
