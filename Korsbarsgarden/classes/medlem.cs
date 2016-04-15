@@ -18,6 +18,7 @@ namespace Korsbarsgarden.classes
         public string kon { get; set; }
         public string epost { get; set; }
         public string losenord { get; set; }
+        public string behorighet { get; set; }
 
     }
 }
