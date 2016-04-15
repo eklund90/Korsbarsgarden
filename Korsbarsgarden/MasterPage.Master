@@ -66,7 +66,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropmeny <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="full-width.html">AAAAA</a>
+                                <asp:HyperLink ID="HyperLink1" runat="server">test</asp:HyperLink>
                             </li>
                             <li>
                                 <a href="sidebar.html">BBBBB</a>

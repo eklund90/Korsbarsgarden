@@ -13,7 +13,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Användarnamn</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Ditt Användarnamn" />
+                            <asp:TextBox ID="txtbox_emaillogin" CssClass="form-control" runat="server" required="required"></asp:TextBox>                            
                             <p class="help-block"></p>
                         </div>
                     </div>               
@@ -21,7 +21,7 @@
                          <div class="control-group form-group">
                         <div class="controls">
                             <label>Lösenord</label>
-                            <input type="text" class="form-control" id="phone" required data-validation-required-message="Ditt Lösenord" />
+                            <asp:TextBox ID="txtbox_password" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                         </div>
                     </div>  
                 
