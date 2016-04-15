@@ -33,7 +33,8 @@ namespace Korsbarsgarden
             try
             {
              
-                sql = "SELECT medlem.id, fnamn, enamn, personnr, behorighet.behorighetsgrad FROM medlem INNER JOIN behorighet ON medlem.fk_behorighet = behorighet.id WHERE epost ='" + email + "'";
+                //sql = "SELECT medlem.id, fnamn, enamn, personnr, behorighet.behorighetsgrad FROM medlem INNER JOIN behorighet ON medlem.fk_behorighet = behorighet.id WHERE epost ='" + email + "'";
+                sql = "SELECT * from medlem where epost ='" + email + "'";
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = cmd.ExecuteReader();
@@ -46,21 +47,19 @@ namespace Korsbarsgarden
 
                     mem.id = Convert.ToInt16(dr["id"]);
                     mem.fnamn = dr["fnamn"].ToString();
-                    mem.behorighet = dr["behorighetsgrad"].ToString();
+                    mem.behorighet = Convert.ToInt16(dr["fk_behorighet"]);
                     Session.Add("id", mem.id);
                     Session.Add("fnamn", mem.fnamn);
                     Session.Add("behorighet", mem.behorighet);
 
-                    if (mem.behorighet == "admin")
+                    if (mem.behorighet == 1)
                     {
                         Response.Redirect("~/index.aspx");
                     }
-                    else if (mem.behorighet == "foralder")
+                    else if (mem.behorighet == 2)
                     {
                         Response.Redirect("~/personal.aspx");
                     }
-
-                    //}
                 }
             }
             catch (Exception ex)

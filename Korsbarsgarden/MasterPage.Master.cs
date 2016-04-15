@@ -25,50 +25,44 @@ namespace Korsbarsgarden
             {
                 loginknapp.InnerText = "Logga in";
             }
-            
-            
-            //if (!IsPostBack)
-            //{
-            //    nymedlem.id = Convert.ToInt32(Session["id"]);
-            //    nymedlem.behorighet = Session["behorighet"].ToString();
 
-            //    //sidor som inte är tillgängliga för vanliga användare
-            //    List<string> memberDenied = new List<string> 
-            //    {
-            //        "ASP.personal_
-            //    };
 
-            //    //sidor som besökare kommer åt (publika sidor)
-            //    List<string> visitorAllowed = new List<string> 
-            //    {
-            //        "ASP.index_aspx",
-            //        "ASP.login_aspx",
-            //        "ASP.tavlingar_aspx",
-            //        "ASP.tavlingsresultat_aspx"
-            //    };
+            if (!IsPostBack)
+            {
+                nymedlem.id = Convert.ToInt32(Session["id"]);
 
-            //    if (g_idAccess == 1) //medlem
-            //    {
-            //        navAdmin.Visible = false;
-            //        if (memberDenied.Contains(Page.ToString()))
-            //        {
-            //            Response.Redirect("index.aspx");
-            //        }
-            //    }
-            //    else if (g_idAccess == 2 || g_idAccess == 3) //admin
-            //    {
+                nymedlem.behorighet = Convert.ToInt32(Session["behorighet"]);
 
-            //    }
-            //    else //besökare
-            //    {
-            //        navBokning.Visible = false;
-            //        navMedlemssida.Visible = false;
-            //        navAdmin.Visible = false;
-            //        if (!visitorAllowed.Contains(Page.ToString()))
-            //        {
-            //            Response.Redirect("login.aspx");
-            //        }
-            //    }
+                //sidor som inte är tillgängliga för vanliga användare
+                List<string> medlemDenied = new List<string> 
+                {
+                    
+                };
+
+                //sidor som besökare kommer åt (publika sidor)
+                List<string> personalAllowed = new List<string> 
+                {
+                    "ASP.index_aspx",
+                    "ASP.login_aspx",
+                    "ASP.intagning_aspx",
+                    "ASP.kooperativ_aspx",
+                    "ASP.personal",
+                    "ASP.kontakt"
+                };
+
+                if (nymedlem.id == 2) //medlem
+                {
+                    dropdown.Visible = false;
+                    if (medlemDenied.Contains(Page.ToString()))
+                    {
+                        Response.Redirect("index.aspx");
+                    }
+                }
+                else if (nymedlem.id == 1) //admin
+                {
+
+                }
+            }
         }
     }
 }
