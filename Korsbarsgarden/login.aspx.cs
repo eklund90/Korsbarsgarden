@@ -37,7 +37,7 @@ namespace Korsbarsgarden
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
+                while (dr.Read()) 
                 {
                     //if (DBNull.Value.Equals(dr["id"]))
                     //{
