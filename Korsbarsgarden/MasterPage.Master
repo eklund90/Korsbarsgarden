@@ -15,21 +15,23 @@
     <script src="js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
    <%-- [if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]--%>
-  
 </head>
-<%--<form id="form1" runat="server" class="" style=""> --%>
-<body style="background-image: url(images/subtle_grunge.png)">
-       
+      
+
+<body runat="server" style="background-image: url(images/subtle_grunge.png)">
+
    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/denim.png)">
         <div class="container">
+                     <li>
+                        <a id="loginknapp" runat="server" style="float:right" href="login.aspx">Logga in</a>
+                    </li>
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div style="margin-top: 5px">
                 <img class="img-responsive" src="images/korsbersgardentest.png" alt="Något gick fel! Bilden kan inte visas."/>
@@ -66,7 +68,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropmeny <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="full-width.html">AAAAA</a>
+                                <asp:HyperLink ID="HyperLink1" runat="server">test</asp:HyperLink>
                             </li>
                             <li>
                                 <a href="sidebar.html">BBBBB</a>
@@ -100,7 +102,9 @@
         <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p> 
         <p class="text-muted">Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
       </div>
-    </footer>    
+    </footer>   
+
 </body>
-<%--</form> --%>   
+
+  
 </html>
