@@ -13,7 +13,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Användarnamn</label>
-                            <asp:TextBox ID="txtbox_emaillogin" CssClass="form-control" runat="server" required="required"></asp:TextBox>                            
+                            <asp:TextBox ID="txtbox_emaillogin" CssClass="form-control" runat="server" required="required"></asp:TextBox>
                             <p class="help-block"></p>
                         </div>
                     </div>               
