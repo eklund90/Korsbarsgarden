@@ -4,10 +4,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 <div class="container" style="background-color: #f2f1f1">
-                <h1 style="text-align:center">Personal                
+          
+        
+        <div class="row">      
+            <h1 style="text-align:center">Personal                
                 </h1>
-        <hr />
-        <div class="row">
+            <hr />
             <div class="col-md-4 img-portfolio">
                 <a href="portfolio-item.html">
                     <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="">
