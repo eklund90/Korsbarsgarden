@@ -26,7 +26,7 @@ namespace Korsbarsgarden
         #region metoder
         private void LogIn()
         {
-            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
+            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString.ToString());
             string sql;
             string email = txtbox_emaillogin.Text;
             string password = txtbox_password.Text;
@@ -39,6 +39,7 @@ namespace Korsbarsgarden
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = cmd.ExecuteReader();
+                
                 while (dr.Read()) 
                 {
                     //if (DBNull.Value.Equals(dr["id"]))
