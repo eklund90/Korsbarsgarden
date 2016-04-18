@@ -23,7 +23,7 @@ namespace Korsbarsgarden
             }
             else
             {
-                loginknapp.InnerText = "Logga in";
+                loginknapp.InnerText = "Logga in";                
             }
 
 
@@ -60,7 +60,11 @@ namespace Korsbarsgarden
                 }
                 else if (nymedlem.id == 1) //admin
                 {
-
+                    dropdown.Visible = true;
+                    droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() +"<b class=caret></b>";
+                    
+                    minaSidor.InnerHtml = "MINA SIDOR";
+                    minaSidor.Attributes["href"] = "kontakt.aspx";
                 }
 
             }

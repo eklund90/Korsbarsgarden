@@ -3,8 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <div class="container" style="background-color: #f2f1f1"> 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
 
 
 
