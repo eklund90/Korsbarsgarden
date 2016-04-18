@@ -149,6 +149,9 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classes\Encryption.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="classes\medlem.cs" />
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
