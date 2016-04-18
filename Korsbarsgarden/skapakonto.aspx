@@ -8,6 +8,8 @@
             <div class="col-md-3"></div>
             
             <div class="col-md-6">
+                 <h1 style="text-align:center">Skapa konto</h1>
+                    
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Förnamn</label>
@@ -71,6 +73,7 @@
                         </asp:DropDownList>
                     </div>
                 </div>
+                <asp:Button ID="btn_skapakonto" class="btn btn-primary" runat="server" Text="Skapa konto" />
             </div>
             
             <div class="col-md-3"></div>
