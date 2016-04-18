@@ -143,6 +143,7 @@
     <Content Include="index.aspx" />
     <Content Include="nyheter.aspx" />
     <Content Include="personal.aspx" />
+    <Content Include="skapakonto.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -207,6 +208,13 @@
       <DependentUpon>personal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="skapakonto.aspx.cs">
+      <DependentUpon>skapakonto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="skapakonto.aspx.designer.cs">
+      <DependentUpon>skapakonto.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

@@ -40,7 +40,7 @@
                 <%--</div>--%>
                 </header>
                 
-                <div class="container" style="background-color: #ededed">
+                <div class="container">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="panel panel-default">
@@ -123,9 +123,7 @@
                     </div>
                 </div>
 
-</div>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+</div>    
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed

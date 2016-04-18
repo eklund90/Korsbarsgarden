@@ -23,7 +23,7 @@ namespace Korsbarsgarden
             }
             else
             {
-                loginknapp.InnerText = "Logga in";
+                loginknapp.InnerText = "Logga in";                
             }
 
 
@@ -36,7 +36,7 @@ namespace Korsbarsgarden
                 //sidor som inte är tillgängliga för vanliga användare
                 List<string> medlemDenied = new List<string> 
                 {
-                    
+                    "ASP.kontakt_aspx"
                 };
 
                 //sidor som besökare kommer åt (publika sidor)
@@ -46,8 +46,8 @@ namespace Korsbarsgarden
                     "ASP.login_aspx",
                     "ASP.intagning_aspx",
                     "ASP.kooperativ_aspx",
-                    "ASP.personal",
-                    "ASP.kontakt"
+                    "ASP.personal_aspx",
+                    "ASP.kontakt_aspx"
                 };
 
                 if (nymedlem.id == 2) //medlem
@@ -60,7 +60,11 @@ namespace Korsbarsgarden
                 }
                 else if (nymedlem.id == 1) //admin
                 {
-
+                    dropdown.Visible = true;
+                    droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() +"<b class=caret></b>";
+                    
+                    minaSidor.InnerHtml = "MINA SIDOR";
+                    minaSidor.Attributes["href"] = "kontakt.aspx";
                 }
             }
         }

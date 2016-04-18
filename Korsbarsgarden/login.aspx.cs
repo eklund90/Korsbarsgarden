@@ -26,7 +26,7 @@ namespace Korsbarsgarden
         #region metoder
         private void LogIn()
         {
-            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString.ToString());
+            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
             string sql;
             string email = txtbox_emaillogin.Text;
             string password = txtbox_password.Text;
@@ -35,11 +35,12 @@ namespace Korsbarsgarden
             {
              
                 //sql = "SELECT medlem.id, fnamn, enamn, personnr, behorighet.behorighetsgrad FROM medlem INNER JOIN behorighet ON medlem.fk_behorighet = behorighet.id WHERE epost ='" + email + "'";
-                sql = "SELECT * from medlem where epost ='" + email + "'";
+                sql = "SELECT * from medlem  where epost ='" + email + "'";
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = cmd.ExecuteReader();
                 
+               
                 while (dr.Read()) 
                 {
                     //if (DBNull.Value.Equals(dr["id"]))
@@ -49,9 +50,11 @@ namespace Korsbarsgarden
 
                     mem.id = Convert.ToInt16(dr["id"]);
                     mem.fnamn = dr["fnamn"].ToString();
+                    mem.enamn = dr["enamn"].ToString();
                     mem.behorighet = Convert.ToInt16(dr["fk_behorighet"]);
                     Session.Add("id", mem.id);
                     Session.Add("fnamn", mem.fnamn);
+                    Session.Add("enamn", mem.enamn);
                     Session.Add("behorighet", mem.behorighet);
 
                     if (mem.behorighet == 1)
