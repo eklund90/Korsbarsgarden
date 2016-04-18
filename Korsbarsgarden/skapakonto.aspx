@@ -73,9 +73,8 @@
                         </asp:DropDownList>
                     </div>
                 </div>
-                <asp:Button ID="btn_skapakonto" class="btn btn-primary" runat="server" Text="Skapa konto" />
+                <asp:Button ID="btn_skapakonto" class="btn btn-primary" runat="server" Text="Skapa konto" Onclick="btn_skapakonto_Click"/>
             </div>
-            <asp:Button ID="skapamedlem" runat="server" Text="Button" OnClick="skapamedlem_Click" />
             <div class="col-md-3"></div>
 
         </div>

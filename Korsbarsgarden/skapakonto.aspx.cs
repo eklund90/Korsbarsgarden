@@ -17,13 +17,10 @@ namespace Korsbarsgarden
         medlem nymedlem = new medlem();
         protected void Page_Load(object sender, EventArgs e)
         {
-
             
         }
-
-        protected void skapamedlem_Click(object sender, EventArgs e)
+        protected void btn_skapakonto_Click(object sender, EventArgs e)
         {
-            
             nymedlem.fnamn = txtBox_skapakonto_fornamn.Text;
             nymedlem.enamn = txtBox_skapakonto_efternamn.Text;
             nymedlem.personnr = txtBox_skapakonto_personnr.Text;
@@ -36,7 +33,6 @@ namespace Korsbarsgarden
             nymedlem.behorighet = Convert.ToInt16(dropdown_skapakonto_behorighet.Text);
 
             läggtillmedlem(nymedlem);
-
         }
         public void läggtillmedlem(medlem nymedlem)
         {
@@ -77,5 +73,7 @@ namespace Korsbarsgarden
 
             
         }
+
+
     }
 }
