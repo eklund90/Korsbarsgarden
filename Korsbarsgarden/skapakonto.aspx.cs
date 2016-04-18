@@ -15,12 +15,14 @@ namespace Korsbarsgarden
     public partial class skapakonto : System.Web.UI.Page
     {
         medlem nymedlem = new medlem();
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             
         }
         protected void btn_skapakonto_Click(object sender, EventArgs e)
         {
+            Encryption SHA256 = new Encryption();
             nymedlem.fnamn = txtBox_skapakonto_fornamn.Text;
             nymedlem.enamn = txtBox_skapakonto_efternamn.Text;
             nymedlem.personnr = txtBox_skapakonto_personnr.Text;
@@ -29,7 +31,7 @@ namespace Korsbarsgarden
             nymedlem.postnr = txtBox_skapakonto_postnr.Text;
             nymedlem.postort = txtBox_skapakonto_postort.Text;
             nymedlem.epost = txtBox_skapakonto_epost.Text;
-            nymedlem.losenord = txtBox_skapakonto_losenord.Text;
+            nymedlem.losenord = SHA256.ComputeHash(txtBox_skapakonto_losenord.Text, Supported_HA.SHA256, null);
             nymedlem.behorighet = Convert.ToInt16(dropdown_skapakonto_behorighet.Text);
 
             läggtillmedlem(nymedlem);
@@ -63,6 +65,7 @@ namespace Korsbarsgarden
 
                 cmd.ExecuteNonQuery();
                 conn.Close();
+                Response.Write("<script>alert('" + nymedlem.fnamn +" " +nymedlem.enamn+ " är nu registrerad" + "')</script>");
             }
             else
             {

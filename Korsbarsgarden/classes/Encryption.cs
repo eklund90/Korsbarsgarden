@@ -100,6 +100,7 @@ namespace Korsbarsgarden.classes
             string NewHash = ComputeHash(plainText, hash, saltBytes);
 
             return (hashValue == NewHash);
+
         }
     }
 }
