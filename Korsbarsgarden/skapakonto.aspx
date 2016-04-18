@@ -72,7 +72,7 @@
                     </div>
                 </div>
             </div>
-            
+            <asp:Button ID="skapamedlem" runat="server" Text="Button" OnClick="skapamedlem_Click" />
             <div class="col-md-3"></div>
 
         </div>
