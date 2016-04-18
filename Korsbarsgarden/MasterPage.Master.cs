@@ -66,6 +66,7 @@ namespace Korsbarsgarden
                     minaSidor.InnerHtml = "MINA SIDOR";
                     minaSidor.Attributes["href"] = "kontakt.aspx";
                 }
+
             }
         }
     }
