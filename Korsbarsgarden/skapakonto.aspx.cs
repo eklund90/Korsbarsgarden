@@ -66,7 +66,7 @@ namespace Korsbarsgarden
             //    dropdown_skapakonto_behorighet.Text = newMember.hcp.ToString();
             //    tbMail.Text = newMember.mail;
             //    tbGolfId.Text = newMember.golfId;
-            }
+            //}
         }
         public void läggtillmedlem(medlem nymedlem)
         {
