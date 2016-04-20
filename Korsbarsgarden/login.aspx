@@ -4,9 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form runat="server">
 <div class="container">
- <div class="row">
+    <div class="row">
      
-            <div class="col-md-6">
+        <div class="col-md-6">
                 <h1 style="text-align:center">Logga in
                     </h1>
                 
@@ -18,18 +18,20 @@
                         </div>
                     </div>               
                
-                         <div class="control-group form-group">
+                    <div class="control-group form-group">
                         <div class="controls">
                             <label>Lösenord</label>
                             <asp:TextBox ID="txtbox_password" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                         </div>
                     </div>  
                 
-                <asp:Button ID="btnLogin" class="btn btn-primary" runat="server" Text="Button" onclick="btnLogin_Click"/>
+                <asp:Button ID="btnLogin" class="btn btn-primary" runat="server" Text="Button" onclick="btnLogin_Click"/><br />
                 
-
-                 </div>
-            </div>
+                <asp:Panel ID="PanelResponse" runat="server" CssClass="alert alert-warning PanelResponse">
+                    <asp:Label ID="LabelResponse" runat="server" Text="asd"></asp:Label>
+                </asp:Panel>
         </div>
+    </div>
+</div>
         </form>
 </asp:Content>  

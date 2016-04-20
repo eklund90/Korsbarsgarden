@@ -50,7 +50,7 @@ namespace Korsbarsgarden
                     "ASP.kontakt_aspx"
                 };
 
-                if (nymedlem.id == 2) //medlem
+                if (nymedlem.behorighet == 2) //medlem
                 {
                     dropdown.Visible = false;
                     if (medlemDenied.Contains(Page.ToString()))
@@ -58,7 +58,7 @@ namespace Korsbarsgarden
                         Response.Redirect("index.aspx");
                     }
                 }
-                else if (nymedlem.id == 1) //admin
+                else if (nymedlem.behorighet == 1) //admin
                 {
                     dropdown.Visible = true;
                     droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() +"<b class=caret></b>";
