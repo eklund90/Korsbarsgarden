@@ -81,7 +81,8 @@
             </div>
             <div class="col-md-6">
                 <h1 style="text-align:center">Medlemslista</h1>
-                <asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+                <asp:ListBox ID="medlemlist" runat="server"></asp:ListBox>
+                <asp:Button ID="btn_tabortkonto" class="btn btn-primary" runat="server" Text="Ta bort konto" OnClick="btn_tabortkonto_Click" />
             </div>
 
         </div>
