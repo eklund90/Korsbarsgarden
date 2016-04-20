@@ -17,6 +17,7 @@ namespace Korsbarsgarden
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Clear();
+            PanelResponse.Visible = false;
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
@@ -26,6 +27,7 @@ namespace Korsbarsgarden
         #region metoder
         private void LogIn()
         {
+            Encryption SHA256 = new Encryption();
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
             string sql;
             string email = txtbox_emaillogin.Text;
@@ -41,30 +43,44 @@ namespace Korsbarsgarden
                 NpgsqlDataReader dr = cmd.ExecuteReader();
                 
                
-                while (dr.Read()) 
+                if (dr.Read()) 
                 {
-                    //if (DBNull.Value.Equals(dr["id"]))
-                    //{
-                    //Skapa object medlem
-
-
+                    
                     mem.id = Convert.ToInt16(dr["id"]);
                     mem.fnamn = dr["fnamn"].ToString();
                     mem.enamn = dr["enamn"].ToString();
                     mem.behorighet = Convert.ToInt16(dr["fk_behorighet"]);
+                    mem.losenord = dr["losenord"].ToString();
                     Session.Add("id", mem.id);
                     Session.Add("fnamn", mem.fnamn);
                     Session.Add("enamn", mem.enamn);
                     Session.Add("behorighet", mem.behorighet);
 
-                    if (mem.behorighet == 1)
+                    //Check if password is correct and then redirect user to right page
+                    if(SHA256.Confirm(password, mem.losenord, Supported_HA.SHA256))
                     {
-                        Response.Redirect("~/index.aspx");
+                        if (mem.behorighet == 1)
+                        {
+                            Response.Redirect("~/index.aspx");
+                        }
+                        else if (mem.behorighet == 2)
+                        {
+                            Response.Redirect("~/personal.aspx");
+                        }
                     }
-                    else if (mem.behorighet == 2)
+                    else
                     {
-                        Response.Redirect("~/personal.aspx");
+                        PanelResponse.Visible = false;
+                        PanelResponse.Visible = true;
+                        LabelResponse.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Lösenordet stämmer inte.";
                     }
+                   
+                }
+                else
+                {
+                    PanelResponse.Visible = false;
+                    PanelResponse.Visible = true;
+                    LabelResponse.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Ingen med den e-mailen registrerad.";
                 }
             }
             catch (Exception ex)

@@ -74,6 +74,10 @@
                     </div>
                 </div>
                 <asp:Button ID="btn_skapakonto" class="btn btn-primary" runat="server" Text="Skapa konto" Onclick="btn_skapakonto_Click"/>
+                
+                <asp:Panel ID="PanelResponse_skapakonto" runat="server" CssClass="alert PanelResponse">
+                    <asp:Label ID="LabelResponse_skapakonto" runat="server" Text="asd"></asp:Label>
+                </asp:Panel>
             </div>
             <div class="col-md-3"></div>
 

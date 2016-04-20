@@ -18,7 +18,7 @@ namespace Korsbarsgarden
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            PanelResponse_skapakonto.Visible = false;
         }
         protected void btn_skapakonto_Click(object sender, EventArgs e)
         {
@@ -65,11 +65,18 @@ namespace Korsbarsgarden
 
                 cmd.ExecuteNonQuery();
                 conn.Close();
-                Response.Write("<script>alert('" + nymedlem.fnamn +" " +nymedlem.enamn+ " är nu registrerad" + "')</script>");
+                
+                PanelResponse_skapakonto.Visible = true;                
+                PanelResponse_skapakonto.CssClass = "alert-success alert PanelResponse";
+                
+                
+                LabelResponse_skapakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Användaren är nu registrerad.";
             }
             else
             {
-                Response.Write("<script>alert('" + "Epost redan registrerad" + "')</script>");
+                PanelResponse_skapakonto.Visible = true;
+                PanelResponse_skapakonto.CssClass = "alert-warning alert PanelResponse";
+                LabelResponse_skapakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Det finns redan en användare med den eposten.";
             
             }
 
