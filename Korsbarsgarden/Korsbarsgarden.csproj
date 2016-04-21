@@ -213,6 +213,7 @@
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
     <Compile Include="classes\methods.cs" />
+    <Compile Include="classes\nyhet.cs" />
     <Compile Include="nyheter.aspx.cs">
       <DependentUpon>nyheter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

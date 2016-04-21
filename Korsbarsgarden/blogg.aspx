@@ -5,48 +5,52 @@
 <!-- Page Content -->
     <div class="container">
 
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Blog Home Two
-                    <small>Subheading</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li class="active">Blog Home Two</li>
-                </ol>
-            </div>
-        </div>
+     <asp:Repeater ID="RepeaterNews" runat="server">
+               <ItemTemplate>
+                   <div class="newsItem">
+                       <h2><%# Eval("rubrik") %></h2>
+                       <p class="newsDate"><%# Eval("datum").ToString().Split(' ')[0] %></p>
+                       <p class="newsText"><%# Eval("text") %></p>
+                       <br />
+                       <hr />
+                   </div>
+               </ItemTemplate>
+           </asp:Repeater>
+       </div>
+  
+
         <!-- /.row -->
 
         <!-- Blog Post Row -->
+      <asp:Repeater ID="Repeater1" runat="server">
+        <ItemTemplate>
         <div class="row">
             <div class="col-md-1 text-center">
-                <p><i class="fa fa-camera fa-4x"></i>
-                </p>
-                <p>June 17, 2014</p>
+                <h2><%# Eval("rubrik") %></h2>
+                <p class="newsDate"><%# Eval("datum").ToString().Split(' ')[0] %></p>
             </div>
             <div class="col-md-5">
-                <a href="blog-post.html">
+                <p class="newsText"><%# Eval("text") %></p>
                     <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
                 </a>
             </div>
+      
             <div class="col-md-6">
                 <h3>
                     <a href="blog-post.html">Blog Post Title</a>
                 </h3>
-                <p>by <a href="#">Start Bootstrap</a>
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                <p class="newsText"><%# Eval("text") %></p>
                 <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
             </div>
-        </div>
+            </ItemTemplate>
+           </asp:Repeater>
         <!-- /.row -->
 
         <hr />
 
         <!-- Blog Post Row -->
-        <div class="row">
+       <%-- <div class="row">
             <div class="col-md-1 text-center">
                 <p><i class="fa fa-film fa-4x"></i>
                 </p>
@@ -104,7 +108,7 @@
                 </li>
             </ul>
         </div>
-        <!-- /.row -->
+        <!-- /.row -->--%>
 
         <hr />
 
