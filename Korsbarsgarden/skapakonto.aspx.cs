@@ -29,9 +29,6 @@ namespace Korsbarsgarden
                 Data.Value = m.id.ToString();
                 medlemlist.Items.Add(Data);
 
-                //medlemlist.Items.Add(m.fnamn.ToString() + " " + m.enamn.ToString());
-                //medlemlist.DataSource = getMemberList();
-                //medlemlist.DataBind();
             }           
         }
         }
