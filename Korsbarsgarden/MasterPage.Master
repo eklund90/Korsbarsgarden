@@ -30,7 +30,7 @@
         <div class="container">
                     <ul>
                          <li>
-                            <a id="loginknapp" runat="server" style="float:right" href="login.aspx">Logga in</a>
+                            <a id="loginknapp" class="headlink" runat="server" style="float:right" href="login.aspx">Logga in</a>
                         </li>
                     </ul> 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -50,19 +50,19 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav nav-justified" >
                      <li>
-                        <a href="index.aspx">Hem</a>
+                        <a class="headlink" href="index.aspx">Hem</a>
                     </li>
                     <li>
-                        <a href="personal.aspx">Personal</a>
+                        <a class="headlink" href="personal.aspx">Personal</a>
                     </li>
                     <li>
-                        <a href="kooperativ.aspx">Kooperativ</a>
+                        <a class="headlink" href="kooperativ.aspx">Kooperativ</a>
                     </li>
                     <li>
-                        <a href="intagning.aspx">Intagning</a>
+                        <a class="headlink" href="intagning.aspx">Intagning</a>
                     </li>
                     <li>
-                        <a href="kontakt.aspx">Kontakt</a>
+                        <a class="headlink" href="kontakt.aspx">Kontakt</a>
                     </li>
 
                     <li id="dropdown" runat="server" class="dropdown" visible="false">
