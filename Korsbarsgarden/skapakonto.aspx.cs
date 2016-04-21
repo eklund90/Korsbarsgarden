@@ -29,6 +29,9 @@ namespace Korsbarsgarden
                 Data.Value = m.id.ToString();
                 medlemlist.Items.Add(Data);
 
+                //medlemlist.Items.Add(m.fnamn.ToString() + " " + m.enamn.ToString());
+                //medlemlist.DataSource = getMemberList();
+                //medlemlist.DataBind();
             }           
         }
         }
@@ -55,13 +58,14 @@ namespace Korsbarsgarden
             clearmedlem();
             medlemlist.Items.Clear();
 
-            foreach (medlem m in getMemberList())
+            foreach (medlem m in memberList)
             {
                 ListItem Data = new ListItem();
                 Data.Text = m.fnamn;
                 Data.Value = m.id.ToString();
                 medlemlist.Items.Add(Data);
-                //hej
+                memberList = getMemberList();
+                //HEj
             }
         }
 
