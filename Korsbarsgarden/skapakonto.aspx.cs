@@ -58,14 +58,14 @@ namespace Korsbarsgarden
             clearmedlem();
             medlemlist.Items.Clear();
 
-            foreach (medlem m in memberList)
+            foreach (medlem m in getMemberList())
             {
                 ListItem Data = new ListItem();
                 Data.Text = m.fnamn;
                 Data.Value = m.id.ToString();
                 medlemlist.Items.Add(Data);
-                memberList = getMemberList();
-                //HEj
+               
+                
             }
         }
 
