@@ -65,6 +65,7 @@ namespace Korsbarsgarden
                 Data.Value = m.id.ToString();
                 medlemlist.Items.Add(Data);
                 memberList = getMemberList();
+                //hej
 
             }
         }
