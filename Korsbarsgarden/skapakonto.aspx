@@ -5,7 +5,7 @@
 <form runat="server">    
     <div class="container container-background">
         <div class="row">
-            <div class="col-md-3"></div>
+            
             
             <div class="col-md-6">
                  <h1 style="text-align:center">Skapa konto</h1>
@@ -79,7 +79,12 @@
                     <asp:Label ID="LabelResponse_skapakonto" runat="server" Text="asd"></asp:Label>
                 </asp:Panel>
             </div>
-            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1 style="text-align:center">Medlemslista</h1>
+                <asp:ListBox ID="medlemlist" CssClass="form-control" runat="server" AutoPostBack="true" OnSelectedIndexChanged="medlemlist_SelectedIndexChanged"></asp:ListBox>
+                <br />
+                <asp:Button ID="btn_tabortkonto" class="btn btn-primary" runat="server" Text="Ta bort konto" OnClick="btn_tabortkonto_Click" />
+            </div>
 
         </div>
     </div>
