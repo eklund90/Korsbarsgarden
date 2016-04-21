@@ -61,6 +61,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="blogg.aspx" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\modern-business.css" />
@@ -150,6 +151,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="blogg.aspx.cs">
+      <DependentUpon>blogg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="blogg.aspx.designer.cs">
+      <DependentUpon>blogg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="classes\Encryption.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
