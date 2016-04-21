@@ -54,7 +54,19 @@ namespace Korsbarsgarden
 
         protected void btn_tabortkonto_Click(object sender, EventArgs e)
         {
+            tabortmedlem(Convert.ToInt16(medlemlist.SelectedValue));
+            clearmedlem();
+            medlemlist.Items.Clear();
 
+            foreach (medlem m in memberList)
+            {
+                ListItem Data = new ListItem();
+                Data.Text = m.fnamn;
+                Data.Value = m.id.ToString();
+                medlemlist.Items.Add(Data);
+                memberList = getMemberList();
+
+            }
         }
 
         #region metoder
@@ -69,6 +81,20 @@ namespace Korsbarsgarden
                 txtBox_skapakonto_postort.Text = nyMember.postort;
                 txtBox_skapakonto_epost.Text = nyMember.epost;
                 dropdown_skapakonto_behorighet.Text = Convert.ToInt16(nyMember.behorighet).ToString();
+            
+        }
+        public void clearmedlem()
+        {
+            txtBox_skapakonto_fornamn.Text = string.Empty;
+            txtBox_skapakonto_efternamn.Text = string.Empty;
+            txtBox_skapakonto_personnr.Text = string.Empty;
+            txtBox_skapakonto_telefonnr.Text = string.Empty;
+            txtBox_skapakonto_adress.Text = string.Empty;
+            txtBox_skapakonto_postnr.Text = string.Empty;
+            txtBox_skapakonto_postort.Text = string.Empty;
+            txtBox_skapakonto_epost.Text = string.Empty;
+            txtBox_skapakonto_losenord.Text = string.Empty;
+            dropdown_skapakonto_behorighet.Text = string.Empty;
             
         }
         public void läggtillmedlem(medlem nymedlem)
@@ -187,6 +213,24 @@ namespace Korsbarsgarden
                 conn.Close();
             }
             return nymedlem;
+        }
+
+        public void tabortmedlem(int id)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
+            string sql;
+            conn.Open();
+            try
+            {
+                sql = "DELETE from medlem WHERE id='"+id+"'";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
         #endregion metoder
 
