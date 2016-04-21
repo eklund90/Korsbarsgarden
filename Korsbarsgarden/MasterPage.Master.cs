@@ -36,7 +36,7 @@ namespace Korsbarsgarden
                 //sidor som inte är tillgängliga för vanliga användare
                 List<string> medlemDenied = new List<string> 
                 {
-                    "ASP.kontakt_aspx"
+                    "ASP.skapakonto_aspx"
                 };
 
                 //sidor som besökare kommer åt (publika sidor)
@@ -52,10 +52,16 @@ namespace Korsbarsgarden
 
                 if (nymedlem.behorighet == 2) //medlem
                 {
-                    dropdown.Visible = false;
+                    dropdown.Visible = true;
                     if (medlemDenied.Contains(Page.ToString()))
                     {
-                        Response.Redirect("index.aspx");
+                        Response.Redirect("404.aspx");
+                    }
+                    else
+                    {
+                        droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() + "<b class=caret></b>";
+                        minaSidor.InnerHtml = "MINA SIDOR";
+                        minaSidor.Attributes["href"] = "kontakt.aspx";
                     }
                 }
                 else if (nymedlem.behorighet == 1) //admin
