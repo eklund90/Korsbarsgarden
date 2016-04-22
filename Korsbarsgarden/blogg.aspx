@@ -7,7 +7,10 @@
 
      <asp:Repeater ID="RepeaterNews" runat="server">
                <ItemTemplate>
-                   <div class="newsItem">
+                   <div class="row">
+                       <div class="col-md">
+
+                       </div>
                        <h2><%# Eval("rubrik") %></h2>
                        <p class="newsDate"><%# Eval("datum").ToString().Split(' ')[0] %></p>
                        <p class="newsText"><%# Eval("text") %></p>

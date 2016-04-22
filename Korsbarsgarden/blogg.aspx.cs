@@ -43,7 +43,7 @@ namespace Korsbarsgarden
                     nyhet nynyhet = new nyhet();
                     nynyhet.id = (int)(dr["id"]);
                     nynyhet.rubrik = (string)(dr["rubrik"]);
-                    nynyhet.text = (string)(dr["text"]);
+                    nynyhet.text = (dr["text"]).ToString().Substring(0, 50);
                     nynyhet.datum = (DateTime)(dr["datum"]);
                     nyhetslista.Add(nynyhet);
                 }
