@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!-- Page Content -->
+<form runat="server">
     <div class="container">
 
 <%--     <asp:Repeater ID="RepeaterNews" runat="server">
@@ -37,18 +38,19 @@
             <div class="col-md-8">
                 <h3>
                     <p><%# Eval("datum").ToString().Split(' ')[0] %></p>
-                    <a href="blog-post.html"><%# Eval("rubrik") %></a>
+                    <a id="blogg_rubrik<%# ((RepeaterItem)Container).ItemIndex + 1%>" href="blog-post.html"><%# Eval("rubrik") %></a>
                 </h3>
 
                 <p><%# Eval("text") %></p>
-                <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
+                <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Read More" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("rubrik")%>'/>
+                <%--<a class="btn btn-primary" href="bloggpost.aspx?field1=<%Eval("rubrik")%>>Read More <i class="fa fa-angle-right"></i></a>--%>
             <hr />
 
             </div>
             
             </div>
             </ItemTemplate>        
-           </asp:Repeater>
+        </asp:Repeater>
         <!-- /.row -->
 
         
@@ -115,6 +117,7 @@
 
         <hr />--%>
 
-</div>
+    </div>
+</form>
     <!-- /.container -->
 </asp:Content>

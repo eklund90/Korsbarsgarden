@@ -13,10 +13,11 @@ namespace Korsbarsgarden
         {
             List<nyhet> nyhetslista = new List<nyhet>();
             nyhetslista = getnews();
-
+            
             if (!IsPostBack)
             {
                 //Hämta de senaste nyheterna
+               
                 DataTable dt = new DataTable();
                 dt = getLatestNews();
                 RepeaterNews.DataSource = dt;
@@ -81,6 +82,11 @@ namespace Korsbarsgarden
             }
 
             return dt;
+        }
+
+        protected void btn_readmore_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
+        {
+            Response.Redirect("bloggpost.aspx?field1=" + e.CommandArgument.ToString());
         }
     }
 }
