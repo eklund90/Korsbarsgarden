@@ -25,7 +25,7 @@
                         </div>
                     </div>  
                 
-                <asp:Button ID="btnLogin" class="btn btn-primary" runat="server" Text="Logga in" onclick="btnLogin_Click"/><br />
+                <asp:Button ID="btnLogin" CssClass="btn btn-primary" runat="server" Text="Logga in" onclick="btnLogin_Click"/><br />
                 
                 <asp:Panel ID="PanelResponse" runat="server" CssClass="alert alert-warning PanelResponse">
                     <asp:Label ID="LabelResponse" runat="server" Text="asd"></asp:Label>

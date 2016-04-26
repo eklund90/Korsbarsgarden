@@ -10,6 +10,7 @@ namespace Korsbarsgarden
         public int id { get; set; }
         public string rubrik { get; set; }
         public string text { get; set; }
+        public string skrivenav { get; set; }
         public DateTime datum { get; set; }
     }
 }
