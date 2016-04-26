@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-<div class="container" style="background-color: #f2f1f1">
+<div class="container">
         <div class="row">
             <div class="col-md-2">
             </div>
@@ -12,7 +12,8 @@
                 <h1 style="text-align:center">Intagning</h1>         
                 
                 <hr />
-
+                    <div class="panel panel-default">
+                <div class="panel-body">
                 <p>Varje termin tar vi in nya barn. Om du är intresserad av att ditt barn ska få en plats så är första steget att kontakta oss för att boka in ett besök på Körsbärsgården. 
                    Då får personalen tillfälle att berätta mer om vår förskola och du som förälder får en inblick i hur förskolan ser ut och fungerar. 
                    Sedan sätter du upp ditt barn i kö hos Helsingborgs kommun eftersom att Körsbärsgården är knuten till den kommunala barnomsorgskön. 
@@ -21,6 +22,8 @@
                     <br />
                 <p>För mer information samt bokning av besök, kontakta vår förskolechef Tiina Huovinen på telefon 042-912 04 eller per e-mail på korsbarsgarden@telia.com. 
                 Alternativt kan du kontakta vår styrelseordförande Catja Öhlin på mobiltelefon 070-2062655.</p>
+            </div>
+            </div>
             </div>
                      <div class="col-md-2">
                      </div>
