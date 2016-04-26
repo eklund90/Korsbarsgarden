@@ -96,7 +96,8 @@
                                      <img class="img-responsive" src="images/test.jpg" />                     
                             </div>
                             <div class="panel-body">
-                            <h3 class="hfont">Snäckan</h3>                                
+                            <h3 class="hfont">Snäckan</h3>
+                                <hr class="hr2" />                                
                             <p class="pfont"> Här finns 8-10 barn, i åldern 1 till 3 år och 2-3 pedagoger. På Snäckan läggs fokus på trygghet, rutiner och att få kunna själv. Miljön är anpassad efter barnen. Låga bord, små stolar och 
                                 materiel i lagom storlek och mängd. Vi utgår från barnens behov och intressen och förbereder miljön och aktiviteterna efter det. </p>
                             <p class="pfont">Vi vill skapa en utmanande och tillåtande miljö.
@@ -113,6 +114,7 @@
                             </div>
                             <div class="panel-body">
                             <h3 class="hfont">Krabban</h3>
+                                <hr class="hr2" />
                             <p class="pfont">På Krabban finns 12-14 barn mellan 3 och 6 år och 2 pedagoger. Några dagar i veckan går barnen in vid kl 9.15 för att ha eget arbete. Under arbetsstunden kan barnen välja vad de vill arbeta med. Detta kan bestå av olika praktiska eller sensoriska övningar med Montessorimaterielen för att lära om språk, 
                                matte eller historia mm, men också av skapande verksamhet såsom målning eller så kan de till exempel välja att läsa en bok eller lyssna på cd-saga.  
                               </p>
