@@ -126,3 +126,10 @@ footer {
 .headlink{
     color: #ffffff;
 }
+
+.lblhead{
+    font-size: 17px;
+    color: #337ab7;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}

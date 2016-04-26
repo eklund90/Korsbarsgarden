@@ -33,15 +33,16 @@ namespace Korsbarsgarden
             {
                 conn.Open();
                 string sql = string.Empty;
-                sql = "SELECT * FROM nyheter;";
+                sql = "SELECT id, rubrik, SUBSTRING(text, 0, 20) AS text, datum FROM nyheter;";
                 NpgsqlCommand command = new NpgsqlCommand(@sql, conn);
                 NpgsqlDataReader dr = command.ExecuteReader();
                 while (dr.Read())
                 {
                     nyhet nynyhet = new nyhet();
-                    nynyhet.id = (int)(dr["id"]);
-                    nynyhet.rubrik = (string)(dr["rubrik"]);
-                    nynyhet.text = (dr["text"]).ToString();
+                    nynyhet.id = Convert.ToInt16(dr["id"]);
+                    nynyhet.rubrik = dr["rubrik"].ToString();
+                    nynyhet.text = dr["text"].ToString();
+                    
                     
                     nynyhet.datum = (DateTime)(dr["datum"]);
                     nyhetslista.Add(nynyhet);
@@ -62,7 +63,7 @@ namespace Korsbarsgarden
 
             try
             {
-                sql = "SELECT * FROM nyheter " +
+                sql = "SELECT id, rubrik, SUBSTRING(text, 0, 100) AS text, datum FROM nyheter " +
                       "ORDER BY datum DESC, id DESC " +
                       "LIMIT 10;";
                 conn.Open();
