@@ -36,7 +36,7 @@
             </div>
       
             <div class="col-md-8">
-                <h3>
+                <h3 class="hfont">
                     <p><%# Eval("datum").ToString().Split(' ')[0] %></p>
                     <a id="blogg_rubrik<%# ((RepeaterItem)Container).ItemIndex + 1%>" href="blog-post.html"><%# Eval("rubrik") %></a>
                 </h3>
