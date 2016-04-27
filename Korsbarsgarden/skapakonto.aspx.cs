@@ -66,6 +66,10 @@ namespace Korsbarsgarden
                 medlemlist.Items.Add(Data);
             }
         }
+        protected void medlemlist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fyllmedlem(getMember(Convert.ToInt16(medlemlist.SelectedValue)));
+        }
 
         #region metoder
         public void fyllmedlem(medlem nyMember)
@@ -232,9 +236,6 @@ namespace Korsbarsgarden
         }
         #endregion metoder
 
-        protected void medlemlist_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            fyllmedlem(getMember(Convert.ToInt16(medlemlist.SelectedValue)));
-        }
+  
     }
 }
