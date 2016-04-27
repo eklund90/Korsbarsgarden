@@ -22,15 +22,6 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.WebControls.Label lbl_head;
         
         /// <summary>
-        /// lbl_date control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_date;
-        
-        /// <summary>
         /// lbl_blogtext control.
         /// </summary>
         /// <remarks>

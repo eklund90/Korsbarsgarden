@@ -17,7 +17,7 @@ namespace Korsbarsgarden
             nyhet = nyhetspost(Request.QueryString["field1"]);
 
             lbl_head.Text = nyhet.rubrik;
-            lbl_date.Text = "<i class='fa fa-clock-o'></i> " + nyhet.datum.ToShortDateString();
+            //lbl_date.Text = "<i class='fa fa-clock-o'></i> " + nyhet.datum.ToShortDateString();
             lbl_blogtext.Text = nyhet.text;
         }
 
