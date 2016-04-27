@@ -41,8 +41,8 @@
                     <a id="blogg_rubrik<%# ((RepeaterItem)Container).ItemIndex + 1%>" href="blog-post.html"><%# Eval("rubrik") %></a>
                 </h3>
 
-                <p><%# Eval("text") %></p>
-                <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Read More" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("rubrik")%>'/>
+                <p><%# Eval("text") %>...</p>
+                <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Read More" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("id")%>'/>
                 <%--<a class="btn btn-primary" href="bloggpost.aspx?field1=<%Eval("rubrik")%>>Read More <i class="fa fa-angle-right"></i></a>--%>
             <hr />
 
