@@ -11,7 +11,7 @@ namespace Korsbarsgarden
 {
 
 
-    public partial class nyheter
+    public partial class minasidor
     {
     }
 }

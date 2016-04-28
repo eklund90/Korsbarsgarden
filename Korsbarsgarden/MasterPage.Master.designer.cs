@@ -49,22 +49,31 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.HtmlControls.HtmlAnchor droprubrik;
         
         /// <summary>
-        /// minaSidor control.
+        /// minasidor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor minaSidor;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor minasidor;
         
         /// <summary>
-        /// test control.
+        /// skapablogg control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor test;
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor skapablogg;
+        
+        /// <summary>
+        /// skapakonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor skapakonto;
         
         /// <summary>
         /// ContentPlaceHolder1 control.

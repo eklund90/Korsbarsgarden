@@ -46,10 +46,22 @@ namespace Korsbarsgarden
             nymedlem.adress = txtBox_skapakonto_adress.Text;
             nymedlem.postnr = txtBox_skapakonto_postnr.Text;
             nymedlem.postort = txtBox_skapakonto_postort.Text;
-            nymedlem.epost = txtBox_skapakonto_epost.Text;
+            nymedlem.epost = txtBox_skapakonto_epost.Text.ToLower();
             nymedlem.losenord = SHA256.ComputeHash(txtBox_skapakonto_losenord.Text, Supported_HA.SHA256, null);
             nymedlem.behorighet = Convert.ToInt16(dropdown_skapakonto_behorighet.Text);
             läggtillmedlem(nymedlem);
+                        
+            medlemlist.Items.Clear();
+            memberList = getMemberList();
+
+            foreach (medlem m in memberList)
+            {
+                ListItem Data = new ListItem();
+                Data.Text = m.fnamn;
+                Data.Value = m.id.ToString();
+                medlemlist.Items.Add(Data);
+
+            }
         }
 
         protected void btn_tabortkonto_Click(object sender, EventArgs e)
@@ -76,7 +88,7 @@ namespace Korsbarsgarden
             nymedlem.adress = txtBox_skapakonto_adress.Text;
             nymedlem.postnr = txtBox_skapakonto_postnr.Text;
             nymedlem.postort = txtBox_skapakonto_postort.Text;
-            nymedlem.epost = txtBox_skapakonto_epost.Text;
+            nymedlem.epost = txtBox_skapakonto_epost.Text.ToLower();
             nymedlem.behorighet = Convert.ToInt16(dropdown_skapakonto_behorighet.Text);
             uppdateramedlem(nymedlem);
 
@@ -107,7 +119,7 @@ namespace Korsbarsgarden
                 txtBox_skapakonto_adress.Text = nyMember.adress;
                 txtBox_skapakonto_postnr.Text = nyMember.postnr;
                 txtBox_skapakonto_postort.Text = nyMember.postort;
-                txtBox_skapakonto_epost.Text = nyMember.epost;
+                txtBox_skapakonto_epost.Text = nyMember.epost.ToLower();
                 dropdown_skapakonto_behorighet.Text = Convert.ToInt16(nyMember.behorighet).ToString();
             
         }
@@ -266,7 +278,7 @@ namespace Korsbarsgarden
         {
             string sql;
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
-            sql = "UPDATE medlem SET fnamn='"+ nymedlem.fnamn + "', enamn='" +nymedlem.enamn+"', personnr='"+nymedlem.personnr+"', telefonnr='"+nymedlem.telefonnr+"', adress='"+nymedlem.adress+"', postnr='"+nymedlem.postnr+"', postort='"+nymedlem.postort+"', epost='"+nymedlem.epost+"' WHERE id='" + nymedlem.id +"'";
+            sql = "UPDATE medlem SET fnamn='"+ nymedlem.fnamn + "', enamn='" +nymedlem.enamn+"', personnr='"+nymedlem.personnr+"', telefonnr='"+nymedlem.telefonnr+"', adress='"+nymedlem.adress+"', postnr='"+nymedlem.postnr+"', postort='"+nymedlem.postort+"', epost='"+nymedlem.epost.ToLower()+"' WHERE id='" + nymedlem.id +"'";
             NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
             conn.Open();
 
