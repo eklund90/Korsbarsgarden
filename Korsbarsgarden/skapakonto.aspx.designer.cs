@@ -13,6 +13,15 @@ namespace Korsbarsgarden {
     public partial class skapakonto {
         
         /// <summary>
+        /// txtBox_skapakonto_id control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtBox_skapakonto_id;
+        
+        /// <summary>
         /// txtBox_skapakonto_fornamn control.
         /// </summary>
         /// <remarks>
@@ -110,6 +119,15 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_skapakonto;
+        
+        /// <summary>
+        /// btn_uppdaterakonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_uppdaterakonto;
         
         /// <summary>
         /// PanelResponse_skapakonto control.

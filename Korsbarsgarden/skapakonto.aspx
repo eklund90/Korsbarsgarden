@@ -8,8 +8,13 @@
             
             
             <div class="col-md-6">
-                 <h1 style="text-align:center">Skapa konto</h1>
-                    
+                 <h1 style="text-align:center">Medlemsinfo</h1>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>MedlemsID</label>
+                        <asp:TextBox ID="txtBox_skapakonto_id" CssClass="form-control" runat="server" ReadOnly="True"></asp:TextBox>
+                    </div>
+                </div>    
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Förnamn</label>
@@ -74,7 +79,7 @@
                     </div>
                 </div>
                 <asp:Button ID="btn_skapakonto" class="btn btn-primary" runat="server" Text="Skapa konto" Onclick="btn_skapakonto_Click"/>
-                
+                <asp:Button ID="btn_uppdaterakonto" class="btn btn-primary" runat="server" Text="Uppdatera Konto" onclick="btn_uppdaterakonto_Click"/>
                 <asp:Panel ID="PanelResponse_skapakonto" runat="server" CssClass="alert PanelResponse">
                     <asp:Label ID="LabelResponse_skapakonto" runat="server" Text="asd"></asp:Label>
                 </asp:Panel>

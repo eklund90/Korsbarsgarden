@@ -66,6 +66,31 @@ namespace Korsbarsgarden
                 medlemlist.Items.Add(Data);
             }
         }
+        protected void btn_uppdaterakonto_Click(object sender, EventArgs e)
+        {
+            nymedlem.id = Convert.ToInt16(txtBox_skapakonto_id.Text);
+            nymedlem.fnamn = txtBox_skapakonto_fornamn.Text;
+            nymedlem.enamn = txtBox_skapakonto_efternamn.Text;
+            nymedlem.personnr = txtBox_skapakonto_personnr.Text;
+            nymedlem.telefonnr = txtBox_skapakonto_telefonnr.Text;
+            nymedlem.adress = txtBox_skapakonto_adress.Text;
+            nymedlem.postnr = txtBox_skapakonto_postnr.Text;
+            nymedlem.postort = txtBox_skapakonto_postort.Text;
+            nymedlem.epost = txtBox_skapakonto_epost.Text;
+            nymedlem.behorighet = Convert.ToInt16(dropdown_skapakonto_behorighet.Text);
+            uppdateramedlem(nymedlem);
+
+            medlemlist.Items.Clear();
+            memberList = getMemberList();
+
+            foreach (medlem m in memberList)
+            {
+                ListItem Data = new ListItem();
+                Data.Text = m.fnamn;
+                Data.Value = m.id.ToString();
+                medlemlist.Items.Add(Data);
+            }   
+        }
         protected void medlemlist_SelectedIndexChanged(object sender, EventArgs e)
         {
             fyllmedlem(getMember(Convert.ToInt16(medlemlist.SelectedValue)));
@@ -73,7 +98,8 @@ namespace Korsbarsgarden
 
         #region metoder
         public void fyllmedlem(medlem nyMember)
-        {  
+        {
+                txtBox_skapakonto_id.Text = nyMember.id.ToString();
                 txtBox_skapakonto_fornamn.Text = nyMember.fnamn;
                 txtBox_skapakonto_efternamn.Text = nyMember.enamn;
                 txtBox_skapakonto_personnr.Text = nyMember.personnr;
@@ -87,6 +113,7 @@ namespace Korsbarsgarden
         }
         public void clearmedlem()
         {
+            txtBox_skapakonto_id.Text = string.Empty;
             txtBox_skapakonto_fornamn.Text = string.Empty;
             txtBox_skapakonto_efternamn.Text = string.Empty;
             txtBox_skapakonto_personnr.Text = string.Empty;
@@ -234,7 +261,29 @@ namespace Korsbarsgarden
                 conn.Close();
             }
         }
+
+        public void uppdateramedlem(medlem nymedlem)
+        {
+            string sql;
+            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
+            sql = "UPDATE medlem SET fnamn='"+ nymedlem.fnamn + "', enamn='" +nymedlem.enamn+"', personnr='"+nymedlem.personnr+"', telefonnr='"+nymedlem.telefonnr+"', adress='"+nymedlem.adress+"', postnr='"+nymedlem.postnr+"', postort='"+nymedlem.postort+"', epost='"+nymedlem.epost+"' WHERE id='" + nymedlem.id +"'";
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+            conn.Open();
+
+            try
+            {
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            }         
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            
+
+        }
         #endregion metoder
+
 
   
     }
