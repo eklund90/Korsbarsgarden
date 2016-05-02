@@ -22,6 +22,7 @@ namespace Korsbarsgarden
             lbl_blogtext.Text = nyhet.text;
             paragraph.InnerText = nyhet.rubrik;
             PanelResponse_bloggpost.Visible = false;
+            bloggbild.Attributes.Add("src", nyhet.bildurl);
 
             if (!IsPostBack)
             {
@@ -46,6 +47,7 @@ namespace Korsbarsgarden
                 aktuellnyhet.rubrik = dr["rubrik"].ToString();
                 aktuellnyhet.text = dr["text"].ToString();
                 aktuellnyhet.skrivenav = dr["publicerare"].ToString();
+                aktuellnyhet.bildurl = dr["bild"].ToString();
             }
             conn.Close();
             return aktuellnyhet;
