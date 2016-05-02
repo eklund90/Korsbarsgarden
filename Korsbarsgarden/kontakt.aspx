@@ -54,7 +54,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Namn</label>
-                            <asp:TextBox ID="txtBox_name" class="form-control" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtBox_name" class="form-control" required="required" runat="server"></asp:TextBox>
 
                             <p class="help-block"></p>
                         </div>
@@ -62,19 +62,19 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Telefonnummer</label>
-                            <asp:TextBox ID="txtBox_telenr" runat="server" class="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtBox_telenr" runat="server" required="required" class="form-control"></asp:TextBox>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Epostadress</label>
-                            <asp:TextBox ID="txtBox_epost" runat="server" class="form-control"></asp:TextBox>
+                            <asp:TextBox ID="txtBox_epost" runat="server" required="required" class="form-control"></asp:TextBox>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Meddelande</label>
-                            <asp:TextBox ID="txtBox_text" CssClass="form-control" runat="server" Rows="15" TextMode="MultiLine"></asp:TextBox>
+                            <asp:TextBox ID="txtBox_text" CssClass="form-control" required="required" runat="server" Rows="15" TextMode="MultiLine"></asp:TextBox>
                             
                         </div>
                     </div>

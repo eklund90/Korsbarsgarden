@@ -22,15 +22,9 @@ namespace Korsbarsgarden
             string epost = txtBox_epost.Text;
             string telenr = txtBox_telenr.Text;
             string text = txtBox_text.Text;
-            if (namn == "" || epost == "" || telenr == "" || text == "")
-            {
-                txtBox_name.Text = "fyll i här";
-            }
-            else
-            {
-                SkickaMail(namn, epost, telenr, text);
-            }
-        
+
+            SkickaMail(namn, epost, telenr, text);
+ 
         }
         public static bool SkickaMail(string namn, string epost, string telenr, string text)
         {

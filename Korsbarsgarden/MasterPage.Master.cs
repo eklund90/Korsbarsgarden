@@ -75,7 +75,6 @@ namespace Korsbarsgarden
                     dropdown.Visible = true;
                     droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() +"<b class=caret></b>";
 
-
                 }
 
             }
