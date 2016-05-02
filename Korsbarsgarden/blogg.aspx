@@ -34,6 +34,7 @@
                     <img class="img-responsive img-hover" src='<%#Eval("bild")%>' alt="">
                 </a>
             </div>
+            <asp:LinkButton ID="lb_blogg" runat="server" CommandArgument='<%#Eval("fil")%>' CommandName="download" Text='<%#Eval("fil")%>' OnClick="lb_blogg_Click" OnCommand="lb_blogg_Command"></asp:LinkButton>
       
             <div class="col-md-8">
                 <h3 class="hfont">
