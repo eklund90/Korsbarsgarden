@@ -21,6 +21,7 @@ namespace Korsbarsgarden
             //lbl_date.Text = "<i class='fa fa-clock-o'></i> " + nyhet.datum.ToShortDateString();
             lbl_blogtext.Text = nyhet.text;
             paragraph.InnerText = nyhet.rubrik;
+            bloggbild.Attributes.Add("src", nyhet.bild);
             PanelResponse_bloggpost.Visible = false;
 
             if (!IsPostBack)
@@ -46,6 +47,7 @@ namespace Korsbarsgarden
                 aktuellnyhet.rubrik = dr["rubrik"].ToString();
                 aktuellnyhet.text = dr["text"].ToString();
                 aktuellnyhet.skrivenav = dr["publicerare"].ToString();
+                aktuellnyhet.bild = dr["bild"].ToString();
             }
             conn.Close();
             return aktuellnyhet;

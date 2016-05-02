@@ -31,7 +31,7 @@
         <div class="row">      
             <div class="col-md-4">
                 <%--<p"><%# Eval("text") %></p>--%>
-                    <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
+                    <img class="img-responsive img-hover" src='<%#Eval("bild")%>' alt="">
                 </a>
             </div>
       
