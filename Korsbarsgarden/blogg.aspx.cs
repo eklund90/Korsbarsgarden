@@ -64,7 +64,7 @@ namespace Korsbarsgarden
 
             try
             {
-                sql = "SELECT id, rubrik, SUBSTRING(text, 0, 100) AS text, datum, bild FROM nyheter " +
+                sql = "SELECT id, rubrik, SUBSTRING(text, 0, 100) AS text, datum FROM nyheter " +
                       "ORDER BY datum DESC, id DESC " +
                       "LIMIT 10;";
                 conn.Open();

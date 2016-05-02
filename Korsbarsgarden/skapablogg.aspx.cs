@@ -22,7 +22,7 @@ namespace Korsbarsgarden
             nyhet.rubrik = txtBox_rubrik.Text;
             nyhet.text = txtBox_text.Text;
             nyhet.datum = DateTime.Today;
-            fileupload_blogg.SaveAs(Server.MapPath("images\\" + fileupload_blogg.FileName+".jpg"));
+            
             if (!string.IsNullOrEmpty(Session["fnamn"] as string) && !string.IsNullOrEmpty(Session["enamn"] as string))
             {
                 nyhet.skrivenav = Session["fnamn"].ToString() + " " + Session["enamn"].ToString();
@@ -32,7 +32,7 @@ namespace Korsbarsgarden
                 nyhet.skrivenav = "Admin";
             }
 
-            string sql = "INSERT INTO nyheter (rubrik, text, datum, publicerare, bild) VALUES (@rubrik, @text, @datum, @publicerare, @bild)";
+            string sql = "INSERT INTO nyheter (rubrik, text, datum, publicerare) VALUES (@rubrik, @text, @datum, @publicerare)";
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
 
             NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
@@ -42,7 +42,6 @@ namespace Korsbarsgarden
             cmd.Parameters.AddWithValue("@text", nyhet.text);
             cmd.Parameters.AddWithValue("@datum", nyhet.datum);
             cmd.Parameters.AddWithValue("@publicerare", nyhet.skrivenav);
-            cmd.Parameters.AddWithValue("@bild", "images/"+fileupload_blogg.FileName.ToString());
 
             cmd.ExecuteNonQuery();
             conn.Close();
@@ -54,14 +53,6 @@ namespace Korsbarsgarden
             txtBox_rubrik.Text = "";
             txtBox_text.Text = "";
             
-        }
-
-        protected void btn_sparabild_Click(object sender, EventArgs e)
-        {
-            //fileupload_blogg.SaveAs(Server.MapPath("images\\" + fileupload_blogg.FileName));
-            //string sql = "INSERT INTO nyheter";
-            //NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
-
         }
     }
 }

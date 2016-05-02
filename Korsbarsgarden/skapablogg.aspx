@@ -22,15 +22,6 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
-                    <asp:Label ID="lbl_bild" runat="server" Text="Välj bild"></asp:Label>
-                    <asp:FileUpload ID="fileupload_blogg" runat="server" />
-                    <asp:Button ID="btn_sparabild" runat="server" Text="Button" OnClick="btn_sparabild_Click" />
-                </div>
-                <div class="col-md-3"></div>
-            </div>
             <%--Blogginlägg--%>
              <div class="row">
                 <div class="col-md-3"></div>

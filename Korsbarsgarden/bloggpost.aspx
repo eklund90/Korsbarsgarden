@@ -21,7 +21,7 @@
             <div class="col-lg-8">
                 <%--<asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>
                 <hr class="hr2"/>--%>
-                <img id="bloggbild" class="img-responsive" runat="server" alt="" />
+                <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
                 <hr />
                 <asp:Label CssClass="pfont" ID="lbl_blogtext" runat="server" Text=""></asp:Label>
                 <hr />                
