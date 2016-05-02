@@ -22,6 +22,16 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
+            <%--Spara bild--%>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <asp:Label ID="lbl_bild" runat="server" Text="Spara bild"></asp:Label>
+                    <asp:FileUpload ID="fileupload_blogg" runat="server" />
+                </div>
+                <div class="col-md-3"></div>
+
+            </div>
             <%--Blogginlägg--%>
              <div class="row">
                 <div class="col-md-3"></div>
