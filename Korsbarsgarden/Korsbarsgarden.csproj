@@ -149,7 +149,6 @@
     <Content Include="personal.aspx" />
     <Content Include="skapablogg.aspx" />
     <Content Include="skapakonto.aspx" />
-    <Content Include="uploadpdf.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -252,13 +251,6 @@
     </Compile>
     <Compile Include="skapakonto.aspx.designer.cs">
       <DependentUpon>skapakonto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="uploadpdf.aspx.cs">
-      <DependentUpon>uploadpdf.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="uploadpdf.aspx.designer.cs">
-      <DependentUpon>uploadpdf.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup />
