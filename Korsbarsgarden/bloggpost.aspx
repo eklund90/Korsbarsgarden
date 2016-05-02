@@ -45,8 +45,7 @@
                             </div>
                         </div>
                        </ItemTemplate>                         
-                    </asp:Repeater>                
-                              
+                    </asp:Repeater>                                              
             </div>
             <div class="col-lg-2"></div>
         </div>

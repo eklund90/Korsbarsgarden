@@ -18,22 +18,22 @@ namespace Korsbarsgarden
         List<medlem> memberList = new List<medlem>();
         protected void Page_Load(object sender, EventArgs e)
         {
-        if(!IsPostBack)
-        {
-            PanelResponse_skapakonto.Visible = false;        
-            memberList = getMemberList();
-            foreach (medlem m in memberList)
+            if(!IsPostBack)
             {
-                ListItem Data = new ListItem();
-                Data.Text = m.fnamn;
-                Data.Value = m.id.ToString();
-                medlemlist.Items.Add(Data);
+                PanelResponse_skapakonto.Visible = false;        
+                memberList = getMemberList();
+                foreach (medlem m in memberList)
+                {
+                    ListItem Data = new ListItem();
+                    Data.Text = m.fnamn;
+                    Data.Value = m.id.ToString();
+                    medlemlist.Items.Add(Data);
 
-                //medlemlist.Items.Add(m.fnamn.ToString() + " " + m.enamn.ToString());
-                //medlemlist.DataSource = getMemberList();
-                //medlemlist.DataBind();
-            }           
-        }
+                    //medlemlist.Items.Add(m.fnamn.ToString() + " " + m.enamn.ToString());
+                    //medlemlist.DataSource = getMemberList();
+                    //medlemlist.DataBind();
+                }           
+            }
         }
      
         protected void btn_skapakonto_Click(object sender, EventArgs e)

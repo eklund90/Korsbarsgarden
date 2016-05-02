@@ -37,7 +37,7 @@ namespace Korsbarsgarden
             {
              
                 //sql = "SELECT medlem.id, fnamn, enamn, personnr, behorighet.behorighetsgrad FROM medlem INNER JOIN behorighet ON medlem.fk_behorighet = behorighet.id WHERE epost ='" + email + "'";
-                sql = "SELECT * from medlem  where epost ='" + email + "'";
+                sql = "SELECT * from medlem  where epost ='" + email.ToLower() + "'";
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = cmd.ExecuteReader();
