@@ -134,6 +134,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="minasidor.aspx" />
     <Content Include="Npgsql.dll" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -145,7 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="index.aspx" />
-    <Content Include="nyheter.aspx" />
     <Content Include="personal.aspx" />
     <Content Include="skapablogg.aspx" />
     <Content Include="skapakonto.aspx" />
@@ -223,12 +223,12 @@
     </Compile>
     <Compile Include="classes\methods.cs" />
     <Compile Include="classes\nyhet.cs" />
-    <Compile Include="nyheter.aspx.cs">
-      <DependentUpon>nyheter.aspx</DependentUpon>
+    <Compile Include="minasidor.aspx.cs">
+      <DependentUpon>minasidor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="nyheter.aspx.designer.cs">
-      <DependentUpon>nyheter.aspx</DependentUpon>
+    <Compile Include="minasidor.aspx.designer.cs">
+      <DependentUpon>minasidor.aspx</DependentUpon>
     </Compile>
     <Compile Include="personal.aspx.cs">
       <DependentUpon>personal.aspx</DependentUpon>

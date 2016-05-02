@@ -8,54 +8,59 @@
             
             
             <div class="col-md-6">
-                 <h1 style="text-align:center">Skapa konto</h1>
-                    
+                 <h1 style="text-align:center">Medlemsinfo</h1>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>MedlemsID</label>
+                        <asp:TextBox ID="txtBox_skapakonto_id" CssClass="form-control" required="required" runat="server" ReadOnly="True"></asp:TextBox>
+                    </div>
+                </div>    
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Förnamn</label>
-                        <asp:TextBox ID="txtBox_skapakonto_fornamn" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_fornamn" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Efternamn</label>
-                        <asp:TextBox ID="txtBox_skapakonto_efternamn" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_efternamn" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Personnummer</label>
-                        <asp:TextBox ID="txtBox_skapakonto_personnr" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_personnr" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Telefonnummer</label>
-                        <asp:TextBox ID="txtBox_skapakonto_telefonnr" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_telefonnr" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Adress</label>
-                        <asp:TextBox ID="txtBox_skapakonto_adress" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_adress" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Postnummer</label>
-                        <asp:TextBox ID="txtBox_skapakonto_postnr" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_postnr" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Postort</label>
-                        <asp:TextBox ID="txtBox_skapakonto_postort" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_postort" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Epost</label>
-                        <asp:TextBox ID="txtBox_skapakonto_epost" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_epost" CssClass="form-control" required="required" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">
@@ -74,14 +79,14 @@
                     </div>
                 </div>
                 <asp:Button ID="btn_skapakonto" class="btn btn-primary" runat="server" Text="Skapa konto" Onclick="btn_skapakonto_Click"/>
-                
+                <asp:Button ID="btn_uppdaterakonto" class="btn btn-primary" runat="server" Text="Uppdatera Konto" onclick="btn_uppdaterakonto_Click"/>
                 <asp:Panel ID="PanelResponse_skapakonto" runat="server" CssClass="alert PanelResponse">
                     <asp:Label ID="LabelResponse_skapakonto" runat="server" Text="asd"></asp:Label>
                 </asp:Panel>
             </div>
             <div class="col-md-6">
                 <h1 style="text-align:center">Medlemslista</h1>
-                <asp:ListBox ID="medlemlist" CssClass="form-control" runat="server"></asp:ListBox>
+                <asp:ListBox ID="medlemlist" AutoPostBack="true" CssClass="form-control" runat="server" OnSelectedIndexChanged="medlemlist_SelectedIndexChanged"></asp:ListBox>
                 <asp:Button ID="btn_tabortkonto" class="btn btn-primary" runat="server" Text="Ta bort konto" OnClick="btn_tabortkonto_Click" />
             </div>
 

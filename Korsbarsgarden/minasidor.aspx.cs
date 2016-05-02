@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Korsbarsgarden
 {
-    public partial class nyheter : System.Web.UI.Page
+    public partial class minasidor : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

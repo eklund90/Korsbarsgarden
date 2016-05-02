@@ -30,7 +30,7 @@ namespace Korsbarsgarden
             Encryption SHA256 = new Encryption();
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
             string sql;
-            string email = txtbox_emaillogin.Text;
+            string email = txtbox_emaillogin.Text.ToLower();
             string password = txtbox_password.Text;
             medlem mem = new medlem();
             try
