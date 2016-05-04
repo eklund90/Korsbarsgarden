@@ -103,6 +103,33 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.WebControls.TextBox txtbox_minasidor_losenord;
         
         /// <summary>
+        /// btn_uppdatera control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_uppdatera;
+        
+        /// <summary>
+        /// PanelResponse_uppdaterakonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel PanelResponse_uppdaterakonto;
+        
+        /// <summary>
+        /// LabelResponse_uppdaterakonto control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelResponse_uppdaterakonto;
+        
+        /// <summary>
         /// hfmedlemsgolfrundorFolded control.
         /// </summary>
         /// <remarks>
