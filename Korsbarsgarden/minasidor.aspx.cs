@@ -115,7 +115,14 @@ namespace Korsbarsgarden
 
         public void changepassword(int id)
         {
-            if(txtbox_minasidor_losenord.Text == txtbox_minasidor_bytalosenord.Text)
+            if (txtbox_minasidor_losenord.Text == "" || txtbox_minasidor_losenord.Text == "")
+            {
+                panelresponse_bytalosenord.Visible = true;
+                panelresponse_bytalosenord.CssClass = "alert-warning alert PanelResponse";
+                lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Fälten får inte vara tomma";
+            }
+            
+            else if(txtbox_minasidor_losenord.Text == txtbox_minasidor_bytalosenord.Text)
             {
                 Encryption SHA256 = new Encryption();
                 string password = SHA256.ComputeHash(txtbox_minasidor_losenord.Text, Supported_HA.SHA256, null);
@@ -131,6 +138,7 @@ namespace Korsbarsgarden
                 panelresponse_bytalosenord.CssClass = "alert-success alert PanelResponse";
                 lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Lösenordet är uppdaterat!";
             }
+            
             else
             {
                 panelresponse_bytalosenord.Visible = true;

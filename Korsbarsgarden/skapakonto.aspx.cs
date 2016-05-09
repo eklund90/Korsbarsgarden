@@ -267,6 +267,11 @@ namespace Korsbarsgarden
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
+                PanelResponse_skapakonto.Visible = true;
+                PanelResponse_skapakonto.CssClass = "alert-success alert PanelResponse";
+
+
+                LabelResponse_skapakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Användaren är nu borttagen.";
             }
             finally
             {
@@ -286,6 +291,11 @@ namespace Korsbarsgarden
             {
             cmd.ExecuteNonQuery();
             conn.Close();
+            PanelResponse_skapakonto.Visible = true;
+            PanelResponse_skapakonto.CssClass = "alert-success alert PanelResponse";
+
+
+            LabelResponse_skapakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Användaren är nu uppdaterad.";
             }         
             catch (Exception ex)
             {
