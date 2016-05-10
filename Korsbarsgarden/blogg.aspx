@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!-- Page Content -->
+<form runat="server">
     <div class="container">
 
 <%--     <asp:Repeater ID="RepeaterNews" runat="server">
@@ -30,25 +31,25 @@
         <div class="row">      
             <div class="col-md-4">
                 <%--<p"><%# Eval("text") %></p>--%>
-                    <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
+                    <img class="img-responsive img-hover" src='<%#Eval("bild")%>' alt="">
                 </a>
             </div>
+           
       
             <div class="col-md-8">
-                <h3>
-                    <p><%# Eval("datum").ToString().Split(' ')[0] %></p>
-                    <a href="blog-post.html"><%# Eval("rubrik") %></a>
-                </h3>
-
-                <p><%# Eval("text") %></p>
-                <a class="btn btn-primary" href="blog-post.html">Read More <i class="fa fa-angle-right"></i></a>
+                    <p style="float: right"><%# Eval("datum").ToString().Split(' ')[0] %></p>
+                    <h3 id="hej<%# ((RepeaterItem)Container).ItemIndex + 1%>"><%# Eval("rubrik") %></h3>
+                <p><%# Eval("text") %>...</p>
+                 <asp:LinkButton ID="lb_blogg" runat="server" CommandArgument='<%#Eval("fil")%>' CommandName="download" Text='<%#Eval("fil")%>' OnClick="lb_blogg_Click" OnCommand="lb_blogg_Command"></asp:LinkButton>
+                <br />
+                <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Läs mer" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("id")%>'/>
+                <%--<a class="btn btn-primary" href="bloggpost.aspx?field1=<%Eval("rubrik")%>>Read More <i class="fa fa-angle-right"></i></a>--%>           
+                
+            </div>            
+            </div>
             <hr />
-
-            </div>
-            
-            </div>
             </ItemTemplate>        
-           </asp:Repeater>
+        </asp:Repeater>
         <!-- /.row -->
 
         
@@ -115,6 +116,7 @@
 
         <hr />--%>
 
-</div>
+    </div>
+</form>
     <!-- /.container -->
 </asp:Content>

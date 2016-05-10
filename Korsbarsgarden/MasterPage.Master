@@ -10,17 +10,17 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/modern-business.css" rel="stylesheet" />
-    <script src="js/bootstrap.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>    
+    <%--<script src="js/bootstrap.min.js"></script>--%>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-   <%-- [if lt IE 9]>
+   <%-- [if lt IE 9]
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]--%>
+    [endif]--%>
 </head>
       
 
@@ -69,19 +69,16 @@
                         <a id="droprubrik" href="#" class="dropdown-toggle" data-toggle="dropdown" runat="server">Dropmeny <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a id="minaSidor" runat="server">test</a>
+                                <a runat="server" href="blogg.aspx">Blogg</a>
                             </li>
                             <li>
-                                <a id="test" runat="server" href="sidebar.html">BBBBB</a>
+                                <a id="minasidor" runat="server" href="minasidor.aspx">Mina sidor</a>
                             </li>
                             <li>
-                                <a href="faq.html">CCCCC</a>
+                                <a id="skapablogg" runat="server" href="skapablogg.aspx">Skapa Blogg</a>
                             </li>
                             <li>
-                                <a href="blogg.aspx">Nyheter</a>
-                            </li>
-                            <li>
-                                <a href="skapakonto.aspx">Medlemshantering</a>
+                                <a id="skapakonto" href="skapakonto.aspx" runat="server">Medlemshantering</a>
                             </li>
                         </ul>
                     </li>

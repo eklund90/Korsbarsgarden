@@ -30,14 +30,14 @@ namespace Korsbarsgarden
             Encryption SHA256 = new Encryption();
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
             string sql;
-            string email = txtbox_emaillogin.Text;
+            string email = txtbox_emaillogin.Text.ToLower();
             string password = txtbox_password.Text;
             medlem mem = new medlem();
             try
             {
              
                 //sql = "SELECT medlem.id, fnamn, enamn, personnr, behorighet.behorighetsgrad FROM medlem INNER JOIN behorighet ON medlem.fk_behorighet = behorighet.id WHERE epost ='" + email + "'";
-                sql = "SELECT * from medlem  where epost ='" + email + "'";
+                sql = "SELECT * from medlem  where epost ='" + email.ToLower() + "'";
                 conn.Open();
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 NpgsqlDataReader dr = cmd.ExecuteReader();
