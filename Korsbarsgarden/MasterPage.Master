@@ -26,7 +26,7 @@
 
 <body runat="server" style="background-image: url(images/subtle_grunge.png)">
 
-   <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/denim.png)">
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/mochaGrunge.png)">
         <div class="container">
                     <ul>
                          <li>
@@ -95,7 +95,7 @@
         </asp:ContentPlaceHolder>
 
     
-      <footer class="footer" style="background-image: url(images/denim.png)">
+      <footer class="panel-footer" style="background-image: url(images/mochaGrunge.png)">
       <div class="container" style="text-align:center">
         <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p> 
         <p class="text-muted">Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>

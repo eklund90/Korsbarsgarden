@@ -18,22 +18,22 @@ namespace Korsbarsgarden
         List<medlem> memberList = new List<medlem>();
         protected void Page_Load(object sender, EventArgs e)
         {
-        if(!IsPostBack)
-        {
-            PanelResponse_skapakonto.Visible = false;        
-            memberList = getMemberList();
-            foreach (medlem m in memberList)
+            if(!IsPostBack)
             {
-                ListItem Data = new ListItem();
-                Data.Text = m.fnamn;
-                Data.Value = m.id.ToString();
-                medlemlist.Items.Add(Data);
+                PanelResponse_skapakonto.Visible = false;        
+                memberList = getMemberList();
+                foreach (medlem m in memberList)
+                {
+                    ListItem Data = new ListItem();
+                    Data.Text = m.fnamn;
+                    Data.Value = m.id.ToString();
+                    medlemlist.Items.Add(Data);
 
-                //medlemlist.Items.Add(m.fnamn.ToString() + " " + m.enamn.ToString());
-                //medlemlist.DataSource = getMemberList();
-                //medlemlist.DataBind();
-            }           
-        }
+                    //medlemlist.Items.Add(m.fnamn.ToString() + " " + m.enamn.ToString());
+                    //medlemlist.DataSource = getMemberList();
+                    //medlemlist.DataBind();
+                }           
+            }
         }
      
         protected void btn_skapakonto_Click(object sender, EventArgs e)
@@ -46,10 +46,22 @@ namespace Korsbarsgarden
             nymedlem.adress = txtBox_skapakonto_adress.Text;
             nymedlem.postnr = txtBox_skapakonto_postnr.Text;
             nymedlem.postort = txtBox_skapakonto_postort.Text;
-            nymedlem.epost = txtBox_skapakonto_epost.Text;
+            nymedlem.epost = txtBox_skapakonto_epost.Text.ToLower();
             nymedlem.losenord = SHA256.ComputeHash(txtBox_skapakonto_losenord.Text, Supported_HA.SHA256, null);
             nymedlem.behorighet = Convert.ToInt16(dropdown_skapakonto_behorighet.Text);
             läggtillmedlem(nymedlem);
+                        
+            medlemlist.Items.Clear();
+            memberList = getMemberList();
+
+            foreach (medlem m in memberList)
+            {
+                ListItem Data = new ListItem();
+                Data.Text = m.fnamn;
+                Data.Value = m.id.ToString();
+                medlemlist.Items.Add(Data);
+
+            }
         }
 
         protected void btn_tabortkonto_Click(object sender, EventArgs e)
@@ -66,10 +78,40 @@ namespace Korsbarsgarden
                 medlemlist.Items.Add(Data);
             }
         }
+        protected void btn_uppdaterakonto_Click(object sender, EventArgs e)
+        {
+            nymedlem.id = Convert.ToInt16(txtBox_skapakonto_id.Text);
+            nymedlem.fnamn = txtBox_skapakonto_fornamn.Text;
+            nymedlem.enamn = txtBox_skapakonto_efternamn.Text;
+            nymedlem.personnr = txtBox_skapakonto_personnr.Text;
+            nymedlem.telefonnr = txtBox_skapakonto_telefonnr.Text;
+            nymedlem.adress = txtBox_skapakonto_adress.Text;
+            nymedlem.postnr = txtBox_skapakonto_postnr.Text;
+            nymedlem.postort = txtBox_skapakonto_postort.Text;
+            nymedlem.epost = txtBox_skapakonto_epost.Text.ToLower();
+            nymedlem.behorighet = Convert.ToInt16(dropdown_skapakonto_behorighet.Text);
+            uppdateramedlem(nymedlem);
+
+            medlemlist.Items.Clear();
+            memberList = getMemberList();
+
+            foreach (medlem m in memberList)
+            {
+                ListItem Data = new ListItem();
+                Data.Text = m.fnamn;
+                Data.Value = m.id.ToString();
+                medlemlist.Items.Add(Data);
+            }   
+        }
+        protected void medlemlist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            fyllmedlem(getMember(Convert.ToInt16(medlemlist.SelectedValue)));
+        }
 
         #region metoder
         public void fyllmedlem(medlem nyMember)
-        {  
+        {
+                txtBox_skapakonto_id.Text = nyMember.id.ToString();
                 txtBox_skapakonto_fornamn.Text = nyMember.fnamn;
                 txtBox_skapakonto_efternamn.Text = nyMember.enamn;
                 txtBox_skapakonto_personnr.Text = nyMember.personnr;
@@ -77,12 +119,13 @@ namespace Korsbarsgarden
                 txtBox_skapakonto_adress.Text = nyMember.adress;
                 txtBox_skapakonto_postnr.Text = nyMember.postnr;
                 txtBox_skapakonto_postort.Text = nyMember.postort;
-                txtBox_skapakonto_epost.Text = nyMember.epost;
+                txtBox_skapakonto_epost.Text = nyMember.epost.ToLower();
                 dropdown_skapakonto_behorighet.Text = Convert.ToInt16(nyMember.behorighet).ToString();
             
         }
         public void clearmedlem()
         {
+            txtBox_skapakonto_id.Text = string.Empty;
             txtBox_skapakonto_fornamn.Text = string.Empty;
             txtBox_skapakonto_efternamn.Text = string.Empty;
             txtBox_skapakonto_personnr.Text = string.Empty;
@@ -224,17 +267,46 @@ namespace Korsbarsgarden
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
+                PanelResponse_skapakonto.Visible = true;
+                PanelResponse_skapakonto.CssClass = "alert-success alert PanelResponse";
+
+
+                LabelResponse_skapakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Användaren är nu borttagen.";
             }
             finally
             {
                 conn.Close();
             }
         }
+
+        public void uppdateramedlem(medlem nymedlem)
+        {
+            string sql;
+            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
+            sql = "UPDATE medlem SET fnamn='"+ nymedlem.fnamn + "', enamn='" +nymedlem.enamn+"', personnr='"+nymedlem.personnr+"', telefonnr='"+nymedlem.telefonnr+"', adress='"+nymedlem.adress+"', postnr='"+nymedlem.postnr+"', postort='"+nymedlem.postort+"', epost='"+nymedlem.epost.ToLower()+"' WHERE id='" + nymedlem.id +"'";
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+            conn.Open();
+
+            try
+            {
+            cmd.ExecuteNonQuery();
+            conn.Close();
+            PanelResponse_skapakonto.Visible = true;
+            PanelResponse_skapakonto.CssClass = "alert-success alert PanelResponse";
+
+
+            LabelResponse_skapakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Användaren är nu uppdaterad.";
+            }         
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            
+
+        }
         #endregion metoder
 
-        protected void medlemlist_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            fyllmedlem(getMember(Convert.ToInt16(medlemlist.SelectedValue)));
-        }
+
+  
     }
 }
