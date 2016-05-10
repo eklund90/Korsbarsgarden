@@ -138,6 +138,7 @@
     <Content Include="minasidor.aspx" />
     <Content Include="Npgsql.dll" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Vinden.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

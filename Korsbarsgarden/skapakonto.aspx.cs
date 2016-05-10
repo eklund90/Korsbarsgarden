@@ -280,7 +280,7 @@ namespace Korsbarsgarden
         }
 
         public void uppdateramedlem(medlem nymedlem)
-        {
+        {           
             string sql;
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
             sql = "UPDATE medlem SET fnamn='"+ nymedlem.fnamn + "', enamn='" +nymedlem.enamn+"', personnr='"+nymedlem.personnr+"', telefonnr='"+nymedlem.telefonnr+"', adress='"+nymedlem.adress+"', postnr='"+nymedlem.postnr+"', postort='"+nymedlem.postort+"', epost='"+nymedlem.epost.ToLower()+"' WHERE id='" + nymedlem.id +"'";
