@@ -34,22 +34,20 @@
                     <img class="img-responsive img-hover" src='<%#Eval("bild")%>' alt="">
                 </a>
             </div>
-            <asp:LinkButton ID="lb_blogg" runat="server" CommandArgument='<%#Eval("fil")%>' CommandName="download" Text='<%#Eval("fil")%>' OnClick="lb_blogg_Click" OnCommand="lb_blogg_Command"></asp:LinkButton>
+           
       
             <div class="col-md-8">
-                <h3 class="hfont">
-                    <p><%# Eval("datum").ToString().Split(' ')[0] %></p>
-                    <a id="blogg_rubrik<%# ((RepeaterItem)Container).ItemIndex + 1%>" href="blog-post.html"><%# Eval("rubrik") %></a>
-                </h3>
-
+                    <p style="float: right"><%# Eval("datum").ToString().Split(' ')[0] %></p>
+                    <h3 id="hej<%# ((RepeaterItem)Container).ItemIndex + 1%>"><%# Eval("rubrik") %></h3>
                 <p><%# Eval("text") %>...</p>
-                <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Read More" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("id")%>'/>
-                <%--<a class="btn btn-primary" href="bloggpost.aspx?field1=<%Eval("rubrik")%>>Read More <i class="fa fa-angle-right"></i></a>--%>
+                 <asp:LinkButton ID="lb_blogg" runat="server" CommandArgument='<%#Eval("fil")%>' CommandName="download" Text='<%#Eval("fil")%>' OnClick="lb_blogg_Click" OnCommand="lb_blogg_Command"></asp:LinkButton>
+                <br />
+                <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Läs mer" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("id")%>'/>
+                <%--<a class="btn btn-primary" href="bloggpost.aspx?field1=<%Eval("rubrik")%>>Read More <i class="fa fa-angle-right"></i></a>--%>           
+                
+            </div>            
+            </div>
             <hr />
-
-            </div>
-            
-            </div>
             </ItemTemplate>        
         </asp:Repeater>
         <!-- /.row -->
