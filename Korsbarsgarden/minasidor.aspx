@@ -59,11 +59,7 @@
                 <div class="controls">
                 <label>Lösenord</label>
                 <asp:TextBox ID="txtbox_minasidor_losenord" CssClass="form-control" required="required" runat="server"></asp:TextBox>
-                </div>   
-                    <asp:Button ID="btn_uppdatera" class="btn btn-primary" runat="server" Text="Uppdatera konto" onclick="btn_uppdatera_Click" />       
-                    <asp:Panel ID="PanelResponse_uppdaterakonto" runat="server" CssClass="alert PanelResponse">
-                    <asp:Label ID="LabelResponse_uppdaterakonto" runat="server" Text="asd"></asp:Label>
-                </asp:Panel>                                                                                                                                                                                 
+                </div>                                                                                                                                                                                         
             </div>
           </div>
           </div>
