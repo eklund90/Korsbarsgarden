@@ -16,7 +16,7 @@ namespace Korsbarsgarden
 
             if (!IsPostBack)
             {
-                //Hämta de senaste nyheterna
+                //Hämta de senaste nyheterna för banne strular
 
                 DataTable dt = new DataTable();
                 dt = getLatestNews();
