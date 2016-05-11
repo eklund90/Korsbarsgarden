@@ -19,7 +19,7 @@ namespace Korsbarsgarden
             nyhet = nyhetspost(Convert.ToInt16(Request.QueryString["field1"]));
 
             lbl_head.Text = nyhet.rubrik + ", av " + nyhet.skrivenav;
-            //lbl_date.Text = "<i class='fa fa-clock-o'></i> " + nyhet.datum.ToShortDateString();
+            //lbl_date.Text = "<i class='fa fa-clock-o'></i> " + nyhet.datum.ToShortDateString();banane
             lbl_blogtext.Text = nyhet.text;
             paragraph.InnerText = nyhet.rubrik;
             bloggbild.Attributes.Add("src", nyhet.bild);
