@@ -25,7 +25,6 @@
       
 
 <body runat="server" style="background-image: url(images/subtle_grunge.png)">
-
    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/denim.png)">
         <div class="container">
                     <ul>
@@ -89,19 +88,18 @@
         <!-- /.container -->
            </div>
         </nav>
-           
+
+
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
         </asp:ContentPlaceHolder>
-
-    
-      <footer class="footer" style="background-image: url(images/denim.png)">
-      <div class="container" style="text-align:center">
-        <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p> 
-        <p class="text-muted">Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
-      </div>
-    </footer>   
-
+                
+            <footer class="footer" style="background-image: url(images/denim.png)">
+                <div class="container" style="text-align:center">
+                    <p class="text-muted">Körsbärsgården, Bygatan 1, 255 91 Helsingborg</p> 
+                    <p class="text-muted">Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
+                </div>
+            </footer>                       
 </body>
 
   

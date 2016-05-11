@@ -1586,6 +1586,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+  position: relative;  
+  min-height: 100%;  
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
