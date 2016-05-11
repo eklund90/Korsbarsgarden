@@ -63,6 +63,17 @@
             </div>
           </div>
           </div>
+                      <div class="col-md-6">
+                <h2>Byta Lösenord</h2>
+                <label>Fyll i nytt lösenord</label>
+                <asp:TextBox ID="TextBox1" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                <label>Upprepa nytt lösenord</label>
+                <asp:TextBox ID="txtbox_minasidor_bytalosenord" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox><br />
+                <asp:Button ID="btn_bytlosenord" CssClass="btn btn-primary" runat="server" Text="Byt Lösenord" Onclick="btn_bytlosenord_Click" />
+                <asp:Panel ID="panelresponse_bytalosenord" runat="server" CssClass="alert PanelResponse">
+                    <asp:Label ID="lbl_responsebytalosen" runat="server" Text=""></asp:Label>
+                </asp:Panel>                                 
+            </div>  
 </div>
 
         <asp:HiddenField ID="hfmedlemsgolfrundorFolded" runat="server" />

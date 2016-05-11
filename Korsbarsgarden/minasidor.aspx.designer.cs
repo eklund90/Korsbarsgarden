@@ -103,6 +103,51 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.WebControls.TextBox txtbox_minasidor_losenord;
         
         /// <summary>
+        /// TextBox1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        
+        /// <summary>
+        /// txtbox_minasidor_bytalosenord control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtbox_minasidor_bytalosenord;
+        
+        /// <summary>
+        /// btn_bytlosenord control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_bytlosenord;
+        
+        /// <summary>
+        /// panelresponse_bytalosenord control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel panelresponse_bytalosenord;
+        
+        /// <summary>
+        /// lbl_responsebytalosen control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_responsebytalosen;
+        
+        /// <summary>
         /// hfmedlemsgolfrundorFolded control.
         /// </summary>
         /// <remarks>
