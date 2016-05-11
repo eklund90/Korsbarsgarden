@@ -13,15 +13,6 @@ namespace Korsbarsgarden {
     public partial class bloggpost {
         
         /// <summary>
-        /// lbl_head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_head;
-        
-        /// <summary>
         /// paragraph control.
         /// </summary>
         /// <remarks>
@@ -29,59 +20,5 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl paragraph;
-        
-        /// <summary>
-        /// lbl_blogtext control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_blogtext;
-        
-        /// <summary>
-        /// txtBox_kommentar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtBox_kommentar;
-        
-        /// <summary>
-        /// btn_sparakommentar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_sparakommentar;
-        
-        /// <summary>
-        /// PanelResponse_bloggpost control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelResponse_bloggpost;
-        
-        /// <summary>
-        /// LabelResponse_bloggpost control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelResponse_bloggpost;
-        
-        /// <summary>
-        /// Repeater_kommentar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater_kommentar;
     }
 }

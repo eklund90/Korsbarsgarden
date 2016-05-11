@@ -6,8 +6,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <asp:Label ID="lbl_head" CssClass="lblhead" runat="server" Text="Label"></asp:Label>
-                <hr />
+                
+
                 <ol class="breadcrumb">
                     <li>
                         <a href="blogg.aspx">Blogg</a>
@@ -21,9 +21,11 @@
             <div class="col-lg-8">
                 <%--<asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>bananemerge
                 <hr class="hr2"/>--%>
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="" />
+                <%--<asp:Label ID="lbl_head" CssClass="lblhead" runat="server" ></asp:Label>
                 <hr />
                 <asp:Label CssClass="pfont" ID="lbl_blogtext" runat="server" Text=""></asp:Label>
+                <img id="bloggbild" runat="server" class="img-responsive" alt="" />
+                <asp:LinkButton ID="lb_blogg" runat="server" CommandName="download" Text="h" onCommand="lb_blogg_Command"></asp:LinkButton>
                 <hr />                
                 <div class="well">
                     <h4>Lämna en kommentar:</h4>                    
@@ -45,7 +47,7 @@
                             </div>
                         </div>
                        </ItemTemplate>                         
-                    </asp:Repeater>                                              
+                    </asp:Repeater>                      --%>                        
             </div>
             <div class="col-lg-2"></div>
         </div>
