@@ -22,6 +22,25 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
+            <%--banane är en rolig prick--%>
+            <%--Spara bild--%>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <asp:Label ID="lbl_bild" runat="server" Text="Spara bild"></asp:Label>
+                    <asp:FileUpload ID="fileupload_blogg" runat="server" />
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <asp:Label ID="lbl_fil" runat="server" Text="Spara fil"></asp:Label>
+                    <asp:FileUpload ID="fileupload_fil" runat="server" />
+                </div>
+                <div class="col-md-3"></div>
+
+            </div>
             <%--Blogginlägg--%>
              <div class="row">
                 <div class="col-md-3"></div>

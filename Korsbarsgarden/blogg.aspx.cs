@@ -13,11 +13,11 @@ namespace Korsbarsgarden
         {
             List<nyhet> nyhetslista = new List<nyhet>();
             nyhetslista = getnews();
-            
+
             if (!IsPostBack)
             {
-                //Hämta de senaste nyheterna
-               
+                //Hämta de senaste nyheterna för banne strular
+
                 DataTable dt = new DataTable();
                 dt = getLatestNews();
                 RepeaterNews.DataSource = dt;
@@ -43,11 +43,11 @@ namespace Korsbarsgarden
                     nynyhet.id = Convert.ToInt16(dr["id"]);
                     nynyhet.rubrik = dr["rubrik"].ToString();
                     nynyhet.text = dr["text"].ToString();
-                    
-                    
+
+
                     nynyhet.datum = (DateTime)(dr["datum"]);
                     nyhetslista.Add(nynyhet);
-                    
+
                 }
             }
             finally
@@ -64,7 +64,7 @@ namespace Korsbarsgarden
 
             try
             {
-                sql = "SELECT id, rubrik, SUBSTRING(text, 0, 100) AS text, datum FROM nyheter " +
+                sql = "SELECT id, rubrik, SUBSTRING(text, 0, 100) AS text, datum, bild, fil FROM nyheter " +
                       "ORDER BY datum DESC, id DESC " +
                       "LIMIT 10;";
                 conn.Open();
@@ -87,6 +87,28 @@ namespace Korsbarsgarden
         protected void btn_readmore_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
         {
             Response.Redirect("bloggpost.aspx?field1=" + e.CommandArgument.ToString());
+        }
+
+        protected void lb_blogg_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void lb_blogg_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
+        {
+
+            if (e.CommandName == "download")
+            {
+                Response.Clear();
+                Response.ContentType = "application/octet-stream";
+                Response.AppendHeader("content-disposition", "filename=" + e.CommandArgument);
+                Response.TransmitFile(Server.MapPath("~/pdf/") + e.CommandArgument);
+                Response.End();
+            }
+            else
+            {
+
+            }
         }
     }
 }
