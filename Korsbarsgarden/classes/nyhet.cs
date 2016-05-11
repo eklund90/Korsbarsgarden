@@ -12,5 +12,7 @@ namespace Korsbarsgarden
         public string text { get; set; }
         public string skrivenav { get; set; }
         public DateTime datum { get; set; }
+        public string fil { get; set; }
+        public string bild { get; set; }
     }
 }

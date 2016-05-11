@@ -21,7 +21,7 @@
             <div class="col-lg-8">
                 <%--<asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>bananemerge
                 <hr class="hr2"/>--%>
-                <%--<asp:Label ID="lbl_head" CssClass="lblhead" runat="server" ></asp:Label>
+                <asp:Label ID="lbl_head" CssClass="lblhead" runat="server" ></asp:Label>
                 <hr />
                 <asp:Label CssClass="pfont" ID="lbl_blogtext" runat="server" Text=""></asp:Label>
                 <img id="bloggbild" runat="server" class="img-responsive" alt="" />
@@ -47,7 +47,7 @@
                             </div>
                         </div>
                        </ItemTemplate>                         
-                    </asp:Repeater>                      --%>                        
+                    </asp:Repeater>                                              
             </div>
             <div class="col-lg-2"></div>
         </div>
