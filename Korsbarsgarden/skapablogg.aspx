@@ -22,6 +22,7 @@
                 </div>
                 <div class="col-md-3"></div>
             </div>
+            <%--banane är en rolig prick--%>
             <%--Spara bild--%>
             <div class="row">
                 <div class="col-md-3"></div>

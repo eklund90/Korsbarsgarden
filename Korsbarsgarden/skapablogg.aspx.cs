@@ -35,7 +35,7 @@ namespace Korsbarsgarden
 
             }
 
-            //jag har en bananan som heter banane
+            //jag har en bananan som heter banane tihi
             if (!string.IsNullOrEmpty(Session["fnamn"] as string) && !string.IsNullOrEmpty(Session["enamn"] as string))
             {
                 nyhet.skrivenav = Session["fnamn"].ToString() + " " + Session["enamn"].ToString();
