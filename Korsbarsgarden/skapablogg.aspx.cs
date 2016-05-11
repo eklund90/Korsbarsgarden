@@ -22,20 +22,7 @@ namespace Korsbarsgarden
             nyhet.rubrik = txtBox_rubrik.Text;
             nyhet.text = txtBox_text.Text;
             nyhet.datum = DateTime.Today;
-
-            if (fileupload_blogg.HasFile)
-            {
-                fileupload_blogg.SaveAs(Server.MapPath("images\\" + fileupload_blogg.FileName));
-
-            }
-
-            if (fileupload_fil.HasFile)
-            {
-                fileupload_fil.SaveAs(Server.MapPath("pdf\\" + fileupload_fil.FileName));
-
-            }
-
-
+            
             if (!string.IsNullOrEmpty(Session["fnamn"] as string) && !string.IsNullOrEmpty(Session["enamn"] as string))
             {
                 nyhet.skrivenav = Session["fnamn"].ToString() + " " + Session["enamn"].ToString();
@@ -45,7 +32,7 @@ namespace Korsbarsgarden
                 nyhet.skrivenav = "Admin";
             }
 
-            string sql = "INSERT INTO nyheter (rubrik, text, datum, publicerare, bild, fil) VALUES (@rubrik, @text, @datum, @publicerare, @bild, @fil)";
+            string sql = "INSERT INTO nyheter (rubrik, text, datum, publicerare) VALUES (@rubrik, @text, @datum, @publicerare)";
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
 
             NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
@@ -55,16 +42,7 @@ namespace Korsbarsgarden
             cmd.Parameters.AddWithValue("@text", nyhet.text);
             cmd.Parameters.AddWithValue("@datum", nyhet.datum);
             cmd.Parameters.AddWithValue("@publicerare", nyhet.skrivenav);
-            if (fileupload_blogg.HasFile)
-            {
-                cmd.Parameters.AddWithValue("@bild", "images/" +fileupload_blogg.FileName.ToString());
 
-            }
-            else
-            {
-                cmd.Parameters.AddWithValue("@bild", "images/korsbarsgarden_logo.png" );
-            }
-            cmd.Parameters.AddWithValue("@fil", fileupload_fil.FileName.ToString());
             cmd.ExecuteNonQuery();
             conn.Close();
 
