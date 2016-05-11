@@ -13,15 +13,6 @@ namespace Korsbarsgarden {
     public partial class bloggpost {
         
         /// <summary>
-        /// lbl_head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_head;
-        
-        /// <summary>
         /// paragraph control.
         /// </summary>
         /// <remarks>
@@ -31,6 +22,15 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl paragraph;
         
         /// <summary>
+        /// lbl_head control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_head;
+        
+        /// <summary>
         /// lbl_blogtext control.
         /// </summary>
         /// <remarks>
@@ -38,6 +38,24 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_blogtext;
+        
+        /// <summary>
+        /// bloggbild control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlImage bloggbild;
+        
+        /// <summary>
+        /// lb_blogg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lb_blogg;
         
         /// <summary>
         /// txtBox_kommentar control.

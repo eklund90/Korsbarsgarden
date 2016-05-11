@@ -15,7 +15,7 @@
                        <h2><%# Eval("rubrik") %></h2>
                        <p class="newsDate"><%# Eval("datum").ToString().Split(' ')[0] %></p>
                        <p class="newsText"><%# Eval("text") %></p>
-                       <br />
+                       <br />tihi
                        <hr />
                    </div>
                </ItemTemplate>
@@ -30,8 +30,8 @@
         <ItemTemplate>
         <div class="row">      
             <div class="col-md-4">
-                <%--<p"><%# Eval("text") %></p>--%>
-                    <img class="img-responsive img-hover" src="http://placehold.it/600x300" alt="">
+              <%--  <p"><%# Eval("text") %></p>--%>
+                    <img class="img-responsive img-hover" src='<%#Eval("bild")%>' alt="">
                 </a>
             </div>
            
