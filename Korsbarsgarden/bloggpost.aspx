@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
-                <%--<asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>
+                <%--<asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>bananemerge
                 <hr class="hr2"/>--%>
                 <asp:Label ID="lbl_head" CssClass="lblhead" runat="server" ></asp:Label>
                 <hr />

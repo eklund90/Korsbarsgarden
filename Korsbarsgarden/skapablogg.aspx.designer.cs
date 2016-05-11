@@ -13,15 +13,6 @@ namespace Korsbarsgarden {
     public partial class skapablogg {
         
         /// <summary>
-        /// lbl_rubrik control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_rubrik;
-        
-        /// <summary>
         /// txtBox_rubrik control.
         /// </summary>
         /// <remarks>
@@ -29,15 +20,6 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtBox_rubrik;
-        
-        /// <summary>
-        /// lbl_bild control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_bild;
         
         /// <summary>
         /// fileupload_blogg control.
@@ -49,15 +31,6 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.WebControls.FileUpload fileupload_blogg;
         
         /// <summary>
-        /// lbl_fil control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_fil;
-        
-        /// <summary>
         /// fileupload_fil control.
         /// </summary>
         /// <remarks>
@@ -65,15 +38,6 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.FileUpload fileupload_fil;
-        
-        /// <summary>
-        /// lbl_text control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_text;
         
         /// <summary>
         /// txtBox_text control.

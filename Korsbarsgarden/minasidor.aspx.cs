@@ -9,7 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Korsbarsgarden
-{    
+{
     public partial class minasidor : System.Web.UI.Page
     {
 
@@ -17,17 +17,17 @@ namespace Korsbarsgarden
         {
             PanelResponse_uppdaterakonto.Visible = false;
             panelresponse_bytalosenord.Visible = false;
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
 
                 fyllmedlem(getMember(Convert.ToInt16(Session["id"])));
             }
-            
+
         }
 
         public void fyllmedlem(medlem nyMember)
         {
-            
+
             txtbox_minasidor_id.Text = nyMember.id.ToString();
             txtbox_minasidor_fornamn.Text = nyMember.fnamn;
             txtbox_minasidor_efternamn.Text = nyMember.enamn;
@@ -37,7 +37,7 @@ namespace Korsbarsgarden
             txtbox_minasidor_postnr.Text = nyMember.postnr;
             txtbox_minasidor_postort.Text = nyMember.postort;
             txtbox_minasidor_epost.Text = nyMember.epost;
-            
+
 
         }
         protected void btn_uppdatera_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace Korsbarsgarden
             nyMember.epost = txtbox_minasidor_epost.Text;
 
             uppdateramedlem(Convert.ToInt16(Session["id"]), nyMember);
-           
+
             PanelResponse_uppdaterakonto.Visible = true;
             PanelResponse_uppdaterakonto.CssClass = "alert-success alert PanelResponse";
             LabelResponse_uppdaterakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Användaren är nu uppdaterad.";
@@ -66,7 +66,7 @@ namespace Korsbarsgarden
             try
             {
                 conn.Open();
-                sql = "update medlem set fnamn='" + nymedlem.fnamn+ "', enamn='"+nymedlem.enamn+"', personnr='"+nymedlem.personnr+"', telefonnr='"+nymedlem.telefonnr+"', adress='"+ nymedlem.adress+"', postnr='"+nymedlem.postnr+"', postort='"+nymedlem.postort+"', epost='"+nymedlem.epost+"' where id='" + id + "'";
+                sql = "update medlem set fnamn='" + nymedlem.fnamn + "', enamn='" + nymedlem.enamn + "', personnr='" + nymedlem.personnr + "', telefonnr='" + nymedlem.telefonnr + "', adress='" + nymedlem.adress + "', postnr='" + nymedlem.postnr + "', postort='" + nymedlem.postort + "', epost='" + nymedlem.epost + "' where id='" + id + "'";
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -121,8 +121,8 @@ namespace Korsbarsgarden
                 panelresponse_bytalosenord.CssClass = "alert-warning alert PanelResponse";
                 lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Fälten får inte vara tomma";
             }
-            
-            else if(txtbox_minasidor_losenord.Text == txtbox_minasidor_bytalosenord.Text)
+
+            else if (txtbox_minasidor_losenord.Text == txtbox_minasidor_bytalosenord.Text)
             {
                 Encryption SHA256 = new Encryption();
                 string password = SHA256.ComputeHash(txtbox_minasidor_losenord.Text, Supported_HA.SHA256, null);
@@ -138,13 +138,13 @@ namespace Korsbarsgarden
                 panelresponse_bytalosenord.CssClass = "alert-success alert PanelResponse";
                 lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Lösenordet är uppdaterat!";
             }
-            
+
             else
             {
                 panelresponse_bytalosenord.Visible = true;
                 panelresponse_bytalosenord.CssClass = "alert-warning alert PanelResponse";
                 lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Lösenordet stämmer inte i båda fälten";
-                
+
             }
         }
 
