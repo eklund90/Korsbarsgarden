@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form runat="server">    
+<form runat="server">    
     <div class="container container-background">
         <div class="row">
             
@@ -66,7 +66,7 @@
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Lösenord</label>
-                        <asp:TextBox ID="txtBox_skapakonto_losenord" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_skapakonto_losenord" CssClass="form-control" runat="server"></asp:TextBox>
                     </div>
                 </div>
                 <div class="control-group form-group">

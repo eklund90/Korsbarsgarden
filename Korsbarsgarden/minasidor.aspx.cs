@@ -16,7 +16,6 @@ namespace Korsbarsgarden
         protected void Page_Load(object sender, EventArgs e)
         {
             PanelResponse_uppdaterakonto.Visible = false;
-            panelresponse_bytalosenord.Visible = false;
             if(!IsPostBack)
             {
 
@@ -111,46 +110,6 @@ namespace Korsbarsgarden
                 conn.Close();
             }
             return nymedlem;
-        }
-
-        public void changepassword(int id)
-        {
-            if (txtbox_minasidor_losenord.Text == "" || txtbox_minasidor_losenord.Text == "")
-            {
-                panelresponse_bytalosenord.Visible = true;
-                panelresponse_bytalosenord.CssClass = "alert-warning alert PanelResponse";
-                lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Fälten får inte vara tomma";
-            }
-            
-            else if(txtbox_minasidor_losenord.Text == txtbox_minasidor_bytalosenord.Text)
-            {
-                Encryption SHA256 = new Encryption();
-                string password = SHA256.ComputeHash(txtbox_minasidor_losenord.Text, Supported_HA.SHA256, null);
-
-                NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
-                string sql = "UPDATE medlem SET losenord ='" + password + "' WHERE id = '" + id + "'";
-                conn.Open();
-                NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
-                cmd.ExecuteReader();
-                conn.Close();
-
-                panelresponse_bytalosenord.Visible = true;
-                panelresponse_bytalosenord.CssClass = "alert-success alert PanelResponse";
-                lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Lösenordet är uppdaterat!";
-            }
-            
-            else
-            {
-                panelresponse_bytalosenord.Visible = true;
-                panelresponse_bytalosenord.CssClass = "alert-warning alert PanelResponse";
-                lbl_responsebytalosen.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Lösenordet stämmer inte i båda fälten";
-                
-            }
-        }
-
-        protected void btn_bytlosenord_Click(object sender, EventArgs e)
-        {
-            changepassword(Convert.ToInt16(Session["id"]));
         }
 
     }
