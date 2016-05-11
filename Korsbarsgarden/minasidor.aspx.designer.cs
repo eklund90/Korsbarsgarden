@@ -164,32 +164,5 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lbl_responsebytalosen;
-        
-        /// <summary>
-        /// hfmedlemsgolfrundorFolded control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfmedlemsgolfrundorFolded;
-        
-        /// <summary>
-        /// hfmedlemstavlingarFolded control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfmedlemstavlingarFolded;
-        
-        /// <summary>
-        /// hfmedlemsregistreringFolded control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField hfmedlemsregistreringFolded;
     }
 }

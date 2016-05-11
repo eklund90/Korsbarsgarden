@@ -7,15 +7,18 @@
     <form runat="server">
     <div class="container">
         <div class="row">
-        <div id="regMedlemstavlingarFold" class="form-control" onclick="toggleSection('medlemstavlingar')"><p>Mina tävlingar</p></div>
+          <div class="panel panel-default">               
+            <div class="panel-body"> 
+<%--        <div id="regMedlemstavlingarFold" class="form-control" onclick="toggleSection('medlemstavlingar')"><p>Mina tävlingar</p></div>
         <div id="medlemstavlingar">
         <p>sadasd</p>  
-        </div>
-       <div id="medlemsregistreringFold" class="form-control" onclick="toggleSection('medlemsregistrering')"><p>Mina medlemsuppgifter</p></div>
-        <div id="medlemsregistrering">
-            <div id="medlemsuppgifter">
+        </div>--%>
+<%--       <div id="medlemsregistreringFold" class="form-control" onclick="toggleSection('medlemsregistrering')"><p>Mina medlemsuppgifter</p></div>
+        <div id="medlemsregistrering">--%>
+            
                 <div class="col-md-6">
-                 <h2 style="text-align:center">Medlemsinfo</h2>
+                 <h1 style="text-align:center">Medlemsinfo</h1>
+                    <hr />
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>MedlemsID</label>
@@ -56,18 +59,21 @@
                 </div> 
                 <div class="controls">                
                 </div>   
+                    <br />
                     <asp:Button ID="btn_uppdatera" class="btn btn-primary" runat="server" Text="Uppdatera konto" onclick="btn_uppdatera_Click" />       
                 <asp:Panel ID="PanelResponse_uppdaterakonto" runat="server" CssClass="alert PanelResponse">
                     <asp:Label ID="LabelResponse_uppdaterakonto" runat="server" Text="asd"></asp:Label>
                 </asp:Panel>                                                                                                                                                                                 
             </div>
-          </div>
+        
             <div class="col-md-6">
-                <h2>Byta Lösenord</h2>
+                <h1 style="text-align:center">Byta Lösenord</h1>
+                <hr />
                 <label>Fyll i nytt lösenord</label>
                 <asp:TextBox ID="txtbox_minasidor_losenord" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
                 <label>Upprepa nytt lösenord</label>
-                <asp:TextBox ID="txtbox_minasidor_bytalosenord" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox><br />
+                <asp:TextBox ID="txtbox_minasidor_bytalosenord" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>
+                <br />
                 <asp:Button ID="btn_bytlosenord" CssClass="btn btn-primary" runat="server" Text="Byt Lösenord" OnClick="btn_bytlosenord_Click" />
                 <asp:Panel ID="panelresponse_bytalosenord" runat="server" CssClass="alert PanelResponse">
                     <asp:Label ID="lbl_responsebytalosen" runat="server" Text=""></asp:Label>
@@ -75,13 +81,15 @@
             </div>  
           </div>
         </div>
-        
-        <asp:HiddenField ID="hfmedlemsgolfrundorFolded" runat="server" />
+            </div>
+        </div>
+
+<%--        <asp:HiddenField ID="hfmedlemsgolfrundorFolded" runat="server" />
         <asp:HiddenField ID="hfmedlemstavlingarFolded" runat="server" />
         <asp:HiddenField ID="hfmedlemsregistreringFolded" runat="server" />  
 
         <script>
-        function toggleSection(section) {
+   function toggleSection(section) {
             if ($("#ContentPlaceHolder1_hf" + section + "Folded").val() == "true") {
                 $("#" + section).show();
                 $("#ContentPlaceHolder1_hf" + section + "Folded").val("false");
@@ -122,7 +130,7 @@
             toggleSection("medlemstavlingar");
             toggleSection("medlemsregistrering");
         }
-        </script>   
-    </div>
+        </script>   --%>
+    
 </form>
 </asp:Content>
