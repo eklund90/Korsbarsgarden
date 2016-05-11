@@ -15,7 +15,7 @@
                        <h2><%# Eval("rubrik") %></h2>
                        <p class="newsDate"><%# Eval("datum").ToString().Split(' ')[0] %></p>
                        <p class="newsText"><%# Eval("text") %></p>
-                       <br />
+                       <br />tihi
                        <hr />
                    </div>
                </ItemTemplate>
