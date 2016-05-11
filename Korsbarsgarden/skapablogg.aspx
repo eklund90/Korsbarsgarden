@@ -6,47 +6,57 @@
         <div class="container">
             <%--Sidrubrik--%>
             <div class="row">
+                
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <h3 class="hfont">Ny bloggpost</h3>
-                    <hr class="hr2" />
+                    <h1 style="text-align:center">Ny bloggpost</h1> 
                 </div>
                 <div class="col-md-3"></div>
             </div>
             <%--Bloggrubrik--%>
+
             <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
+                 <div class="col-md-3"></div>
+
+                <div class="col-md-6">     
+            <div class="panel panel-default">               
+            <div class="panel-body">       
                     <asp:Label ID="lbl_rubrik" CssClass="lblhead" runat="server" Text="Rubrik"></asp:Label>
                     <asp:TextBox ID="txtBox_rubrik" CssClass="form-control" runat="server"></asp:TextBox>
                 </div>
-                <div class="col-md-3"></div>
             </div>
+          </div>
+                <div class="col-md-3"></div>
+                </div>
             <%--Spara bild--%>
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
+            <div class="panel panel-default">               
+            <div class="panel-body">  
                     <asp:Label ID="lbl_bild" runat="server" Text="Spara bild"></asp:Label>
                     <asp:FileUpload ID="fileupload_blogg" runat="server" />
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6">
+
                     <asp:Label ID="lbl_fil" runat="server" Text="Spara fil"></asp:Label>
                     <asp:FileUpload ID="fileupload_fil" runat="server" />
-                </div>
+                        </div>
+                    </div>
+               </div>
                 <div class="col-md-3"></div>
-
             </div>
+
+            
             <%--Blogginlägg--%>
              <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-6">
+                <div class="panel panel-default">               
+                    <div class="panel-body">  
                     <asp:Label ID="lbl_text" CssClass="lblhead" runat="server" Text="Inlägg"></asp:Label>                    
                     <asp:TextBox ID="txtBox_text" CssClass="form-control" runat="server" Rows="15" TextMode="MultiLine"></asp:TextBox>
                 </div>
+                    </div>
+                    </div>
                 <div class="col-md-3"></div>
             </div>
             <%--Sparainlägg--%>
@@ -59,7 +69,8 @@
                     </asp:Panel>
                 </div>
                 <div class="col-md-3"></div>
+                </div>
             </div>
-        </div>
+
     </form>
 </asp:Content>
