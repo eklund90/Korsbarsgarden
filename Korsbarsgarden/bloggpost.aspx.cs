@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using Npgsql;
 using System.Configuration;
 using System.Data;
-using System.Diagnostics;
 
 namespace Korsbarsgarden
 {
@@ -18,14 +17,10 @@ namespace Korsbarsgarden
             nyhet nyhet = new nyhet();
             nyhet = nyhetspost(Convert.ToInt16(Request.QueryString["field1"]));
 
-            lbl_head.Text = nyhet.rubrik + ", av " + nyhet.skrivenav;
+            lbl_head.Text = nyhet.rubrik + " Av " + nyhet.skrivenav;
             //lbl_date.Text = "<i class='fa fa-clock-o'></i> " + nyhet.datum.ToShortDateString();
             lbl_blogtext.Text = nyhet.text;
             paragraph.InnerText = nyhet.rubrik;
-            bloggbild.Attributes.Add("src", nyhet.bild);
-            lb_blogg.Attributes.Add("CommandArgument", nyhet.fil);
-            lb_blogg.CommandArgument = nyhet.fil;
-            lb_blogg.Text = nyhet.fil;
             PanelResponse_bloggpost.Visible = false;
 
             if (!IsPostBack)
@@ -51,8 +46,6 @@ namespace Korsbarsgarden
                 aktuellnyhet.rubrik = dr["rubrik"].ToString();
                 aktuellnyhet.text = dr["text"].ToString();
                 aktuellnyhet.skrivenav = dr["publicerare"].ToString();
-                aktuellnyhet.bild = dr["bild"].ToString();
-                aktuellnyhet.fil = dr["fil"].ToString();
             }
             conn.Close();
             return aktuellnyhet;
@@ -101,22 +94,6 @@ namespace Korsbarsgarden
             sparaKommentar();
             Repeater_kommentar.DataSource = hämtaKommentarer(Convert.ToInt16(Request.QueryString["field1"]));
             Repeater_kommentar.DataBind();
-        }
-
-        protected void lb_blogg_Command(object sender, CommandEventArgs e)
-        {
-            if (e.CommandName == "download")
-            {
-                Response.Clear();
-                Response.ContentType = "application/octet-stream";
-                Response.AppendHeader("content-disposition", "filename=" + e.CommandArgument);
-                Response.TransmitFile(Server.MapPath("~/pdf/") + e.CommandArgument);
-                Response.End();
-            }
-            else
-            {
-
-            }
         }
     }
 }
