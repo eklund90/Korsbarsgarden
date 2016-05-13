@@ -1,14 +1,17 @@
-﻿using Npgsql;
+﻿using Korsbarsgarden.classes;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Diagnostics;
+using System.Web.UI.WebControls;
 
 namespace Korsbarsgarden
 {
     public partial class blogg : System.Web.UI.Page
     {
+        public medlem nymedlem = new medlem();
         protected void Page_Load(object sender, EventArgs e)
         {
             List<nyhet> nyhetslista = new List<nyhet>();
@@ -16,13 +19,33 @@ namespace Korsbarsgarden
 
             if (!IsPostBack)
             {
-                //Hämta de senaste nyheterna för banne strular
-
                 DataTable dt = new DataTable();
                 dt = getLatestNews();
                 RepeaterNews.DataSource = dt;
                 RepeaterNews.DataBind();
             }
+
+            nymedlem.id = Convert.ToInt32(Session["id"]);
+            nymedlem.behorighet = Convert.ToInt32(Session["behorighet"]);
+
+            if (nymedlem.behorighet == 1)
+            {
+
+                foreach (RepeaterItem item in RepeaterNews.Items)
+                {
+                    Button btncontrol = item.FindControl("btn_tabort") as Button;
+                    if (btncontrol != null)
+                    {
+                        btncontrol.Visible = true;
+                    }
+
+                }
+            }
+            else
+            {
+
+            }
+
         }
 
         public static List<nyhet> getnews()
@@ -109,6 +132,44 @@ namespace Korsbarsgarden
             {
 
             }
+        }
+
+        protected void btn_tabort_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
+        {
+            string nyhetsid = e.CommandArgument.ToString();
+            tabortnyhet(nyhetsid);
+            List<nyhet> nyhetslista = new List<nyhet>();
+            nyhetslista = getnews();
+
+                DataTable dt = new DataTable();
+                dt = getLatestNews();
+                RepeaterNews.DataSource = dt;
+                RepeaterNews.DataBind();
+
+        }
+
+        public void tabortnyhet(string nyhetsid)
+        {
+            NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
+            string sql;
+
+            try
+            {
+                conn.Open();
+                sql = "Delete from nyheter Where id = '" + nyhetsid + "'";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+
         }
     }
 }

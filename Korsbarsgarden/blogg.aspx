@@ -6,26 +6,6 @@
 <form runat="server">
     <div class="container">
 
-<%--     <asp:Repeater ID="RepeaterNews" runat="server">
-               <ItemTemplate>
-                   <div class="row">
-                       <div class="col-md">
-
-                       </div>
-                       <h2><%# Eval("rubrik") %></h2>
-                       <p class="newsDate"><%# Eval("datum").ToString().Split(' ')[0] %></p>
-                       <p class="newsText"><%# Eval("text") %></p>
-                       <br />tihi
-                       <hr />
-                   </div>
-               </ItemTemplate>
-           </asp:Repeater>
-       </div>
-  --%>
-
-        <!-- /.row -->
-
-        <!-- Blog Post Row -->
       <asp:Repeater ID="RepeaterNews" runat="server">
         <ItemTemplate>
         <div class="row">      
@@ -43,6 +23,8 @@
                  <asp:LinkButton ID="lb_blogg" runat="server" CommandArgument='<%#Eval("fil")%>' CommandName="download" Text='<%#Eval("fil")%>' OnClick="lb_blogg_Click" OnCommand="lb_blogg_Command"></asp:LinkButton>
                 <br />
                 <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Läs mer" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("id")%>'/>
+
+                <asp:Button ID="btn_tabort" runat="server" CssClass="btn btn-danger" Text="Ta bort" OnCommand="btn_tabort_Command" CommandArgument='<%#Eval("id")%>' Visible="False" />
                 <%--<a class="btn btn-primary" href="bloggpost.aspx?field1=<%Eval("rubrik")%>>Read More <i class="fa fa-angle-right"></i></a>--%>           
                 
             </div>            
@@ -52,7 +34,6 @@
         </asp:Repeater>
         <!-- /.row -->
 
-        
 
       <%--  <!-- Blog Post Row -->
         <div class="row">
