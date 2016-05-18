@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<script src="js/jquery.js"></script>
 <form role="form" runat="server">    
     <div class="container">
         <div class="row">
@@ -41,17 +42,18 @@
                         </div>
                        </ItemTemplate>                         
                     </asp:Repeater>  
-                 
+ 
+
                     <div class="well">
                     <h4>Lämna en kommentar:</h4>                    
                     <div class="form-group">
-                        <asp:TextBox ID="txtBox_kommentar" CssClass="form-control" runat="server" Rows="4" TextMode="MultiLine"></asp:TextBox>
+                        <asp:TextBox ID="txtBox_kommentar" CssClass="form-control" runat="server" Rows="4" required="required" TextMode="MultiLine"></asp:TextBox>
                     </div>
                     <asp:Button ID="btn_sparakommentar" runat="server" Text="Spara" CssClass="btn btn-primary" OnClick="btn_sparakommentar_Click" />
                     <asp:Panel ID="PanelResponse_bloggpost" runat="server" CssClass="alert PanelResponse">
                         <asp:Label ID="LabelResponse_bloggpost" runat="server" Text=""></asp:Label>
                     </asp:Panel>
-                </div>                                            
+                </div>                        
             </div>
             <div class="col-lg-2">
             </div>
