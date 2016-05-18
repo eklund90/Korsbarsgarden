@@ -151,8 +151,27 @@ namespace Korsbarsgarden
         public void tabortnyhet(string nyhetsid)
         {
             NpgsqlConnection conn = new NpgsqlConnection(ConfigurationManager.ConnectionStrings["korsbarsgarden"].ConnectionString);
+            string sqldel;
+            try
+            {
+                conn.Open();
+                sqldel = "Delete from nyhetskommentar Where fk_nyhet = '" + nyhetsid + "'";
+                NpgsqlCommand cmd = new NpgsqlCommand(sqldel, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            
+            
+            
             string sql;
-
             try
             {
                 conn.Open();
