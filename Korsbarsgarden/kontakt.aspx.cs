@@ -18,12 +18,12 @@ namespace Korsbarsgarden
 
         protected void btn_skickamed_Click(object sender, EventArgs e)
         {
-            string namn = txtBox_name.Text;
-            string epost = txtBox_epost.Text;
-            string telenr = txtBox_telenr.Text;
-            string text = txtBox_text.Text;
+            //string namn = txtBox_name.Text;
+            //string epost = txtBox_epost.Text;
+            //string telenr = txtBox_telenr.Text;
+            //string text = txtBox_text.Text;
 
-            SkickaMail(namn, epost, telenr, text);
+            //SkickaMail(namn, epost, telenr, text);
  
         }
         public static bool SkickaMail(string namn, string epost, string telenr, string text)

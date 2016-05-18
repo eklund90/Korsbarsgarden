@@ -58,6 +58,15 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.WebControls.LinkButton lb_blogg;
         
         /// <summary>
+        /// Repeater_kommentar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater Repeater_kommentar;
+        
+        /// <summary>
         /// txtBox_kommentar control.
         /// </summary>
         /// <remarks>
@@ -92,14 +101,5 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label LabelResponse_bloggpost;
-        
-        /// <summary>
-        /// Repeater_kommentar control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater Repeater_kommentar;
     }
 }

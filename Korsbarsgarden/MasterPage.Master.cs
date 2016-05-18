@@ -49,8 +49,6 @@ namespace Korsbarsgarden
                     "ASP.kooperativ_aspx",
                     "ASP.personal_aspx",
                     "ASP.kontakt_aspx",
-
-
                     "ASP.skapakonto_aspx",
                     "ASP.skapablogg_aspx"
                 };
@@ -65,7 +63,7 @@ namespace Korsbarsgarden
                     else
                     {
                         droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() + "<b class=caret></b>";
-                        skapakonto.InnerHtml = "" ;
+                        skapakonto.InnerHtml = "";
                         skapablogg.InnerHtml = "";
 
                     }

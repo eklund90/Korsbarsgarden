@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <form runat="server">
-<div class="container" style="background-color: #f2f1f1"> 
+<div class="container"> 
 
 
         <!-- Content Row -->
@@ -47,7 +47,7 @@
 
         <!-- Contact Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
+<%--        <div class="row">
             <div class="col-md-6">
                 <h3>Skicka ett meddelande</h3>
 
@@ -82,8 +82,11 @@
                     <!-- For success/fail messages -->
                     <asp:Button ID="btn_skickamed" type="submit"  class="btn btn-primary" runat="server" Onclick="btn_skickamed_Click" Text="Skicka meddelande" />
             </div>
-        </div>
-       </div>
+        </div>--%>
+  
+    <br />     
+        <br />     
+</div>
 </form>
 </asp:Content>
 

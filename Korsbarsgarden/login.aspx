@@ -21,7 +21,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Lösenord</label>
-                            <asp:TextBox ID="txtbox_password" CssClass="form-control" required="required" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtbox_password" CssClass="form-control" required="required" runat="server" TextMode="Password"></asp:TextBox>
                         </div>
                     </div>  
                 
@@ -32,6 +32,18 @@
                 </asp:Panel>
         </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <br />
 </div>
         </form>
 </asp:Content>  
