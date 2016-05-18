@@ -92,7 +92,7 @@
         </asp:ContentPlaceHolder>
 
     
-      <div style="height: 600px;background-image: url(images/footer.png)">
+      <div style="height: 600px;background-image: url(images/footer_orginal.png)">
       <div class="container" style="text-align:center">
         <p class="headlink" style="padding-top: 550px";>Körsbärsgården, Bygatan 1, 255 91 Helsingborg | Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
       </div>
