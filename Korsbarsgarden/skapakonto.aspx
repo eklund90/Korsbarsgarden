@@ -82,7 +82,9 @@
                 </div>
                 <asp:Button ID="btn_skapakonto" class="btn btn-primary" runat="server" Text="Skapa konto" Onclick="btn_skapakonto_Click"/>
                 <asp:Button ID="btn_uppdaterakonto" class="btn btn-warning" runat="server" Text="Uppdatera Konto" onclick="btn_uppdaterakonto_Click"/>
+
                 <asp:Button ID="btn_tabortkonto" class="btn btn-danger" runat="server" Text="Ta bort konto" OnClick="btn_tabortkonto_Click" />
+                
 
                 <asp:Panel ID="PanelResponse_skapakonto" runat="server" CssClass="alert PanelResponse">
                     <asp:Label ID="LabelResponse_skapakonto" runat="server" Text="asd"></asp:Label>

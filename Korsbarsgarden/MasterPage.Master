@@ -22,7 +22,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     [endif]--%>
 </head>
-      
+ 
 
 <body runat="server" style="background-image: url(images/subtle_grunge.png)">
 
@@ -32,6 +32,8 @@
             <!-- Brand and toggle get grouped for better mobile display -->
             <div style="margin-top: 5px">
                 <a id="loginknapp" class="headlink" runat="server" style="float:right" href="login.aspx">Logga in</a>
+                
+
                 <img class="img-responsive" src="images/korsbersgardentest.png" alt="Något gick fel! Bilden kan inte visas."/>
             </div>
             <div class="navbar-header">
@@ -81,6 +83,8 @@
                     </li>
                 </ul>
             </div>
+
+
             <!-- /.navbar-collapse -->
         
         <!-- /.container -->

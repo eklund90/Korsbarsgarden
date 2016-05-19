@@ -12,6 +12,7 @@ namespace Korsbarsgarden
     {
         public medlem nymedlem = new medlem();
         int medlemid;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             nymedlem.id = Convert.ToInt32(Session["id"]);
@@ -19,11 +20,13 @@ namespace Korsbarsgarden
 
             if (medlemid > 0)
             {
-                loginknapp.InnerText = "Logga ut";
+
+                loginknapp.InnerHtml = "<i class='glyphicon glyphicon-lock'></i> Logga ut";
             }
             else
             {
-                loginknapp.InnerText = "Logga in";                
+                
+                loginknapp.InnerHtml = "<i class='glyphicon glyphicon-lock'></i> Logga in";
             }
 
 
