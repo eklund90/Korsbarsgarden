@@ -79,6 +79,8 @@
     <Content Include="images\footer2.png" />
     <Content Include="images\footer6.png" />
     <Content Include="images\footer_orginal.png" />
+    <Content Include="images\intagningbild1.jpg" />
+    <Content Include="images\intagningbild2.jpg" />
     <Content Include="images\leksaker.jpg" />
     <Content Include="images\rum.JPG" />
     <Content Include="images\korsbersgardentest.png" />
