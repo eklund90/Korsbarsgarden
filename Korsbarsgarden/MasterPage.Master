@@ -31,11 +31,8 @@
 
             <!-- Brand and toggle get grouped for better mobile display -->
             <div style="margin-top: 5px">
-                <ul class="nav nav-justified" >
-                <li>
                 <a id="loginknapp" class="headlink" runat="server" style="float:right" href="login.aspx">Logga in</a>
-                </li>
-                    </ul>
+
                 <img class="img-responsive" src="images/korsbersgardentest.png" alt="Något gick fel! Bilden kan inte visas."/>
             </div>
             <div class="navbar-header">
