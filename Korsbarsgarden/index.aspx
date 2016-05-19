@@ -17,7 +17,7 @@
                     <div class="carousel-inner">
                         <div class="item active">
                             <%--<img class="img-responsive" src="images/hus.png" alt="" style="margin:0 auto" />--%>
-                            <div class="fill" style="background-image:url('images/test3.jpg')"></div>
+                            <div class="fill" style="background-image:url('images/Untitled-2.jpg')"></div>
                         </div>
                         <div class="item">
                             <div class="fill" style="background-image:url('images/test4.jpg')"></div>
