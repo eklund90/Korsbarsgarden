@@ -16,7 +16,7 @@
             </div>
             <!-- Contact Details Column -->
             <div class="col-md-4">
-                <h3>Kontaktuppgifter</h3>
+                <h3 class="rfont">Kontaktuppgifter</h3>
                 <p>
                     Körsbärsgården<br>Bygatan 1, 255 91 Helsingborg<br>
                 </p>

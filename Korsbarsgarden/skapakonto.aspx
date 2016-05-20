@@ -9,7 +9,7 @@
           <div class="panel panel-default">               
             <div class="panel-body">   
             <div class="col-md-6">
-                 <h1 style="text-align:center">Medlemsinfo</h1>
+                 <h1 class="rfont" style="text-align:center">Medlemsinfo</h1>
                 <hr />
                 <div class="control-group form-group">
                     <div class="controls">
@@ -91,7 +91,7 @@
                 </asp:Panel>
             </div>
             <div class="col-md-6">
-                <h1 style="text-align:center">Medlemslista</h1>
+                <h1 class="rfont" style="text-align:center">Medlemslista</h1>
                 <hr />
                 <asp:ListBox ID="medlemlist" AutoPostBack="true" CssClass="form-control" runat="server" OnSelectedIndexChanged="medlemlist_SelectedIndexChanged"></asp:ListBox>
             </div>

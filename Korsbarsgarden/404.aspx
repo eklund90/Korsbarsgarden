@@ -7,7 +7,7 @@
 
             <div class="col-lg-12">
                 <div class="jumbotron">
-                    <h1 style="text-align:center"><span class="error-404">404</span>
+                    <h1 class="rfont" style="text-align:center"><span class="error-404">404</span>
                     </h1>
                     <p style="text-align:center">Du har inte behörighet till den här sidan.</p>                
        

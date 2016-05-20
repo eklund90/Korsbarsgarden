@@ -18,7 +18,7 @@
       
             <div class="col-md-8">
                     <p style="float: right"><%# Eval("datum").ToString().Split(' ')[0] %></p>
-                    <h3 id="hej<%# ((RepeaterItem)Container).ItemIndex + 1%>"><%# Eval("rubrik") %></h3>
+                    <h3 class="rfont" id="hej<%# ((RepeaterItem)Container).ItemIndex + 1%>"><%# Eval("rubrik") %></h3>
                 <p><%# Eval("text") %>...</p>
                  <asp:LinkButton ID="lb_blogg" runat="server" CommandArgument='<%#Eval("fil")%>' CommandName="download" Text='<%#Eval("fil")%>' OnClick="lb_blogg_Click" OnCommand="lb_blogg_Command"></asp:LinkButton>
                 <br />

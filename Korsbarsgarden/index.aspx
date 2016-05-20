@@ -48,7 +48,7 @@
                                 <h3 class="panel-title">Välkommen till föräldrakoperativet Körsbärsgården!</h3>
                             </div>--%>
                             <div class="panel-body">
-                                <h3 class="hfont">Personalkooperativet Körsbärsgården</h3>
+                                <h3 class="rfont">Personalkooperativet Körsbärsgården</h3>
                                 <hr class="hr2" />
                             <p class="pfont"> Vi är en liten Montessori-inspirerad verksamhet med ett stort hjärta! Körsbärsgårdens rosa villa har plats för runt 22 barn och ligger i Domsten, i norra Helsingborg. 
                                 Den stora, lummiga trädgården lockar till lek och vi har strand och skog som närmsta grannar. Domstens by inbjuder till promenader till hamnen och omgivande lekplatser. 
@@ -64,7 +64,7 @@
                                 <h3 class="panel-title">Pedagogik</h3>
                             </div>--%>
                             <div class="panel-body">
-                                <h3 class="hfont">Pedagogik</h3>
+                                <h3 class="rfont">Pedagogik</h3>
                                 <hr class="hr2" />
                             <p class="pfont"> Vi strävar efter att lägga grunden för ett livslångt lärande genom att erbjuda varje barn en trygg och lärorik pedagogisk miljö. 
                                 Lärande och lek sammanflätas i en förberedd miljö med empatiska, kompetenta pedagoger som tillsammans med barnen upplever var dag. Hela dagen är lika viktig. 
@@ -79,7 +79,7 @@
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">
-                                    <h3 class="hfont" style="text-align:center">Avdelningar</h3>
+                                    <h3 class="rfont" style="text-align:center">Avdelningar</h3>
                                 
                                     <p>På Körsbärsgården har vi två avdelningar, Snäckan och Krabban. 
                                        Lämning sker ute på altanen, där också de små barnen sover efter 
@@ -96,7 +96,7 @@
                                      <img class="img-responsive" src="images/test.jpg" />                     
                             </div>
                             <div class="panel-body">
-                            <h3 class="hfont">Snäckan</h3>
+                            <h3 class="rfont">Snäckan</h3>
                                 <hr class="hr2" />                                
                             <p class="pfont"> Här finns 8-10 barn, i åldern 1 till 3 år och 2-3 pedagoger. På Snäckan läggs fokus på trygghet, rutiner och att få kunna själv. Miljön är anpassad efter barnen. Låga bord, små stolar och 
                                 materiel i lagom storlek och mängd. Vi utgår från barnens behov och intressen och förbereder miljön och aktiviteterna efter det. </p>
@@ -113,7 +113,7 @@
                                 <img class="img-responsive" src="images/test2.jpg" /> 
                             </div>
                             <div class="panel-body">
-                            <h3 class="hfont">Krabban</h3>
+                            <h3 class="rfont">Krabban</h3>
                                 <hr class="hr2" />
                             <p class="pfont">På Krabban finns 12-14 barn mellan 3 och 6 år och 2 pedagoger. Några dagar i veckan går barnen in vid kl 9.15 för att ha eget arbete. Under arbetsstunden kan barnen välja vad de vill arbeta med. Detta kan bestå av olika praktiska eller sensoriska övningar med Montessorimaterielen för att lära om språk, 
                                matte eller historia mm, men också av skapande verksamhet såsom målning eller så kan de till exempel välja att läsa en bok eller lyssna på cd-saga.  

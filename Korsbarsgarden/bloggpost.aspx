@@ -31,7 +31,7 @@
                 <asp:LinkButton ID="lb_blogg" runat="server" CommandName="download" Text="h" onCommand="lb_blogg_Command"></asp:LinkButton>
                     
                 <hr />
-               <h3>Kommentarer:</h3>  
+               <h3 class="rfont">Kommentarer:</h3>  
                     <asp:Repeater ID="Repeater_kommentar" runat="server">
                        <ItemTemplate>
                            <div class="media">
@@ -45,7 +45,7 @@
  
 
                     <div class="well">
-                    <h4>Lämna en kommentar:</h4>                    
+                    <h4 class="rfont">Lämna en kommentar:</h4>                    
                     <div class="form-group">
                         <asp:TextBox ID="txtBox_kommentar" CssClass="form-control" runat="server" Rows="4" required="required" TextMode="MultiLine"></asp:TextBox>
                     </div>

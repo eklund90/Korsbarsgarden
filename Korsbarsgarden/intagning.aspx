@@ -7,7 +7,7 @@
 <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 style="text-align: center">Intagning                
+                <h1 class="rfont" style="text-align: center">Intagning                
                 </h1>
                 <hr />
             </div>
