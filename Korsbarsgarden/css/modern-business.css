@@ -12,8 +12,8 @@ body {
 }
 
 body {
-    padding-top: 150px;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #DD5151;
+    padding-top: 155px;/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #ffffff;
 }
 
 .img-portfolio {
@@ -112,10 +112,11 @@ footer {
 }
 
 .hfont{
-    color: #337ab7;
+    color: #F26161;
+    /*#337ab7;*/
 }
 .rfont{
-    color: #DD5151;
+    color: #F26161;
 }
 
 .container-background{

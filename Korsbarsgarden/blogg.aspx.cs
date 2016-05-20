@@ -22,7 +22,7 @@ namespace Korsbarsgarden
                 DataTable dt = new DataTable();
                 dt = getLatestNews();
                 RepeaterNews.DataSource = dt;
-                RepeaterNews.DataBind();
+                RepeaterNews.DataBind();                
             }
 
             nymedlem.id = Convert.ToInt32(Session["id"]);
@@ -45,7 +45,9 @@ namespace Korsbarsgarden
             {
 
             }
-
+            //DateTime date = new DateTime();
+           
+            //Label1.Text = 
         }
 
         public static List<nyhet> getnews()
@@ -106,6 +108,32 @@ namespace Korsbarsgarden
 
             return dt;
         }
+
+        protected DateTime RepeaterNews_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        {
+            DateTime date = new DateTime();
+            date = DateTime.FromOADate(2016.01);
+            if (e.Item.ItemType == ListItemType.Item ||
+                e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                if (e.Item.ItemIndex == RepeaterNews.Items.Count - 1)
+                {
+                    
+                    date = Convert.ToDateTime(RepeaterNews.FindControl("paragraph" + RepeaterNews.Items.Count).ToString());
+
+                    
+                }
+            }
+            Label1.Text = date.ToShortDateString();
+            return date;
+        }
+        
+        //private static DataTable getNextNews()
+        //{
+        //    //RepeaterItem item = new RepeaterItem;
+
+        //    //item
+        //}
 
         protected void btn_readmore_Command(object sender, System.Web.UI.WebControls.CommandEventArgs e)
         {
@@ -189,6 +217,25 @@ namespace Korsbarsgarden
                 conn.Close();
             }
 
+        }
+
+        protected void RepeaterNews_ItemDataBound1(object sender, RepeaterItemEventArgs e)
+        {
+            DateTime date = new DateTime();
+            date = DateTime.FromOADate(2016.01);
+            if (e.Item.ItemType == ListItemType.Item ||
+                e.Item.ItemType == ListItemType.AlternatingItem)
+            {
+                if (e.Item.ItemIndex == RepeaterNews.Items.Count)
+                {
+
+                    date = Convert.ToDateTime(RepeaterNews.FindControl("paragraph" + RepeaterNews.Items.Count).ToString());
+
+
+                }
+            }
+            Label1.Text = date.ToShortDateString();
+            //return date;
         }
     }
 }

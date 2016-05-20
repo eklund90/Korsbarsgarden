@@ -24,9 +24,9 @@
 </head>
  
 
-<body runat="server" style="background-image: url(images/subtle_grunge.png)">
+<body runat="server" >
 
-   <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/denim.png)">
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/school.png)">
         <div class="container">
 
             <!-- Brand and toggle get grouped for better mobile display -->

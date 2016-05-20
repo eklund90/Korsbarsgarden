@@ -6,7 +6,7 @@
 <form runat="server">
     <div class="container">
 
-      <asp:Repeater ID="RepeaterNews" runat="server">
+      <asp:Repeater ID="RepeaterNews" runat="server" OnItemDataBound="RepeaterNews_ItemDataBound1" >
         <ItemTemplate>
         <div class="row">      
             <div class="col-md-4">
@@ -17,7 +17,7 @@
            
       
             <div class="col-md-8">
-                    <p style="float: right"><%# Eval("datum").ToString().Split(' ')[0] %></p>
+                    <p id="paragraph<%# ((RepeaterItem)Container).ItemIndex + 1%>" style="float: right"><%# Eval("datum").ToString().Split(' ')[0] %></p>
                     <h3 class="rfont" id="hej<%# ((RepeaterItem)Container).ItemIndex + 1%>"><%# Eval("rubrik") %></h3>
                 <p><%# Eval("text") %>...</p>
                  <asp:LinkButton ID="lb_blogg" runat="server" CommandArgument='<%#Eval("fil")%>' CommandName="download" Text='<%#Eval("fil")%>' OnClick="lb_blogg_Click" OnCommand="lb_blogg_Command"></asp:LinkButton>
@@ -32,6 +32,7 @@
             <hr />
             </ItemTemplate>        
         </asp:Repeater>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <!-- /.row -->
 
 

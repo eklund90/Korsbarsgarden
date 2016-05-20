@@ -20,14 +20,14 @@
 
                 <div class="col-md-5">
 
-                    <img class="img-rounded" src="images/rum.JPG" style="float: right" />
+                    <img class="img-rounded" src="images/_koperativ2.png" style="float: right" />
                 </div>
             </div>
             <br />
             <div class="row">
                 <div class="col-md-5">
                     <br />
-                    <img class="img-circle" src="images/flaggorliten.JPG" />
+                    <img class="img-responsive" src="images/_koperativ.png" />
                 </div>
                 <div class="col-md-7">
                     <h4 class="rfont">Gemenskap</h4>
@@ -47,7 +47,7 @@
 
                 <div class="col-md-5">
 
-                    <img class="img-rounded" src="images/leksaker.JPG" style="float: right" />
+                    <img class="img-rounded" src="images/_koperativ1.png" style="float: right" />
                 </div>
             </div>
         </div>

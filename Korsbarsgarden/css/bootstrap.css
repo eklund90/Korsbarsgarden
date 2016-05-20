@@ -1150,7 +1150,7 @@ hr {
   margin-bottom: 20px;
   border-style: solid none none;
   border-width: 2px 0px 0px;
-  border-color: #337ab7;
+  border-color: #F26161;
   
 }
 .sr-only {
@@ -5463,15 +5463,15 @@ button.list-group-item-danger.active:focus {
   margin-bottom: 20px;
   background-color: #fff;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 0px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+          box-shadow: 0 0px 6px rgba(0, 0, 0, .3);
 }
 .panel-body {
   padding: 15px;
 }
 .panel-heading {
-  padding: 5px 5px;
+  padding: 1px 1px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
