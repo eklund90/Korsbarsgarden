@@ -22,6 +22,7 @@ namespace Korsbarsgarden
             {
 
                 loginknapp.InnerHtml = "<i class='glyphicon glyphicon-lock'></i> Logga ut";
+                
             }
             else
             {
@@ -35,7 +36,15 @@ namespace Korsbarsgarden
                 nymedlem.id = Convert.ToInt32(Session["id"]);
 
                 nymedlem.behorighet = Convert.ToInt32(Session["behorighet"]);
-
+                //sidor som inte är tillgängliga för vanliga besökare
+                List<string> persondenied = new List<string>
+                {
+                    "ASP.skapakonto_aspx",
+                    "ASP.skapablogg_aspx",
+                    "ASP.blogg_aspx",
+                    "ASP.bloggpost_aspx",
+                    "ASP.minasidor_aspx"
+                };
                 //sidor som inte är tillgängliga för vanliga användare
                 List<string> medlemDenied = new List<string> 
                 {
@@ -43,18 +52,6 @@ namespace Korsbarsgarden
                     "ASP.skapablogg_aspx"
                 };
 
-                //sidor som besökare kommer åt (publika sidor)
-                List<string> personalAllowed = new List<string> 
-                {
-                    "ASP.index_aspx",
-                    "ASP.login_aspx",
-                    "ASP.intagning_aspx",
-                    "ASP.kooperativ_aspx",
-                    "ASP.personal_aspx",
-                    "ASP.kontakt_aspx",
-                    "ASP.skapakonto_aspx",
-                    "ASP.skapablogg_aspx"
-                };
 
                 if (nymedlem.behorighet == 2) //medlem
                 {
@@ -68,7 +65,6 @@ namespace Korsbarsgarden
                         droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() + "<b class=caret></b>";
                         skapakonto.InnerHtml = "";
                         skapablogg.InnerHtml = "";
-
                     }
                 }
                 else if (nymedlem.behorighet == 1) //admin
@@ -76,6 +72,14 @@ namespace Korsbarsgarden
                     dropdown.Visible = true;
                     droprubrik.InnerHtml = "<i class='glyphicon glyphicon-user'></i> " + Session["fnamn"].ToString() + " " + Session["enamn"].ToString() +"<b class=caret></b>";
 
+                }
+
+                else if (nymedlem.behorighet == 0)
+                {
+                    if (persondenied.Contains(Page.ToString()))
+                    {
+                        Response.Redirect("404.aspx");
+                    }
                 }
 
             }
