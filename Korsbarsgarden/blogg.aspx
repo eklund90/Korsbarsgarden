@@ -6,7 +6,7 @@
 <form runat="server">
     <div class="container">
 
-      <asp:Repeater ID="RepeaterNews" runat="server" OnItemDataBound="RepeaterNews_ItemDataBound1" >
+      <asp:Repeater ID="RepeaterNews" runat="server" >
         <ItemTemplate>
         <div class="row">      
             <div class="col-md-4">

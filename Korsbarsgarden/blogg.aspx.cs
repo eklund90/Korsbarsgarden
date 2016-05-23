@@ -219,23 +219,23 @@ namespace Korsbarsgarden
 
         }
 
-        protected void RepeaterNews_ItemDataBound1(object sender, RepeaterItemEventArgs e)
-        {
-            DateTime date = new DateTime();
-            date = DateTime.FromOADate(2016.01);
-            if (e.Item.ItemType == ListItemType.Item ||
-                e.Item.ItemType == ListItemType.AlternatingItem)
-            {
-                if (e.Item.ItemIndex == RepeaterNews.Items.Count)
-                {
+        //protected void RepeaterNews_ItemDataBound1(object sender, RepeaterItemEventArgs e)
+        //{
+        //    DateTime date = new DateTime();
+        //    date = DateTime.FromOADate(2016.01);
+        //    if (e.Item.ItemType == ListItemType.Item ||
+        //        e.Item.ItemType == ListItemType.AlternatingItem)
+        //    {
+        //        if (e.Item.ItemIndex == RepeaterNews.Items.Count)
+        //        {
 
-                    date = Convert.ToDateTime(RepeaterNews.FindControl("paragraph" + RepeaterNews.Items.Count).ToString());
+        //            date = Convert.ToDateTime(RepeaterNews.FindControl("paragraph" + RepeaterNews.Items.Count).ToString());
 
 
-                }
-            }
-            Label1.Text = date.ToShortDateString();
-            //return date;
-        }
+        //        }
+        //    }
+        //    Label1.Text = date.ToShortDateString();
+        //    //return date;
+        //}
     }
 }

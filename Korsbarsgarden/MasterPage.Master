@@ -10,6 +10,7 @@
 
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/modern-business.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Amatic+SC' rel='stylesheet' type='text/css' />
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>    
     <%--<script src="js/bootstrap.min.js"></script>--%>
@@ -26,7 +27,7 @@
 
 <body runat="server" >
 
-   <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/school.png)">
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-image: url(images/denim2.png)">
         <div class="container">
 
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -96,7 +97,7 @@
         </asp:ContentPlaceHolder>
 
     
-      <div style="height: 600px;background-image: url(images/footer_orginal.png)">
+      <div style="height: 600px;background-image: url(images/footer_orginal.png); margin-top: 100px">
       <div class="container" style="text-align:center">
         <p class="headlink" style="padding-top: 550px";>Körsbärsgården, Bygatan 1, 255 91 Helsingborg | Telefon: 042-912 04 | Mail: korsbarsgarden@telia.com</p>
       </div>
