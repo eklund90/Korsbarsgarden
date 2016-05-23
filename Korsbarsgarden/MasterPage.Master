@@ -11,6 +11,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" />
     <link href="css/modern-business.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700|Amatic+SC' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css' />
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>    
     <%--<script src="js/bootstrap.min.js"></script>--%>
@@ -66,7 +67,7 @@
                     </li>
 
                     <li id="dropdown" runat="server" class="dropdown" visible="false">
-                        <a id="droprubrik" href="#" class="dropdown-toggle" data-toggle="dropdown" runat="server">Dropmeny <b class="caret"></b></a>
+                        <a id="droprubrik" href="#" class="dropdown-toggle headlink" data-toggle="dropdown" runat="server">Dropmeny <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a runat="server" href="blogg.aspx">Blogg</a>

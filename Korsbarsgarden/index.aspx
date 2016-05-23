@@ -45,28 +45,16 @@
                 
                 <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-default">
-                            <%--<div class="panel-heading">
-                                <h3 class="panel-title">Välkommen till föräldrakoperativet Körsbärsgården!</h3>
-                            </div>--%>
-                            <div class="panel-body">
+                    <div class="col-md-6">                        
                                 <h3 class="rfont">Personalkooperativet Körsbärsgården</h3>
                                 <hr class="hr2" />
                             <p class="pfont"> Vi är en liten Montessori-inspirerad verksamhet med ett stort hjärta! Körsbärsgårdens rosa villa har plats för runt 22 barn och ligger i Domsten, i norra Helsingborg. 
                                 Den stora, lummiga trädgården lockar till lek och vi har strand och skog som närmsta grannar. Domstens by inbjuder till promenader till hamnen och omgivande lekplatser. 
                                 Småskaligheten gör att alla barn, föräldrar och våra pedagoger får en nära relation och ger alla en god inblick i verksamheten.
-                                Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken.</p>
-                        </div>
-                        </div>                        
+                                Som grund för vår verksamhet har vi skollagen, läroplanen och Montessoripedagogiken.</p>                                              
                     </div>
 
                     <div class="col-md-6">
-                        <div class="panel panel-default">
-                            <%--<div class="panel-heading">
-                                <h3 class="panel-title">Pedagogik</h3>
-                            </div>--%>
-                            <div class="panel-body">
                                 <h3 class="rfont">Pedagogik</h3>
                                 <hr class="hr2" />
                             <p class="pfont"> Vi strävar efter att lägga grunden för ett livslångt lärande genom att erbjuda varje barn en trygg och lärorik pedagogisk miljö. 
@@ -74,11 +62,9 @@
                                 Alla barn blir sedda, hörda och får tid att uttrycka sig och träna sina färdigheter. 
                                 Vi tror att varje barn har en inneboende kraft och vilja att utvecklas, utmanas och förändras. 
                                 Genom vår förberedda miljö, vårt förhållningssätt, verksamhetens innehåll och vår Montessoripedagogik ger vi varje barn bästa möjliga förutsättningar.</p>
-                        </div>
-                        </div>
                     </div>
                 </div>
-                <hr />
+             
                     <div class="row">
                         <div class="col-md-1"></div>
                         <div class="col-md-10">

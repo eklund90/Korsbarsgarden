@@ -35,11 +35,12 @@
                     <asp:Repeater ID="Repeater_kommentar" runat="server">
                        <ItemTemplate>
                            <div class="media">
-                            <div class="media-body">
-                                <h4 id="kommentarhead" runat="server" class="media-heading"><%# Eval("publicerare") %> <small id="smallhead" runat="server"><%# Eval("datum") %></small></h4>
-                                <p id="kommentartext" runat="server" class="pfont"><%# Eval("text") %></p>
+                                <div class="media-body">
+                                    <h4 id="kommentarhead" runat="server" class="media-heading"><%# Eval("publicerare") %> <small id="smallhead" runat="server"><%# Eval("datum") %></small></h4>
+                                    <p id="kommentartext" runat="server" class="pfont"><%# Eval("text") %></p>
+                                </div>
                             </div>
-                        </div>
+                            <hr class="hr2" />
                        </ItemTemplate>                         
                     </asp:Repeater>  
  

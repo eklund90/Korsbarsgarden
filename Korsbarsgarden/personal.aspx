@@ -6,7 +6,7 @@
 <div class="container" >                  
     <div class="row">      
             <h1 class="rfont" style="text-align:center">Personal</h1>                                
-            <hr />            
+                       
             <div class="col-md-4 img-portfolio">
                 <div class="panel panel-default">
                     <a href="portfolio-item.html">

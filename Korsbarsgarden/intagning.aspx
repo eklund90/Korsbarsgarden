@@ -9,7 +9,7 @@
             <div class="col-md-12">
                 <h1 class="rfont" style="text-align: center">Intagning                
                 </h1>
-                <hr />
+                
             </div>
         </div>
         <div class="row">
@@ -26,14 +26,6 @@
             <div class="col-md-2"></div>   
         </div>
         <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="images/intagningbild1.jpg" style="margin-left: 153.75px" />
-            </div>
-            <div class="col-md-6">
-                <img class="img-responsive img-rounded" src="images/intagningbild2.jpg" style="margin-left: 102.5px" />
-            </div>
-        </div>
-        <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
                 <p class="pfont">
@@ -43,6 +35,17 @@
             </div>
             <div class="col-md-2"></div>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img class="img-responsive" src="images/polaroid_intagning.png" /> <%--Polaroid frame by lured2stock @ http://lured2stock.deviantart.com/art/Polaroid-3262470--%>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="images/polaroid_intagning1.png" /> <%--Polaroid frame by lured2stock @ http://lured2stock.deviantart.com/art/Polaroid-3262470--%>
+            </div>
+            <div class="col-md-4">
+                <img class="img-responsive" src="images/polaroid_intagning2.png" /> <%--Polaroid frame by lured2stock @ http://lured2stock.deviantart.com/art/Polaroid-3262470--%>
+            </div>
+        </div>        
     </div>
 
 </asp:Content>
