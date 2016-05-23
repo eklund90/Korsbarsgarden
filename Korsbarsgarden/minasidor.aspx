@@ -17,7 +17,7 @@
         <div id="medlemsregistrering">--%>
 
                         <div class="col-md-6">
-                            <h1 class="rfont" style="text-align: center">Medlemsinfo</h1>
+                            <h1 style="text-align: center">Medlemsinfo</h1>
                             <hr />
                             <div class="control-group form-group">
                                 <div class="controls">
@@ -67,7 +67,7 @@
                         </div>
 
                         <div class="col-md-6">
-                            <h1 class="rfont" style="text-align: center">Byta Lösenord</h1>
+                            <h1 style="text-align: center">Byta Lösenord</h1>
                             <hr />
                             <label>Fyll i nytt lösenord</label>
                             <asp:TextBox ID="txtbox_minasidor_losenord" CssClass="form-control" runat="server" TextMode="Password"></asp:TextBox>

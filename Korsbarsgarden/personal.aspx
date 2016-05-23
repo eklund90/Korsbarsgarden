@@ -13,9 +13,9 @@
                         <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
                     </a>
                     <div class="panel-body">
-                        <h3 class="rfont" >Tina</h3>
+                        <h3 class="rfont" >Fredrik ej klar</h3>
                         <hr class="hr2" />
-                        <p>Förskolelärare sedan 1992. Montessoriutbildning 0-6 år från 1998. Arbetat som förskolechef på Körsbärsgården sedan augusti 2010.  Lång erfarenhet inom privat och kommunal regi med barn i förskola och i lägre skolåldern. Jobbat i utegrupp på hjul, traditionell förskola och inom Montessori. Har erfarenhet av barn med särskilda behov. Viktigt för mig är att ständigt utvecklas och " få kickar" i mitt  arbete för att kunna möta och stimulera "dagens barn." Brinner för att vara medupptäckare på strövtåg bland djur och natur.</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
                     </div>
                 </div> 
             </div>
@@ -56,9 +56,9 @@
                         <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
                     </a>
                     <div class="panel-body" style="height:349px">
-                        <h3 class="rfont">Lena</h3>
+                        <h3 class="rfont">Maria ej klar</h3>
                         <hr class="hr2" />
-                        <p>Barnskötare sedan 1980, Montessoripedagog 0-6 år sedan 1998 och trädgårdsmästare sedan 2011. Arbetar på Körsbärsgården sedan januari 2014. Brinner för allt det som växer och gror i trädgård och skog.</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
                     </div>
                 </div> 
             </div>
@@ -68,9 +68,9 @@
                         <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
                     </a>
                     <div class="panel-body" style="height:349px">
-                        <h3 class="rfont">Eva</h3>
+                        <h3 class="rfont">Pernilla ej klar</h3>
                         <hr class="hr2" />
-                        <p>Har lång erfarenhet inom försäljning av inredning och belysning. Driver ett designföretag med min man. Saknar familjens fyra utflugna barn och har därför sökt mig till förskolans värld. Har arbetat på Körsbärsgården sedan 2012. Brinner för samvaron, glädjen och spontaniteten i mötena med barnen.</p>
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
                     </div>
                 </div> 
             </div>

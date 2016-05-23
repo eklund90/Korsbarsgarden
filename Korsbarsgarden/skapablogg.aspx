@@ -8,19 +8,19 @@
            <div class="row">  
             <div class="panel panel-default">               
             <div class="panel-body">    
-                    <h1 class="rfont" style="text-align:center">Ny bloggpost</h1>  
+                    <h1 style="text-align:center">Ny bloggpost</h1>  
                     <hr />
-               <h3 class="rfont">Rubrik:</h3>
+               <h3>Rubrik:</h3>
                     <asp:TextBox ID="txtBox_rubrik" CssClass="form-control" runat="server"></asp:TextBox>           
 
                     <br />
-                    <h3 class="rfont">Spara bild:</h3>
+                    <h3>Spara bild:</h3>
                     <asp:FileUpload ID="fileupload_blogg" runat="server" />
 
-                    <h3 class="rfont">Spara fil:</h3>
+                    <h3>Spara fil:</h3>
                     <asp:FileUpload ID="fileupload_fil" runat="server" />
              
-                    <h3 class="rfont">Text:</h3>               
+                    <h3>Text:</h3>               
                     <asp:TextBox ID="txtBox_text" CssClass="form-control" runat="server" Rows="15" TextMode="MultiLine"></asp:TextBox>
                         <br />
                     <asp:Button ID="btn_skapainlägg" CssClass="btn btn-primary" runat="server" Text="Skapa Inlägg" OnClick="btn_skapainlägg_Click" />

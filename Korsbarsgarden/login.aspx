@@ -7,7 +7,7 @@
     <div class="row">
      
         <div class="col-md-6">
-                <h1 class="rfont" style="text-align:center">Logga in
+                <h1 style="text-align:center">Logga in
                     </h1>
                 
                     <div class="control-group form-group">
