@@ -32,9 +32,7 @@
                 <div class="col-md-7">
                     <h4 class="rfont">Gemenskap</h4>
                     <hr class="hr2" />
-                    <p class="pfont">Ansvar och engagemang från föräldrarna är naturligtvis viktigt för att kooperativet ska fungera väl. I utbyte får du en nära kontakt med personal och andra föräldrar samt glädjen i att bidra till en välfungerande förskola för ditt barn. Som förälder förväntas du delta i årsmöten och fixardagar samt att ibland hjälpa med mindre, praktiska sysslor såsom att sätta upp en hylla eller skotta snö. De flesta familjer kommer också att delta i styrelsearbetet någon period under sin tid på Körsbärsgården Fixardagar arrangeras två-fyra gånger per år och varar normalt 4h. Under dessa utförs lättare renoverings- och utvecklingsarbete på fastigheten och trädgården ses över.
-
-Fixardagarna brukar också vara trevliga rent socialt och avslutas typiskt med gemensam korvgrillning. Föräldrarna har ingen arbetsplikt i barngruppen, utan den pedagogiska verksamheten sköts helt av personalen.</p>
+                    <p class="pfont">Ansvar och engagemang från föräldrarna är naturligtvis viktigt för att kooperativet ska fungera väl. I utbyte får du en nära kontakt med personal och andra föräldrar samt glädjen i att bidra till en välfungerande förskola för ditt barn. Som förälder förväntas du delta i årsmöten och fixardagar samt att ibland hjälpa med mindre, praktiska sysslor såsom att sätta upp en hylla eller skotta snö. De flesta familjer kommer också att delta i styrelsearbetet någon period under sin tid på Körsbärsgården Fixardagar arrangeras två-fyra gånger per år och varar normalt 4h. Under dessa utförs lättare renoverings- och utvecklingsarbete på fastigheten och trädgården ses över. Fixardagarna brukar också vara trevliga rent socialt och avslutas typiskt med gemensam korvgrillning. Föräldrarna har ingen arbetsplikt i barngruppen, utan den pedagogiska verksamheten sköts helt av personalen.</p>
                     <%--<hr class="hr2" style="border-color: #b1b0b0" />--%>
                 </div>
             </div>
