@@ -94,9 +94,14 @@ footer {
     }
 }
 
-#pb1 {
-    background-image: url(images/snacka.jpg) !important; 
-  
+.pb1 {
+    width: 380px;
+    height: auto;
+    margin: auto;
+}
+
+.pb2{
+    margin: auto;
 }
 
 .hr2{
@@ -132,6 +137,10 @@ footer {
 
 .headlink{
     color: #ffffff;
+}
+
+.breadlink{
+    color: #F26161;
 }
 
 .lblhead{
