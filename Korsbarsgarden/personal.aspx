@@ -7,19 +7,32 @@
     <div class="row">      
             <h1 class="rfont" style="text-align:center">Personal</h1>                                
                        
-            <div class="col-md-4 img-portfolio">
+              <div class="row">
+            <div class="col-md-4 img-portfolio" >
                 <div class="panel panel-default">
                     <a href="portfolio-item.html">
                         <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
                     </a>
-                    <div class="panel-body">
-                        <h3 class="rfont" >Fredrik ej klar</h3>
+                    <div class="panel-body" style="height:349px">
+                        <h3 class="rfont">Maria ej klar</h3>
                         <hr class="hr2" />
                         <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
                     </div>
                 </div> 
             </div>
-
+  
+            <div class="col-md-4 img-portfolio" >
+                <div class="panel panel-default">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
+                    </a>
+                    <div class="panel-body" style="height:349px">
+                        <h3 class="rfont">Pernilla ej klar</h3>
+                        <hr class="hr2" />
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
+                    </div>
+                </div> 
+            </div>
             <div class="col-md-4 img-portfolio">
                  <div class="panel panel-default">
                      <a href="portfolio-item.html">
@@ -33,7 +46,7 @@
                  </div> 
             </div>
 
-
+</div>
             <div class="col-md-4 img-portfolio" >
                 <div class="panel panel-default">
                     <a href="portfolio-item.html">
@@ -46,34 +59,10 @@
                     </div>
                 </div> 
            </div>
-    </div>
+    
 
         <!-- Projects Row -->
-        <div class="row">
-            <div class="col-md-4 img-portfolio" >
-                <div class="panel panel-default">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
-                    </a>
-                    <div class="panel-body" style="height:349px">
-                        <h3 class="rfont">Maria ej klar</h3>
-                        <hr class="hr2" />
-                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="col-md-4 img-portfolio" >
-                <div class="panel panel-default">
-                    <a href="portfolio-item.html">
-                        <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
-                    </a>
-                    <div class="panel-body" style="height:349px">
-                        <h3 class="rfont">Pernilla ej klar</h3>
-                        <hr class="hr2" />
-                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
-                    </div>
-                </div> 
-            </div>
+
             <div class="col-md-4 img-portfolio" >
                 <div class="panel panel-default">
                     <a href="portfolio-item.html">
@@ -86,6 +75,19 @@
                     </div>
                 </div> 
             </div>
+                        <div class="col-md-4 img-portfolio">
+                <div class="panel panel-default">
+                    <a href="portfolio-item.html">
+                        <img class="img-responsive img-hover img-thumbnail" src="http://placehold.it/700x400" alt="" />
+                    </a>
+                    <div class="panel-body">
+                        <h3 class="rfont" >Fredrik ej klar</h3>
+                        <hr class="hr2" />
+                        <p>Lorem Ipsum är en utfyllnadstext från tryck- och förlagsindustrin. Lorem ipsum har varit standard ända sedan 1500-talet, när en okänd boksättare tog att antal bokstäver och blandade dem för att göra ett provexemplar av en bok. Lorem ipsum har inte bara överlevt fem århundraden, utan även övergången till elektronisk typografi utan större förändringar. Det blev allmänt känt på 1960-talet i samband med lanseringen av Letraset-ark med avsnitt av Lorem Ipsum, och senare med mjukvaror som Aldus PageMaker.</p>
+                    </div>
+                </div> 
+            </div>
         </div>
-</div>
+            </div>
+
 </asp:Content>
