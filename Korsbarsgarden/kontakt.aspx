@@ -11,14 +11,14 @@
             <!-- Map Column -->
             <div class="col-md-8">
                 <!-- Embedded Google Map -->
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:100%'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map() { var myOptions = { zoom: 12, center: new google.maps.LatLng(56.11479809999999, 12.614059300000008), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(56.11479809999999, 12.614059300000008) }); infowindow = new google.maps.InfoWindow({ content: '<strong>Här finns vi</strong><br>Bygatan 1, 255 91 Helsingborg<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
+               <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:440px;width:700px;'><div id='gmap_canvas' style='height:440px;width:700px;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="https://privacypolicytemplate.net">privacy policy template</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(56.11479809999999, 12.614059300000008), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(56.11479809999999, 12.614059300000008) }); infowindow = new google.maps.InfoWindow({ content: '<strong>Här finns vi</strong><br>Bygatan 1, 255 91 Domsten<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
                
             </div>
             <!-- Contact Details Column -->
             <div class="col-md-4">
                 <h3>Kontaktuppgifter</h3>
                 <p>
-                    Körsbärsgården<br>Bygatan 1, 255 91 Helsingborg<br>
+                    Körsbärsgården<br>Bygatan 1, 254 78 Domsten<br>
                 </p>
                 <p><i class="fa fa-phone"></i> 
                     <abbr title="Telefon">T</abbr>: 042-912 04</p>
