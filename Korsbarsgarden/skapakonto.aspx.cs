@@ -18,9 +18,13 @@ namespace Korsbarsgarden
         List<medlem> memberList = new List<medlem>();
         protected void Page_Load(object sender, EventArgs e)
         {
+            Page.MaintainScrollPositionOnPostBack = true;
             if(!IsPostBack)
             {
-                PanelResponse_skapakonto.Visible = false;        
+                PanelResponse_skapakonto.Visible = false;
+                btn_no.Visible = false;
+                btn_yes.Visible = false;
+
                 memberList = getMemberList();
                 foreach (medlem m in memberList)
                 {
@@ -66,17 +70,22 @@ namespace Korsbarsgarden
 
         protected void btn_tabortkonto_Click(object sender, EventArgs e)
         {
-            tabortmedlem(Convert.ToInt16(medlemlist.SelectedValue));
-            clearmedlem();
-            medlemlist.Items.Clear();
+            //tabortmedlem(Convert.ToInt16(medlemlist.SelectedValue));
+            //clearmedlem();
+            //medlemlist.Items.Clear();
 
-            foreach (medlem m in getMemberList())
-            {
-                ListItem Data = new ListItem();
-                Data.Text = m.fnamn;
-                Data.Value = m.id.ToString();
-                medlemlist.Items.Add(Data);
-            }
+            //foreach (medlem m in getMemberList())
+            //{
+            //    ListItem Data = new ListItem();
+            //    Data.Text = m.fnamn;
+            //    Data.Value = m.id.ToString();
+            //    medlemlist.Items.Add(Data);
+            //}
+            PanelResponse_skapakonto.Visible = true;
+            btn_yes.Visible = true;
+            btn_no.Visible = true;
+            PanelResponse_skapakonto.CssClass = "alert-warning alert PanelResponse";
+            LabelResponse_skapakonto.Text = "Är du säker? ";
         }
         protected void btn_uppdaterakonto_Click(object sender, EventArgs e)
         {
@@ -305,6 +314,35 @@ namespace Korsbarsgarden
 
         }
         #endregion metoder
+
+        protected void btn_yes_Click(object sender, EventArgs e)
+        {
+            tabortmedlem(Convert.ToInt16(medlemlist.SelectedValue));
+            clearmedlem();
+            medlemlist.Items.Clear();
+
+            foreach (medlem m in getMemberList())
+            {
+                ListItem Data = new ListItem();
+                Data.Text = m.fnamn;
+                Data.Value = m.id.ToString();
+                medlemlist.Items.Add(Data);
+            }
+
+            PanelResponse_skapakonto.Visible = true;
+            //PanelResponse_skapakonto.CssClass = "alert-warning alert PanelResponse";
+            btn_no.Visible = false;
+            btn_yes.Visible = false;
+
+            //LabelResponse_skapakonto.Text = "<span class='spacer-glyph glyphicon glyphicon-exclamation-sign'></span> Användaren är nu raderad.";
+        }
+
+        protected void btn_no_Click(object sender, EventArgs e)
+        {
+            PanelResponse_skapakonto.Visible = false;
+            btn_no.Visible = false;
+            btn_yes.Visible = false;
+        }
 
 
   

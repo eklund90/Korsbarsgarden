@@ -157,6 +157,24 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.WebControls.Label LabelResponse_skapakonto;
         
         /// <summary>
+        /// btn_yes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_yes;
+        
+        /// <summary>
+        /// btn_no control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_no;
+        
+        /// <summary>
         /// medlemlist control.
         /// </summary>
         /// <remarks>

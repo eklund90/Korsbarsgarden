@@ -24,23 +24,26 @@
                 <%--<asp:Label ID="lbl_date" runat="server" Text=""></asp:Label>bananemerge
                 <hr class="hr2"/>--%>
                 <asp:Label ID="lbl_head" CssClass="lblhead" runat="server" ></asp:Label>
-                <hr />
-                <asp:Label CssClass="pfont" ID="lbl_blogtext" runat="server" Text=""></asp:Label>
-                <br />
+                <hr class="hr4" />
                 <img id="bloggbild" runat="server" class="img-responsive" alt="" />
-                <asp:LinkButton ID="lb_blogg" runat="server" CommandName="download" Text="h" onCommand="lb_blogg_Command"></asp:LinkButton>
+                <br /> 
+                <asp:Label CssClass="pfont" ID="lbl_blogtext" runat="server" Text=""></asp:Label>                               
+                <div class="col-md-12">
+                    <p class="pfont">Fil: <asp:LinkButton ID="lb_blogg" runat="server" CommandName="download" Text="h" onCommand="lb_blogg_Command"></asp:LinkButton></p>
                     
-                <hr />
+                </div>
+                
+                    
                <h3>Kommentarer:</h3>  
                     <asp:Repeater ID="Repeater_kommentar" runat="server">
                        <ItemTemplate>
                            <div class="media">
                                 <div class="media-body">
-                                    <h4 id="kommentarhead" runat="server" class="media-heading"><%# Eval("publicerare") %> <small id="smallhead" runat="server"><%# Eval("datum") %></small></h4>
+                                    <h4 id="kommentarhead" runat="server" class="media-heading"><%# Eval("publicerare") %> <small id="smallhead" runat="server"><%# Eval("datum").ToString().Split(' ')[0] %></small></h4>
                                     <p id="kommentartext" runat="server" class="pfont"><%# Eval("text") %></p>
                                 </div>
                             </div>
-                            <hr class="hr2" />
+                            <hr class="hr3" />
                        </ItemTemplate>                         
                     </asp:Repeater>  
  

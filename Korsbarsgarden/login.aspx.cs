@@ -65,7 +65,7 @@ namespace Korsbarsgarden
                         }
                         else if (mem.behorighet == 2)
                         {
-                            Response.Redirect("~/personal.aspx");
+                            Response.Redirect("~/index.aspx");
                         }
                     }
                     else

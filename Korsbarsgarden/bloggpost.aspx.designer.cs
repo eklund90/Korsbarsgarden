@@ -31,15 +31,6 @@ namespace Korsbarsgarden {
         protected global::System.Web.UI.WebControls.Label lbl_head;
         
         /// <summary>
-        /// lbl_blogtext control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl_blogtext;
-        
-        /// <summary>
         /// bloggbild control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace Korsbarsgarden {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlImage bloggbild;
+        
+        /// <summary>
+        /// lbl_blogtext control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_blogtext;
         
         /// <summary>
         /// lb_blogg control.

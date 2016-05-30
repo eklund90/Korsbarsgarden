@@ -88,6 +88,8 @@
 
                 <asp:Panel ID="PanelResponse_skapakonto" runat="server" CssClass="alert PanelResponse">
                     <asp:Label ID="LabelResponse_skapakonto" runat="server" Text="asd"></asp:Label>
+                    <asp:Button ID="btn_yes" class="btn btn-danger"  runat="server" Text="Radera konto" OnClick="btn_yes_Click" />
+                    <asp:Button ID="btn_no" class="btn btn-warning" runat="server" Text="Radera inte konto" OnClick="btn_no_Click" />
                 </asp:Panel>
             </div>
             <div class="col-md-6">

@@ -22,29 +22,28 @@ namespace Korsbarsgarden
                 DataTable dt = new DataTable();
                 dt = getLatestNews();
                 RepeaterNews.DataSource = dt;
-                RepeaterNews.DataBind();                
-            }
+                RepeaterNews.DataBind();
 
-            nymedlem.id = Convert.ToInt32(Session["id"]);
-            nymedlem.behorighet = Convert.ToInt32(Session["behorighet"]);
-
-            if (nymedlem.behorighet == 1)
-            {
-
-                foreach (RepeaterItem item in RepeaterNews.Items)
+                nymedlem.id = Convert.ToInt32(Session["id"]);
+                nymedlem.behorighet = Convert.ToInt32(Session["behorighet"]);
+                
+                if (nymedlem.behorighet != 1)
                 {
-                    Button btncontrol = item.FindControl("btn_tabort") as Button;
-                    if (btncontrol != null)
-                    {
-                        btncontrol.Visible = true;
-                    }
 
+                    foreach (RepeaterItem item in RepeaterNews.Items)
+                    {
+                        Button btncontrol = item.FindControl("btn_tabort") as Button;
+                        if (btncontrol != null)
+                        {
+                            btncontrol.Visible = false;
+                        }
+
+                    }
                 }
             }
-            else
-            {
 
-            }
+            
+            
             //DateTime date = new DateTime();
            
             //Label1.Text = 
@@ -109,24 +108,24 @@ namespace Korsbarsgarden
             return dt;
         }
 
-        protected DateTime RepeaterNews_ItemDataBound(object sender, RepeaterItemEventArgs e)
-        {
-            DateTime date = new DateTime();
-            date = DateTime.FromOADate(2016.01);
-            if (e.Item.ItemType == ListItemType.Item ||
-                e.Item.ItemType == ListItemType.AlternatingItem)
-            {
-                if (e.Item.ItemIndex == RepeaterNews.Items.Count - 1)
-                {
-                    
-                    date = Convert.ToDateTime(RepeaterNews.FindControl("paragraph" + RepeaterNews.Items.Count).ToString());
+        //protected DateTime RepeaterNews_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        //{
+        //    DateTime date = new DateTime();
+        //    date = DateTime.FromOADate(2016.01);
+        //    if (e.Item.ItemType == ListItemType.Item ||
+        //        e.Item.ItemType == ListItemType.AlternatingItem)
+        //    {
+        //        if (e.Item.ItemIndex == RepeaterNews.Items.Count - 1)
+        //        {
 
-                    
-                }
-            }
-            Label1.Text = date.ToShortDateString();
-            return date;
-        }
+        //            date = Convert.ToDateTime(RepeaterNews.FindControl("paragraph" + RepeaterNews.Items.Count).ToString());
+
+
+        //        }
+        //    }
+        //    Label1.Text = date.ToShortDateString();
+        //    return date;
+        //}
         
         //private static DataTable getNextNews()
         //{

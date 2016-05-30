@@ -24,7 +24,7 @@
                 <br />
                 <asp:Button ID="btn_readmore" runat="server" CssClass="btn btn-primary" Text="Läs mer" OnCommand="btn_readmore_Command" CommandArgument='<%#Eval("id")%>'/>
 
-                <asp:Button ID="btn_tabort" runat="server" CssClass="btn btn-danger" Text="Ta bort" OnCommand="btn_tabort_Command" CommandArgument='<%#Eval("id")%>' Visible="False" />
+                <asp:Button ID="btn_tabort" runat="server" CssClass="btn btn-danger" Text="Ta bort" OnCommand="btn_tabort_Command" CommandArgument='<%#Eval("id")%>' Visible="True" />
                 <%--<a class="btn btn-primary" href="bloggpost.aspx?field1=<%Eval("rubrik")%>>Read More <i class="fa fa-angle-right"></i></a>--%>           
                 
             </div>            
@@ -32,7 +32,6 @@
             <hr />
             </ItemTemplate>        
         </asp:Repeater>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <!-- /.row -->
 
 

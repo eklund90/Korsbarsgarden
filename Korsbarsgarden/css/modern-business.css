@@ -107,6 +107,14 @@ footer {
 .hr2{
     margin-right: 85%;
 }
+.hr3{
+    border-color: #7d7d7d;
+    margin-right: 85%;
+}
+
+.hr4{
+    border-color: #7d7d7d;
+}
 
 .pfont{
     font-family: 'Droid Serif', serif;
