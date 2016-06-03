@@ -119,11 +119,15 @@
                             utmanande och tillåtande miljö.
                             Vi har utedagar med uppdrag och utflykter till stranden, skogen eller
                             någon lekplats i närmiljön. Skapande verksamhet, sånger/sagor och
-                            rörelse/rytmik är återkommande aktiviteter. Vi arbetar även
-                            temainriktat, med olika områden såsom natyrvetenskap och “att vara
+                            rörelse/rytmik är återkommande aktiviteter. 
+                        </p>
+                        <p class="pfont">
+                            Vi arbetar även
+                            temainriktat, med olika områden såsom naturvetenskap och “att vara
                             en bra kompis”. Vi vill fånga dagen och uppleva världen med alla våra
-                            sinnen.    
-                        </p>                        
+                            sinnen.   
+                        </p>
+                        <br /><br />                        
                     </div>
                 </div>
             </div>
@@ -149,7 +153,10 @@
                         <p class="pfont">
                             En dag i veckan har vi Spanarna, där vi ger oss ut på spa spännande
                             uppdrag i naturen. Sångstund, “Hela huset sjunger”, tillsammans med
-                            barnen på Snäckan är också en stående aktivitet. Vi arbetar
+                            barnen på Snäckan är också en stående aktivitet. Vi arbetar 
+                            temabaserat med utgångspunkt i barnens frågeställningar och
+                            intressen. De barn som går sista året har regelbundet specifika,
+                            skolförberedande aktiviteter.
                         </p>
                         <br />
                     </div>
